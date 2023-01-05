@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-05T03:08:18.301Z</updated>
+  <updated>2023-01-05T05:12:40.477Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,16 +21,12 @@
     <link href="http://example.com/2023/01/04/Blog%20test/"/>
     <id>http://example.com/2023/01/04/Blog%20test/</id>
     <published>2023-01-04T14:36:20.000Z</published>
-    <updated>2023-01-05T03:08:18.301Z</updated>
+    <updated>2023-01-05T05:12:40.477Z</updated>
     
-    <content type="html"><![CDATA[<p>这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&lt;!-- more --&gt;<br></code></pre></td></tr></table></figure><p>$$<br>u(\lambda, T)=\frac{8 \pi h c}{\lambda^5} \cdot \frac{1}{e^{\frac{h c}{\lambda k T}}-1}<br>$$<br>目前来看，一切正常。</p>]]></content>
+    <content type="html"><![CDATA[<p>这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。</p><span id="more"></span><p>$$<br>u(\lambda, T)=\frac{8 \pi h c}{\lambda^5} \cdot \frac{1}{e^{\frac{h c}{\lambda k T}}-1}<br>$$<br>目前来看，一切正常。</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。&lt;/p&gt;
-&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span</summary>
-      
+    <summary type="html">&lt;p&gt;这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。&lt;/p&gt;</summary>
     
     
     

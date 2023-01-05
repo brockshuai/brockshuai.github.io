@@ -8,7 +8,7 @@
     <link href="/2023/01/04/Blog%20test/"/>
     <url>/2023/01/04/Blog%20test/</url>
     
-    <content type="html"><![CDATA[<p>这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&lt;!-- more --&gt;<br></code></pre></td></tr></table></figure><p>$$<br>u(\lambda, T)=\frac{8 \pi h c}{\lambda^5} \cdot \frac{1}{e^{\frac{h c}{\lambda k T}}-1}<br>$$<br>目前来看，一切正常。</p>]]></content>
+    <content type="html"><![CDATA[<p>这是我的第一篇文章，用来测试刚刚完成配置的Hexo是否能够正常推送博文。</p><span id="more"></span><p>$$<br>u(\lambda, T)=\frac{8 \pi h c}{\lambda^5} \cdot \frac{1}{e^{\frac{h c}{\lambda k T}}-1}<br>$$<br>目前来看，一切正常。</p>]]></content>
     
     
     
