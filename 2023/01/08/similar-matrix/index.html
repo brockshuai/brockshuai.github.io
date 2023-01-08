@@ -16,25 +16,25 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="也许不曾缺少善意 自从目睹“虎子事件”，十几万粉丝被愚弄，虎子收割了善意和同情后以“死亡”淡出了观众视野后，我便对身患疾病（或真或假），在B站上拍摄视频“募捐”的人有所抵触。虽然不能判断真假，但我也不再会随意地向一个陌生人释放善意了。即使没有什么物质上的付出，释放善意后却发现被欺骗的感觉总归是不好受的。 然而，这两天总看到B站主页推送UP主“景秀前程老周抗癌中”的视频。我一如既往地划走，继续寻找我">
+    <meta name="description" content="二级结论  与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即\(\text{tr}(A)&#x3D;\text{tr}(B)\) 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有\(n\)的不同的特征值，要么所有的\(k\)重特征值的几何重数也为\(k\)  相似矩阵特征向量的关系 若\(P^{-1}AP&#x3D;B\)，\(B\)有特征向量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="也许不曾缺少善意">
-<meta property="og:url" content="http://example.com/2023/01/07/jingxiuqiancheng/index.html">
+<meta property="og:title" content="相似矩阵知识点">
+<meta property="og:url" content="http://example.com/2023/01/08/similar-matrix/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="也许不曾缺少善意 自从目睹“虎子事件”，十几万粉丝被愚弄，虎子收割了善意和同情后以“死亡”淡出了观众视野后，我便对身患疾病（或真或假），在B站上拍摄视频“募捐”的人有所抵触。虽然不能判断真假，但我也不再会随意地向一个陌生人释放善意了。即使没有什么物质上的付出，释放善意后却发现被欺骗的感觉总归是不好受的。 然而，这两天总看到B站主页推送UP主“景秀前程老周抗癌中”的视频。我一如既往地划走，继续寻找我">
+<meta property="og:description" content="二级结论  与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即\(\text{tr}(A)&#x3D;\text{tr}(B)\) 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有\(n\)的不同的特征值，要么所有的\(k\)重特征值的几何重数也为\(k\)  相似矩阵特征向量的关系 若\(P^{-1}AP&#x3D;B\)，\(B\)有特征向量">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-07T10:56:30.000Z">
-<meta property="article:modified_time" content="2023-01-07T14:23:03.629Z">
+<meta property="article:published_time" content="2023-01-08T01:34:52.000Z">
+<meta property="article:modified_time" content="2023-01-08T05:15:40.349Z">
 <meta property="article:author" content="神仙魚">
-<meta property="article:tag" content="生活">
-<meta property="article:tag" content="碎碎念">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>也许不曾缺少善意 - 神仙魚</title>
+  <title>相似矩阵知识点 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="也许不曾缺少善意"></span>
+            <span id="subtitle" data-typed-text="相似矩阵知识点"></span>
           
         </div>
 
@@ -236,8 +236,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-07 18:56" pubdate>
-          2023年1月7日 晚上
+        <time datetime="2023-01-08 09:34" pubdate>
+          2023年1月8日 上午
         </time>
       </span>
     
@@ -248,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          930 字
+          1.4k 字
         
       </span>
     
@@ -259,7 +259,7 @@
         
         
         
-          6 分钟
+          9 分钟
         
       </span>
     
@@ -305,21 +305,72 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">也许不曾缺少善意</h1>
+            <h1 style="display: none">相似矩阵知识点</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="也许不曾缺少善意">也许不曾缺少善意</h2>
-<p>自从目睹“虎子事件”，十几万粉丝被愚弄，虎子收割了善意和同情后以“死亡”淡出了观众视野后，我便对身患疾病（或真或假），在B站上拍摄视频“募捐”的人有所抵触。虽然不能判断真假，但我也不再会随意地向一个陌生人释放善意了。即使没有什么物质上的付出，释放善意后却发现被欺骗的感觉总归是不好受的。</p>
-<p>然而，这两天总看到B站主页推送UP主“<strong>景秀前程老周抗癌中</strong>”的视频。我一如既往地划走，继续寻找我感兴趣的视频。可连续推送了几天之后，我发现他的视频有分享阳过，阳康经历的，有“今天来给大家做道菜”，也有翻唱歌曲的，似乎不像是一个身患疾病的老人通常会拍视频发布的内容。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-07%2019.16.19.png" srcset="/img/loading.gif" lazyload /></p>
-<p>单纯出于好奇，点进他的几期做菜视频。虽然这些菜式都比较家常，但每期视频里他都会细致地介绍食材、做法，以及最终的成品展示。他的设备并不专业，拍摄手法也很直白，但总能给人一种“他真的有在认真教大家做菜”的感觉。听着他一边做菜一边讲解，有时还在最后亲自品尝，莫名地有一种亲切的感受。他拍的那期“阳春面”的视频令人印象尤其深刻。不加修饰的家常做法、和最后那句带着笑容的“小时候能够吃到这样的一碗面，那就太开心了”，实在令人感到温暖。不知怎么地，他就像一个邻家的富有生活情趣的老人，认真地制作美食、认真地生活。“他是不是真的得病了？”“他是不是在骗取同情？”当看他的视频的时候，这种问题甚至很难问出口。学一道菜，听一首歌，这便足够。再留下两个硬币，是更好的。也许只有亲自看完他的视频之后才能有体会，但无论如何，他跟以往那些B站上的“抗癌”视频不同，每次看完总能给人积极向上的感受。</p>
-<p>评论区中留言的朋友们大抵看完后也都有相似的心境吧。乐观积极的感染力是一种广谱的感染力，它能在乌烟瘴气、充斥着抽象和反智的网络空间中开辟出一片净土，唤醒众人最本能的恻隐之心。我们绝大多数人在生活的长征路上都各有各的苦难，刻意的卖惨在当今只会招来怀疑和谩骂，因为它不能给我们的生活带来正能量。我们每天接收到的负面信息已经接近饱和了，没有人会像徒增悲悯和哀伤。<strong>景秀前程老周抗癌中</strong>的视频告诉我们，“抗癌”视频也可以不以乞怜的形式拍摄。在困境中保持对生活的热爱，把这份热爱传递给他人，这样的人理应受到最多的帮助、最大的支持。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-07%2022.22.18.png" srcset="/img/loading.gif" lazyload /></p>
-<p>祝早日康复。</p>
+                <h2 id="二级结论">二级结论</h2>
+<ol type="1">
+<li>与对角矩阵相似的只有对角矩阵</li>
+<li>相似矩阵的迹相等，即<span
+class="math inline">\(\text{tr}(A)=\text{tr}(B)\)</span></li>
+<li>相似矩阵的秩相等</li>
+<li>相似矩阵有相同的特征值</li>
+<li>与实对称矩阵相似的矩阵必可以相似对角化</li>
+<li>矩阵可以相似对角化只有两种情况：要么有<span
+class="math inline">\(n\)</span>的不同的特征值，要么所有的<span
+class="math inline">\(k\)</span>重特征值的几何重数也为<span
+class="math inline">\(k\)</span></li>
+</ol>
+<h2 id="相似矩阵特征向量的关系">相似矩阵特征向量的关系</h2>
+<p>若<span class="math inline">\(P^{-1}AP=B\)</span>，<span
+class="math inline">\(B\)</span>有特征向量<span
+class="math inline">\(\beta\)</span>，则有如下推论：</p>
+<p>因<span class="math inline">\(P^{-1}AP=B\)</span>，<span
+class="math inline">\(B=\lambda\beta\)</span>，则 <span
+class="math display">\[
+A=PBP^{-1}
+\]</span> 故而 <span class="math display">\[
+AP\beta=PBP^{-1}P\beta=PBP\beta=P\lambda\beta
+\]</span> <span
+class="math inline">\(\lambda\)</span>作为数可以提到前面，则 <span
+class="math display">\[
+AP\beta=\lambda P\beta
+\]</span></p>
+<p>由此可以得到，<span class="math inline">\(A\)</span>有特征向量<span
+class="math inline">\(P\beta\)</span>。</p>
+<h2 id="先拆后合求特征值">“先拆后合”求特征值</h2>
+<p>求矩阵<span class="math inline">\(A\)</span>的特征值可以把<span
+class="math inline">\(A\)</span>拆成一个简单矩阵<span
+class="math inline">\(B\)</span>和若干倍的<span
+class="math inline">\(E\)</span>的和，先求出<span
+class="math inline">\(B\)</span>的特征值，再根据特征值的性质求出<span
+class="math inline">\(A\)</span>的特征值。具体而言，可以进行如下操作：</p>
+<p><strong>例：求矩阵<span
+class="math inline">\(A=\left[\begin{array}{ccccc}a &amp; 1 &amp; 1
+&amp; \cdots &amp; 1 \\ 1 &amp; a &amp; 1 &amp; \cdots &amp; 1 \\ 1
+&amp; 1 &amp; a &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots
+&amp; &amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp;
+a\end{array}\right]\)</span>的特征值</strong></p>
+<p>解：由题目知， <span class="math display">\[
+\begin{aligned} \boldsymbol{A} &amp; =\left[\begin{array}{lllll}a-1
+&amp; &amp; &amp; &amp; \\ &amp; a-1 &amp; &amp; &amp; \\ &amp; &amp;
+a-1 &amp; &amp; \\ &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp;
+a-1\end{array}\right]+\left[\begin{array}{ccccc}1 &amp; 1 &amp; 1 &amp;
+\cdots &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \\ 1 &amp; 1
+&amp; 1 &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots &amp;
+&amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1\end{array}\right]
+\\ &amp; =(a-1) \boldsymbol{E}+\boldsymbol{B},\end{aligned}
+\]</span></p>
+<p>而矩阵<span class="math inline">\(\boldsymbol{B}\)</span>的秩为<span
+class="math inline">\(1\)</span>，有 <span class="math display">\[
+|\lambda \boldsymbol{E}-\boldsymbol{B}|=\lambda^n-n\lambda^{n-1}
+\]</span> 得到矩阵<span
+class="math inline">\(\boldsymbol{B}\)</span>的特征值为<span
+class="math inline">\(n,0,0,...,0\)</span>，因此<span
+class="math inline">\(\boldsymbol{A}\)</span>的特征值为<span
+class="math inline">\(n+a-1,a-1,a-1,...,a-1\)</span>。</p>
 
                 
               </div>
@@ -332,9 +383,9 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">#碎碎念</a>
+        <a href="/tags/%E6%95%B0%E5%AD%A6/">#数学</a>
       
     </div>
   
@@ -346,8 +397,8 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>也许不曾缺少善意</div>
-      <div>http://example.com/2023/01/07/jingxiuqiancheng/</div>
+      <div>相似矩阵知识点</div>
+      <div>http://example.com/2023/01/08/similar-matrix/</div>
     </div>
     <div class="license-meta">
       
@@ -359,7 +410,7 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月7日</div>
+          <div>2023年1月8日</div>
         </div>
       
       
@@ -391,18 +442,12 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/08/similar-matrix/" title="相似矩阵知识点">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">相似矩阵知识点</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/06/Jordan/" title="由一道考研线性代数题目引发的思考">
-                        <span class="hidden-mobile">由一道考研线性代数题目引发的思考</span>
+                      <a href="/2023/01/07/jingxiuqiancheng/" title="也许不曾缺少善意">
+                        <span class="hidden-mobile">也许不曾缺少善意</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

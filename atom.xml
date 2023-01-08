@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-07T14:23:03.629Z</updated>
+  <updated>2023-01-08T05:15:40.349Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>相似矩阵知识点</title>
+    <link href="http://example.com/2023/01/08/similar-matrix/"/>
+    <id>http://example.com/2023/01/08/similar-matrix/</id>
+    <published>2023-01-08T01:34:52.000Z</published>
+    <updated>2023-01-08T05:15:40.349Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="二级结论">二级结论</h2><ol type="1"><li>与对角矩阵相似的只有对角矩阵</li><li>相似矩阵的迹相等，即<spanclass="math inline">\(\text{tr}(A)=\text{tr}(B)\)</span></li><li>相似矩阵的秩相等</li><li>相似矩阵有相同的特征值</li><li>与实对称矩阵相似的矩阵必可以相似对角化</li><li>矩阵可以相似对角化只有两种情况：要么有<spanclass="math inline">\(n\)</span>的不同的特征值，要么所有的<spanclass="math inline">\(k\)</span>重特征值的几何重数也为<spanclass="math inline">\(k\)</span></li></ol><h2 id="相似矩阵特征向量的关系">相似矩阵特征向量的关系</h2><p>若<span class="math inline">\(P^{-1}AP=B\)</span>，<spanclass="math inline">\(B\)</span>有特征向量<spanclass="math inline">\(\beta\)</span>，则有如下推论：</p><p>因<span class="math inline">\(P^{-1}AP=B\)</span>，<spanclass="math inline">\(B=\lambda\beta\)</span>，则 <spanclass="math display">\[A=PBP^{-1}\]</span> 故而 <span class="math display">\[AP\beta=PBP^{-1}P\beta=PBP\beta=P\lambda\beta\]</span> <spanclass="math inline">\(\lambda\)</span>作为数可以提到前面，则 <spanclass="math display">\[AP\beta=\lambda P\beta\]</span></p><p>由此可以得到，<span class="math inline">\(A\)</span>有特征向量<spanclass="math inline">\(P\beta\)</span>。</p><h2 id="先拆后合求特征值">“先拆后合”求特征值</h2><p>求矩阵<span class="math inline">\(A\)</span>的特征值可以把<spanclass="math inline">\(A\)</span>拆成一个简单矩阵<spanclass="math inline">\(B\)</span>和若干倍的<spanclass="math inline">\(E\)</span>的和，先求出<spanclass="math inline">\(B\)</span>的特征值，再根据特征值的性质求出<spanclass="math inline">\(A\)</span>的特征值。具体而言，可以进行如下操作：</p><p><strong>例：求矩阵<spanclass="math inline">\(A=\left[\begin{array}{ccccc}a &amp; 1 &amp; 1&amp; \cdots &amp; 1 \\ 1 &amp; a &amp; 1 &amp; \cdots &amp; 1 \\ 1&amp; 1 &amp; a &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots&amp; &amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp;a\end{array}\right]\)</span>的特征值</strong></p><p>解：由题目知， <span class="math display">\[\begin{aligned} \boldsymbol{A} &amp; =\left[\begin{array}{lllll}a-1&amp; &amp; &amp; &amp; \\ &amp; a-1 &amp; &amp; &amp; \\ &amp; &amp;a-1 &amp; &amp; \\ &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp;a-1\end{array}\right]+\left[\begin{array}{ccccc}1 &amp; 1 &amp; 1 &amp;\cdots &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \\ 1 &amp; 1&amp; 1 &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots &amp;&amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1\end{array}\right]\\ &amp; =(a-1) \boldsymbol{E}+\boldsymbol{B},\end{aligned}\]</span></p><p>而矩阵<span class="math inline">\(\boldsymbol{B}\)</span>的秩为<spanclass="math inline">\(1\)</span>，有 <span class="math display">\[|\lambda \boldsymbol{E}-\boldsymbol{B}|=\lambda^n-n\lambda^{n-1}\]</span> 得到矩阵<spanclass="math inline">\(\boldsymbol{B}\)</span>的特征值为<spanclass="math inline">\(n,0,0,...,0\)</span>，因此<spanclass="math inline">\(\boldsymbol{A}\)</span>的特征值为<spanclass="math inline">\(n+a-1,a-1,a-1,...,a-1\)</span>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;二级结论&quot;&gt;二级结论&lt;/h2&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;与对角矩阵相似的只有对角矩阵&lt;/li&gt;
+&lt;li&gt;相似矩阵的迹相等，即&lt;span
+class=&quot;math inline&quot;&gt;\(\text{tr}(A)=\text{tr}(B)\)&lt;/span&gt;&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>也许不曾缺少善意</title>
