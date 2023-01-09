@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-08T05:15:40.349Z</updated>
+  <updated>2023-01-09T04:20:07.240Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>惯性定理的几何意义</title>
+    <link href="http://example.com/2023/01/09/quadratic/"/>
+    <id>http://example.com/2023/01/09/quadratic/</id>
+    <published>2023-01-09T02:05:12.000Z</published>
+    <updated>2023-01-09T04:20:07.240Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="惯性定理">惯性定理</h2><h3 id="引子">引子</h3><p>先看一道题：</p><span id="more"></span><div class="note note-success">            <p>二次型<spanclass="math inline">\(f(x_{1},x_{2},x_{3})=(x_{1}+x_{2})^2+(x_{2}+x_{3})^2-(x_{3}-x_{1})^2\)</span>的正惯性指数和负惯性指数是___________.</p>          </div><p>看到题，一般而言会立刻想到惯性定理：不管选取怎样的可逆线性变换使二次型化为仅含有平方项的标准形，其中正平方项和负平方项的个数都是由所给二次型唯一确定的。于是观察题目中二次型的结构，三个括号的平方，系数两正一负，填入答案<spanclass="math inline">\(2,1\)</span>。这时，所用的线性变换即为 <spanclass="math display">\[y_{1}=x_{1}+x_{2},~y_{2}=x_{2}+x_{3},~y_{3}=x_{3}-x_{1}\]</span></p><p>这样做对吗？错的。原因在于，惯性定理中所用到的线性变换必须是可逆线性变换。回看刚才使用的线性变换，<span class="math display">\[\left[\begin{aligned}y_{1}\\y_{2}\\y_{3}\end{aligned}\right]=\left[\begin{array}{lll}~1 &amp; 1 &amp; 0 \\~0 &amp; 1 &amp; 1 \\-1 &amp; 0 &amp; 1\end{array}\right]\left[\begin{aligned}x_{1}\\x_{2}\\x_{3}\end{aligned}\right]\]</span> 由于 <span class="math display">\[\text{r}(\left[\begin{array}{lll}~1 &amp; 1 &amp; 0 \\~0 &amp; 1 &amp; 1 \\-1 &amp; 0 &amp; 1\end{array}\right])=2\]</span>这显然不是一个可逆线性变换，不符合惯性定理的使用条件，不能使用定理得到结论。事实上，这道题目正确的做法应该是：</p><p>将二次型展开化简，得到： <span class="math display">\[f(x_{1},x_{2},x_{3})=2x_{2}^2+2x_{1}x_{2}+2x_{2}x_{3}+2x_{1}x_{3}\]</span> 则二次型矩阵 <span class="math display">\[A=\left[\begin{array}{lll}0 &amp; 1 &amp; 1 \\1 &amp; 2 &amp; 1 \\1 &amp; 1 &amp; 0\end{array}\right]\]</span> 根据公式<span class="math inline">\(|\lambdaE-A|=0\)</span>，可以得到特征值分别为<spanclass="math inline">\(0,-1,3\)</span>，因此正、负惯性指数都为<spanclass="math inline">\(1\)</span>。</p><p>惯性定理从几何层面上反映了：一个二次曲面经过可逆的线性变换后，其拓扑性质应该保持不变（也就是正负惯性指数不变）。如果使用了退化的线性变换，高维的几何图形便会变为低维图形，拓扑性质改变，自然也就不能保证“正负惯性指数相同”了。</p><h3 id="从几何角度理解惯性定理">从几何角度理解惯性定理</h3><p>我们来考虑一个简单的例子：二次型<spanclass="math inline">\(x_{1}^2-4x_{1}x_{2}+x_{2}^2\)</span>在<spanclass="math inline">\(1\)</span>的等值线，也即<spanclass="math inline">\(x_{1}^2-4x_{1}x_{2}+x_{2}^2=1\)</span>。</p><p>通过绘图，我们可以得出，这一等值线的形态为斜置的双曲线。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-09%2011.48.26.png" /></p><p>这里，二次型的矩阵为 <span class="math display">\[A=\left[\begin{array}{lll}~1 &amp; -2 \\-2 &amp; ~1\end{array}\right]\]</span> 通过正交变换法，我们容易找到正交矩阵 <spanclass="math display">\[C=\left[\begin{array}{lll}\dfrac{1}{\sqrt{2}} &amp; -\dfrac{1}{\sqrt{2}} \\\dfrac{1}{\sqrt{2}} &amp; ~~\dfrac{1}{\sqrt{2}}\end{array}\right]\]</span> 使得 <span class="math display">\[C^TAC=S=\left[\begin{array}{lll}-1 &amp; 0 \\~~0 &amp; 3\end{array}\right]\]</span> 而且<span class="math inline">\(C\)</span>是可逆变换。</p><p>变换后的标准形是<spanclass="math inline">\(-y_{1}^2+3y_{2}^2=1\)</span>。由标准形的形式可以看出，变换后的二次型在<spanclass="math inline">\(1\)</span>处的等值线仍然表示双曲线。这是因为，二维平面上的线性变换的本质实际上是选取了与原先基底不同的另一组线性无关的基底，并由基底的变换对原先的图形进行了变换。从动态的角度上讲，是在保持大致形状不变的情况下对原先的图形进行了伸缩和扭转。那么自然，原来是双曲线，经过伸缩扭转后一定还是双曲线，不会变成椭圆或者抛物线。进而，正惯性指数和负惯性指数也是不会改变的。它们一旦改变，对应图形就会变成椭圆或者抛物线，这显然与刚才的推导不符。惯性定理从几何上讲是一定成立的。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-09%2012.10.33.png" /></p><p>要注意，上述过程成立的前提是，我们选取的一组新基底中两个向量是线性无关的，也就是惯性定理中提到的<strong>可逆线性变换</strong>，或者说<strong>非退化线性变换</strong>。从几何上讲，这一条件保证了原有的坐标平面以及图形不会被“压平”到一条直线上。这也很好理解。由于新的基底中两个向量线性无关，也就是它们不共线，那么原先在坐标平面上两个不共线的向量经过变换后依然不会共线。那现在我们来看看，如果舍弃掉这一条件又会如何呢？我们选择线性变换<span class="math display">\[D=\left[\begin{array}{lll}~1 &amp; 0 \\-1 &amp; 0\end{array}\right]\]</span> 在这一线性变换的作用下， <span class="math display">\[D^TAD=\left[\begin{array}{lll}2 &amp; 0 \\0 &amp; 0\end{array}\right]\]</span> 二次型变成了 <span class="math display">\[2x_{1}^2=1\]</span>几何上表示什么呢？一对直线。原先的双曲线由于新基底中包含了<spanclass="math inline">\((0,0)^T\)</span>退化成了直线。那么我们能说，这里的正惯性指数是<spanclass="math inline">\(1\)</span>，负惯性指数是<spanclass="math inline">\(0\)</span>吗？不能了。现在的正负惯性指数已经不能代表图形的拓扑性质了，因而也就不再具有不变形。我们甚至选择不同的退化线性变换<spanclass="math inline">\(D\)</span>，还可以得到不同的结果，比如 <spanclass="math display">\[D&#39;=\left[\begin{array}{lll}1 &amp; 0 \\1 &amp; 0\end{array}\right]\]</span> 可以得到 <span class="math display">\[D&#39;^TAD&#39;=\left[\begin{array}{lll}-2 &amp; 0 \\0 &amp; 0\end{array}\right]\]</span> 显然我们也不能说，这里的正惯性指数是<spanclass="math inline">\(0\)</span>，负惯性指数是<spanclass="math inline">\(1\)</span>。使用了一个不可逆的线性变换，得到的二次型就退化了，失真了，没有意义了。</p><p>这是应用惯性定理时一个特别需要注意的问题。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;惯性定理&quot;&gt;惯性定理&lt;/h2&gt;
+&lt;h3 id=&quot;引子&quot;&gt;引子&lt;/h3&gt;
+&lt;p&gt;先看一道题：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>相似矩阵知识点</title>
@@ -90,29 +113,6 @@ id=&quot;由一道考研线性代数题目引发的思考&quot;&gt;由一道考�
     <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一些2023的目标</title>
-    <link href="http://example.com/2023/01/05/%E4%B8%80%E4%BA%9B2023%E7%9A%84%E7%9B%AE%E6%A0%87/"/>
-    <id>http://example.com/2023/01/05/%E4%B8%80%E4%BA%9B2023%E7%9A%84%E7%9B%AE%E6%A0%87/</id>
-    <published>2023-01-05T15:42:12.000Z</published>
-    <updated>2023-01-05T16:12:58.594Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一些2023的目标">一些2023的目标</h2><p>也许是去年11月到现在这段时间整个社会都太过动荡，思想、舆论极不安定；也可能是由于阳过以后还未敢恢复运动，原本耗散在跑步、骑行和摄影上的精力现在几乎全花在了游思妄想上，最近这些日子总觉得心神不太平静。想做的事情太多、太杂，时间却又太少。</p><p>人似乎总需要一个宣泄口，把头脑中各种杂乱的想法和思绪消解干净。现在每天在家，也不怎么外出，通过运动放空自己是不太可能了，于是建立了博客，想通过这种方式给生活留下一些用来反思和总结的缓冲区。借此机会回顾了一下近日的生活，发现也并非那么混乱不堪，学习和生活大体也还在正轨上运行着，只要再明确几个目标和原则，相信2023也不会太糟。</p><div class="note note-success">            <ol type="1"><li>保持独立思考能力，不要被信息的漩涡吞噬。信息太多，真假难辨，要学会独立思考，不把过多时间浪费在摄入大量网络信息上。</li><li>保持健康的身体。希望开春恢复到良好的运动状态，保有健康的生活习惯。</li><li>每天学点英语。</li><li>做一个学业优秀的学生。这一点无论何时都不能忘，是本职工作。</li><li>希望能把博客坚持写下去。</li></ol>          </div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一些2023的目标&quot;&gt;一些2023的目标&lt;/h2&gt;
-&lt;p&gt;也许是去年11月到现在这段时间整个社会都太过动荡，思想、舆论极不安定；也可能是由于阳过以后还未敢恢复运动，原本耗散在跑步、骑行和摄影上的精力现在几乎全花在了游思妄想上，最近这些日子总觉得心神不太平静。想做的</summary>
-      
-    
-    
-    
-    
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
