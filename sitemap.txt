@@ -1,3 +1,4 @@
+http://example.com/2023/01/09/walrus/
 http://example.com/2023/01/09/quadratic/
 http://example.com/2023/01/08/similar-matrix/
 http://example.com/2023/01/07/jingxiuqiancheng/
@@ -11,3 +12,4 @@ http://example.com/tags/%E6%8A%80%E6%9C%AF/
 http://example.com/tags/%E5%AD%A6%E4%B9%A0/
 http://example.com/tags/%E6%95%B0%E5%AD%A6/
 http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/
+http://example.com/tags/Python/
