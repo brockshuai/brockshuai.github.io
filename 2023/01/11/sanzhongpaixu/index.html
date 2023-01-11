@@ -16,25 +16,27 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="由一道考研线性代数题目引发的思考 母题 上午复习线性代数的时候做到了一道很有意思的题目：">
+    <meta name="description" content="今天试着用Python实现了冒泡排序、选择排序和插入排序，代码如下： 冒泡排序 123456789101112131415161718a&#x3D;eval(input(&quot;请输入你要排序的列表：&quot;))def compare(t):    if a[t]&gt;a[t+1]:        return 0    else:        return 1def compare_list(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="由一道考研线性代数题目引发的思考">
-<meta property="og:url" content="http://example.com/2023/01/06/Jordan/index.html">
+<meta property="og:title" content="三种常见排序算法的Python实现">
+<meta property="og:url" content="http://example.com/2023/01/11/sanzhongpaixu/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="由一道考研线性代数题目引发的思考 母题 上午复习线性代数的时候做到了一道很有意思的题目：">
+<meta property="og:description" content="今天试着用Python实现了冒泡排序、选择排序和插入排序，代码如下： 冒泡排序 123456789101112131415161718a&#x3D;eval(input(&quot;请输入你要排序的列表：&quot;))def compare(t):    if a[t]&gt;a[t+1]:        return 0    else:        return 1def compare_list(">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-06T04:33:07.000Z">
-<meta property="article:modified_time" content="2023-01-06T12:29:25.093Z">
+<meta property="article:published_time" content="2023-01-11T05:10:19.000Z">
+<meta property="article:modified_time" content="2023-01-11T05:12:37.578Z">
 <meta property="article:author" content="神仙魚">
+<meta property="article:tag" content="技术">
 <meta property="article:tag" content="学习">
-<meta property="article:tag" content="数学">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>由一道考研线性代数题目引发的思考 - 神仙魚</title>
+  <title>三种常见排序算法的Python实现 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +222,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="由一道考研线性代数题目引发的思考"></span>
+            <span id="subtitle" data-typed-text="三种常见排序算法的Python实现"></span>
           
         </div>
 
@@ -236,8 +238,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-06 12:33" pubdate>
-          2023年1月6日 下午
+        <time datetime="2023-01-11 13:10" pubdate>
+          2023年1月11日 下午
         </time>
       </span>
     
@@ -248,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          7.6k 字
+          639 字
         
       </span>
     
@@ -259,7 +261,7 @@
         
         
         
-          48 分钟
+          4 分钟
         
       </span>
     
@@ -305,239 +307,18 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">由一道考研线性代数题目引发的思考</h1>
+            <h1 style="display: none">三种常见排序算法的Python实现</h1>
             
             
               <div class="markdown-body">
                 
-                <h2
-id="由一道考研线性代数题目引发的思考">由一道考研线性代数题目引发的思考</h2>
-<h3 id="母题">母题</h3>
-<p>上午复习线性代数的时候做到了一道很有意思的题目：</p>
-<span id="more"></span>
-<div class="note note-success">
-            <p>设<span class="math inline">\(\boldsymbol{A}\)</span>是<spanclass="math inline">\(n\)</span>阶矩阵, <spanclass="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>是<spanclass="math inline">\(n\)</span>维列向量，若<spanclass="math inline">\(\boldsymbol{A\alpha}_{1}=\boldsymbol{\alpha}_{1}\neq\mathbf{0},\boldsymbol{A}\boldsymbol{\alpha}_2=\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2,\boldsymbol{A}\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3\)</span>，证明向量组<spanclass="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关.</p>
-          </div>
-<p>一开始看到这道题，很自然地想到把题目条件写成矩阵形式进行处理。于是得到：</p>
-<p><span
-class="math display">\[\boldsymbol{A}[\boldsymbol{\alpha}_{1}~~\boldsymbol{\alpha}_{2}~~\boldsymbol{\alpha}_{3}]=[\boldsymbol{\alpha}_{1}~~\boldsymbol{\alpha}_{2}~~\boldsymbol{\alpha}_{3}]\left[\begin{array}{lll}
-1 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 1 \\
-0 &amp; 0 &amp; 1
-\end{array}\right]\]</span></p>
-<p>在这里，<span
-class="math inline">\(\boldsymbol{A\alpha}_{1}\neq\mathbf{0}\)</span>，因此<span
-class="math inline">\(\boldsymbol{A}\neq\boldsymbol{0}\)</span>。但再往下，似乎难以做进一步的处理了。</p>
-<p>题目需要证明<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关，如果记<span
-class="math inline">\(\boldsymbol{P}=[\boldsymbol{\alpha}_{1}~~\boldsymbol{\alpha}_{2}~~\boldsymbol{\alpha}_{3}]\)</span>，那就要说明<span
-class="math inline">\(\text{rank}(\boldsymbol{P})=3\)</span>，或者<span
-class="math inline">\(\det(\boldsymbol{P})\neq0\)</span>。</p>
-<p>但在不知道<span
-class="math inline">\(\boldsymbol{A}\)</span>的具体信息的时候，无论是通过左/右乘矩阵，还是对两边取行列式，似乎都很难得到想要的结论。题目也没有多出的条件，通过矩阵变换证明的思路似乎难以走通了。</p>
-<p>翻看标准答案，深感巧妙。答案的思路是这样的：由于<span
-class="math inline">\(\boldsymbol{A\alpha}_{1}=\boldsymbol{\alpha}_{1}\neq\mathbf{0},\boldsymbol{A}
-\boldsymbol{\alpha}_2=\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2,
-\boldsymbol{A}
-\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_2+\boldsymbol{\alpha}_3\)</span>，则</p>
-<p><span
-class="math display">\[(\boldsymbol{A}-\boldsymbol{E})\boldsymbol{\alpha}_{1}=\boldsymbol{0}\]</span></p>
-<p><span
-class="math display">\[(\boldsymbol{A}-\boldsymbol{E})\boldsymbol{\alpha}_{2}=\boldsymbol{\alpha}_{1}\]</span></p>
-<p><span
-class="math display">\[(\boldsymbol{A}-\boldsymbol{E})\boldsymbol{\alpha}_{3}=\boldsymbol{\alpha}_{2}\]</span></p>
-<p>假设<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性相关，则存在$
-k_{1},k_{2},k_{3}~~$</p>
-<p><span
-class="math display">\[\begin{equation}k_{1}\boldsymbol{\alpha}_{1}+k_{2}\boldsymbol{\alpha}_{2}+k_{3}\boldsymbol{\alpha}_{3}=0\end{equation}\]</span></p>
-<p>且<span class="math inline">\(k_{1},k_{2},k_{3}\)</span>不全为<span
-class="math inline">\(0\)</span>。</p>
-<p>用<span
-class="math inline">\((\boldsymbol{A}-\boldsymbol{E})\)</span>左乘<span
-class="math inline">\((1)\)</span>式两侧，得到</p>
-<p><span
-class="math display">\[k_{2}\boldsymbol{\alpha}_{1}+k_{3}\boldsymbol{\alpha}_{2}=0\]</span></p>
-<p>再用<span
-class="math inline">\((\boldsymbol{A}-\boldsymbol{E})\)</span>左乘上式两侧，得到</p>
-<p><span
-class="math display">\[k_{3}\boldsymbol{\alpha}_{1}=0\]</span></p>
-<p>又因为<span
-class="math inline">\(\boldsymbol{\alpha}_{1}\neq\mathbf{0}\)</span>，因此<span
-class="math inline">\(k_{3}=0\)</span>。故进一步得到<span
-class="math inline">\(k_{2}\boldsymbol{\alpha}_{1}=0\)</span>，<span
-class="math inline">\(k_{2}=0\)</span>。同理，再次代入，得到<span
-class="math inline">\(k_{1}=0\)</span>。这与<span
-class="math inline">\(k_{1},k_{2},k_{3}\)</span>不全为<span
-class="math inline">\(0\)</span>是矛盾的，因此向量组<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关。答案巧妙地运用了<span
-class="math inline">\(\boldsymbol{\alpha}_{1}\)</span>是<span
-class="math inline">\(\boldsymbol{A}\)</span>的特征向量这一条件，把待证式不断简化，简化到只含有一个向量，便可以进行处理。</p>
-<p>做到这里，这道题的解答已经完成了。但这类题的一般规律是什么呢？具体而言，如果非零向量<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>满足<span
-class="math inline">\(\boldsymbol{A}[\boldsymbol{\alpha}_{1}~~\boldsymbol{\alpha}_{2}~~\boldsymbol{\alpha}_{3}]=[\boldsymbol{\alpha}_{1}~~\boldsymbol{\alpha}_{2}~~\boldsymbol{\alpha}_{3}]\boldsymbol{P}\)</span>，那么当<span
-class="math inline">\(\boldsymbol{P}\)</span>满足什么样的条件时，才能证明<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关呢？</p>
-<p>带着这个问题，我尝试了数种不同的<span
-class="math inline">\(\boldsymbol{P}\)</span>，发现下面这些<span
-class="math inline">\(\boldsymbol{P}\)</span>的取法都可以最终得到线性无关的结论：</p>
-<p><span class="math display">\[\boldsymbol{P}=\left[\begin{array}{lll}
--1 &amp; 0 &amp; 0 \\
-~~0 &amp; 1 &amp; 1 \\
-~~0 &amp; 0 &amp; 1
-\end{array}\right]\]</span></p>
-<p><span class="math display">\[\boldsymbol{P}=\left[\begin{array}{lll}
-2 &amp; ~~0 &amp; ~~0 \\
-0 &amp; -1 &amp; ~~1 \\
-0 &amp; ~~0 &amp; -1
-\end{array}\right]\]</span></p>
-<p>这时，规律仍然不太明显。但回看原题的条件：“<span
-class="math inline">\(\boldsymbol{A\alpha}_{1}=\boldsymbol{\alpha}_{1},
-\boldsymbol{A}
-\boldsymbol{\alpha}_2=\boldsymbol{\alpha}_1+\boldsymbol{\alpha}_2\)</span>”，似乎与特征值有一些关联。再结合已经得到的符合要求的<span
-class="math inline">\(\boldsymbol{P}\)</span>的样子，很自然地，我们可以联想到<span
-class="math inline">\(\text{Jordan}\)</span>标准型。下面，我们尝试从<span
-class="math inline">\(\text{Jordan}\)</span>标准型出发，试着对母题的出题背景进行分析</p>
-<h3 id="jordan标准型">Jordan标准型</h3>
-<p><span
-class="math inline">\(\text{Jordan}\)</span>标准型是一个矩阵<span
-class="math inline">\(\boldsymbol{J}\)</span>，它除了主对角线和主对角线上方元素之外，其余都是0，且主对角线上方的对角线数若不为<span
-class="math inline">\(0\)</span>则只能为<span
-class="math inline">\(1\)</span>。对角矩阵是一种特殊的<span
-class="math inline">\(\text{Jordan}\)</span>标准型。</p>
-<p><span
-class="math inline">\(\text{Jordan}\)</span>标准型的意义类似于对角矩阵，它代表了任意一个方阵最多可以被简化到的程度。然而，不是所有矩阵都可以被化成对角矩阵，只有那些有<span
-class="math inline">\(n\)</span>个线性无关的特征向量的矩阵可以被对角化，但所有的<span
-class="math inline">\(n\)</span>阶复方阵都有对应的<span
-class="math inline">\(\text{Jordan}\)</span>标准型，也就是说对于任意矩阵<span
-class="math inline">\(\boldsymbol{A}\)</span>，都应该存在可逆矩阵<span
-class="math inline">\(\boldsymbol{P}\)</span>，使得</p>
-<p><span
-class="math display">\[\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{J}\]</span></p>
-<p>因此，<span
-class="math inline">\(\text{Jordan}\)</span>标准型可以被视作一种广义的对角矩阵。</p>
-<p>一个<span
-class="math inline">\(\text{Jordan}\)</span>标准型由若干个对角线上排列的<span
-class="math inline">\(\text{Jordan}\)</span>块组成。一个阶数为<span
-class="math inline">\(n_{i}\)</span>的<span
-class="math inline">\(\text{Jordan}\)</span>块定义如下：</p>
-<p><span
-class="math display">\[\boldsymbol{J}_{n_i}(\lambda)=\left(\begin{array}{ccccc}
-\lambda &amp; 1 &amp; &amp; &amp; 0 \\
-&amp; \lambda &amp; 1 &amp; &amp; \\
-&amp; &amp; \ddots &amp; &amp; \\
-&amp; &amp; &amp; \lambda &amp; 1 \\
-0 &amp; &amp; &amp; &amp; \lambda
-\end{array}\right)\]</span></p>
-<p>因此</p>
-<p><span class="math display">\[\boldsymbol{J}=\left(\begin{array}{ccc}
-J_{n_1}\left(\lambda_1\right) &amp; &amp; 0 \\
-&amp; \ddots &amp; \\
-0 &amp; &amp; J_{n_k}\left(\lambda_m\right)
-\end{array}\right)\]</span></p>
-<p>通过证明，我们能得到如下结论：</p>
-<ol type="1">
-<li><strong>是否可对角化：</strong>如果一个矩阵的<span
-class="math inline">\(\text{Jordan}\)</span>标准形是对角阵，那么这个矩阵可对角化。</li>
-<li><strong>本征值的代数重数与几何重数：</strong>本征值<span
-class="math inline">\(\lambda_{i}\)</span>在<span
-class="math inline">\(\text{Jordan}\)</span>矩阵对角线上出现的总次数为<span
-class="math inline">\(d_{i}\)</span>（即<span
-class="math inline">\(J(\lambda_{i})\)</span>的阶数为<span
-class="math inline">\(d_{i}\)</span>），则<span
-class="math inline">\(\lambda{i}\)</span>的代数重数为<span
-class="math inline">\(d_{i}\)</span>。本征值<span
-class="math inline">\(\lambda_{i}\)</span>在<span
-class="math inline">\(\text{Jordan}\)</span>矩阵的<span
-class="math inline">\(g_{i}\)</span>个<span
-class="math inline">\(\text{Jordan}\)</span>块中出现过，则<span
-class="math inline">\(\lambda_{i}\)</span>的几何重数为<span
-class="math inline">\(g_{i}\)</span>。</li>
-</ol>
-<p>由以上知识，可以得到三阶方阵的四种<span
-class="math inline">\(\text{Jordan}\)</span>标准型形式：</p>
-<h4 id="第一种">第一种</h4>
-<p><span class="math inline">\(\begin{aligned} &amp; g
-m\left(\lambda_1\right)=1, g m\left(\lambda_2\right)=1,
-\operatorname{gm}\left(\lambda_3\right)=1 \\ &amp;
-\operatorname{am}\left(\lambda_1\right)=1,
-\operatorname{am}\left(\lambda_2\right)=1,
-\operatorname{am}\left(\lambda_3\right)=1 \end{aligned}\)</span></p>
-<p><span class="math display">\[\left(\begin{array}{ccc}
-\lambda_1 &amp; 0 &amp; 0 \\
-0 &amp; \lambda_2 &amp; 0 \\
-0 &amp; 0 &amp; \lambda_3
-\end{array}\right)\]</span></p>
-<h4 id="第二种">第二种</h4>
-<p><span class="math inline">\(\begin{aligned} &amp; g
-m\left(\lambda_1\right)=1, g m\left(\lambda_2\right)=2, \\ &amp;
-\operatorname{am}\left(\lambda_1\right)=1,
-\operatorname{am}\left(\lambda_2\right)=2, \end{aligned}\)</span></p>
-<p><span class="math display">\[\left(\begin{array}{ccc}
-\lambda_1 &amp; 0 &amp; 0 \\
-0 &amp; \lambda_2 &amp; 0 \\
-0 &amp; 0 &amp; \lambda_2
-\end{array}\right)\]</span></p>
-<h4 id="第三种">第三种</h4>
-<p><span class="math inline">\(\begin{aligned} &amp; g
-m\left(\lambda_1\right)=1, g m\left(\lambda_2\right)=1, \\ &amp;
-\operatorname{am}\left(\lambda_1\right)=1,
-\operatorname{am}\left(\lambda_2\right)=2, \end{aligned}\)</span></p>
-<p><span class="math display">\[\left(\begin{array}{ccc}
-\lambda_1 &amp; 0 &amp; 0 \\
-0 &amp; \lambda_2 &amp; 1 \\
-0 &amp; 0 &amp; \lambda_2
-\end{array}\right)\]</span></p>
-<h4 id="第四种">第四种</h4>
-<p><span class="math inline">\(\begin{aligned} &amp; g
-m\left(\lambda_1\right)=1 \\ &amp;
-\operatorname{am}\left(\lambda_1\right)=3 \end{aligned}\)</span></p>
-<p><span class="math display">\[\left(\begin{array}{ccc}\lambda_1 &amp;
-1 &amp; 0 \\ 0 &amp; \lambda_1 &amp; 1 \\ 0 &amp; 0 &amp;
-\lambda_1\end{array}\right)\]</span></p>
-<p>刚才已经提到，所有的<span
-class="math inline">\(n\)</span>阶复方阵都有对应的<span
-class="math inline">\(\text{Jordan}\)</span>​标准型，对于任意矩阵<span
-class="math inline">\(\boldsymbol{A}\)</span>，都应该存在可逆矩阵<span
-class="math inline">\(\boldsymbol{P}\)</span>，使得</p>
-<p><span
-class="math display">\[\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{J}\]</span></p>
-<p>也即</p>
-<p><span
-class="math display">\[\boldsymbol{AP}=\boldsymbol{PJ}\]</span></p>
-<p>这一形式与原题中的条件十分已经十分相像了呢？事实上可以发现，母题中所给出的矩阵<span
-class="math inline">\(\left[\begin{array}{lll} 1 &amp; 1 &amp; 0 \\ 0
-&amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 1
-\end{array}\right]\)</span>与我们找到的符合要求的矩阵恰好符合<span
-class="math inline">\(\text{Jordan}\)</span>标准型的形式。</p>
-<p>与矩阵的相似对角化类似，如果我们把这里的<span
-class="math inline">\(\boldsymbol{P}\)</span>按列分块，可以得到，<span
-class="math inline">\(\boldsymbol{P}\)</span>的列向量组恰好是<span
-class="math inline">\(\boldsymbol{A}\)</span>的<span
-class="math inline">\(n\)</span>个的广义特征向量（即满足<span
-class="math inline">\((\boldsymbol{A}-\lambda\boldsymbol{E})^{m}\boldsymbol{\alpha}=\boldsymbol{0}\)</span>的<span
-class="math inline">\(\boldsymbol{\alpha}\)</span>）。而且可以得到，<span
-class="math inline">\(\boldsymbol{P}\)</span>的列向量组中的任意向量要么分别对应了不同的特征值，要么是同一个特征值下的广义特征向量链中的向量。无论是这两种情况中的哪一种，都可以证明它们是线性无关的。关于广义特征向量链的证明参考以下链接：https://zhuanlan.zhihu.com/p/30454490</p>
-<h3 id="再回到母题">再回到母题</h3>
-<p>母题的出题背景此时已经呼之欲出了。再来看答案给出的解题过程，可以看出出题人实际上是把“证明广义特征向量线性无关”这一结论做了特殊化处理，让我们来证明对于一个给定的<span
-class="math inline">\(\text{Jordan}\)</span>型，它的三个广义特征向量是线性无关的。答案给出的解题过程也是完全按照一般结论的证明来进行的：不断对等式两边做<span
-class="math inline">\((\boldsymbol{A}-\lambda\boldsymbol{E})\)</span>的线性变换，直到证明所有的系数均为<span
-class="math inline">\(0\)</span>为止。</p>
-<p>现在我们可以来回答一开始提出的问题了：什么样的<span
-class="math inline">\(\boldsymbol{P}\)</span>才能确保<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关呢？根据上面的知识，作如下推断（只考虑<span
-class="math inline">\(\boldsymbol{P}\)</span>是<span
-class="math inline">\(\text{Jordan}\)</span>标准形的情况）：</p>
-<ol type="1">
-<li>当<span
-class="math inline">\(\boldsymbol{P}\)</span>属于上述的<strong>第一种、第三种和第四种</strong>标准型时，可以保证<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关。在这种情况下，<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>要么是不同特征值对应的特征向量，要么是同一特征向量链下的向量，线性无关。</li>
-<li>当<span
-class="math inline">\(\boldsymbol{P}\)</span>属于上述的<strong>第二种</strong>标准型时，不能保证<span
-class="math inline">\(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>线性无关。如果仍然想要得到结论：需要添加条件<span
-class="math inline">\(\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>是同一特征值下的两个线性无关的向量。</li>
-</ol>
+                <p>今天试着用Python实现了冒泡排序、选择排序和插入排序，代码如下：</p>
+<h2 id="冒泡排序">冒泡排序</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare</span>(<span class="hljs-params">t</span>):<br>    <span class="hljs-keyword">if</span> a[t]&gt;a[t+<span class="hljs-number">1</span>]:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare_list</span>(<span class="hljs-params">a</span>):<br>    lst=[]<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        lst.append(compare(i))<br>    <span class="hljs-keyword">return</span> lst<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">sum</span>(compare_list(a))&lt;<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>:<br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        <span class="hljs-keyword">if</span> compare(j)==<span class="hljs-number">0</span>:<br>            c=a[j+<span class="hljs-number">1</span>]<br>            a[j+<span class="hljs-number">1</span>]=a[j]<br>            a[j]=c<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
+<h2 id="选择排序">选择排序</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br>lst=[]<br>ini_length=<span class="hljs-built_in">len</span>(a)<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">len</span>(lst)&lt;ini_length:<br>    lst.append(<span class="hljs-built_in">max</span>(a))<br>    a.remove(<span class="hljs-built_in">max</span>(a))<br>lst=lst[::-<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(lst)<br></code></pre></td></tr></table></figure>
+<h2 id="插入排序">插入排序</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-built_in">len</span>(a)):<br>    j=<span class="hljs-number">0</span><br>    <span class="hljs-keyword">while</span> a[i]&gt;a[j]:<br>        j=j+<span class="hljs-number">1</span><br>    <span class="hljs-keyword">else</span>:<br>        a.insert(j,a[i])<br>        <span class="hljs-keyword">del</span> a[i+<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -550,9 +331,13 @@ class="math inline">\(\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>�
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
+        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
+      
         <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E6%95%B0%E5%AD%A6/">#数学</a>
+        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
+      
+        <a href="/tags/Python/">#Python</a>
       
     </div>
   
@@ -564,8 +349,8 @@ class="math inline">\(\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>�
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>由一道考研线性代数题目引发的思考</div>
-      <div>http://example.com/2023/01/06/Jordan/</div>
+      <div>三种常见排序算法的Python实现</div>
+      <div>http://example.com/2023/01/11/sanzhongpaixu/</div>
     </div>
     <div class="license-meta">
       
@@ -577,7 +362,7 @@ class="math inline">\(\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>�
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月6日</div>
+          <div>2023年1月11日</div>
         </div>
       
       
@@ -609,18 +394,12 @@ class="math inline">\(\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3}\)</span>�
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/07/jingxiuqiancheng/" title="也许不曾缺少善意">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">也许不曾缺少善意</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/05/2023mubiao/" title="一些2023的目标">
-                        <span class="hidden-mobile">一些2023的目标</span>
+                      <a href="/2023/01/11/mianxiangduixiang/" title="对面向对象编程的理解">
+                        <span class="hidden-mobile">对面向对象编程的理解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

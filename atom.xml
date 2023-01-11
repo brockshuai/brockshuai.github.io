@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-11T01:17:43.173Z</updated>
+  <updated>2023-01-11T05:12:37.578Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>三种常见排序算法的Python实现</title>
+    <link href="http://example.com/2023/01/11/sanzhongpaixu/"/>
+    <id>http://example.com/2023/01/11/sanzhongpaixu/</id>
+    <published>2023-01-11T05:10:19.000Z</published>
+    <updated>2023-01-11T05:12:37.578Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天试着用Python实现了冒泡排序、选择排序和插入排序，代码如下：</p><h2 id="冒泡排序">冒泡排序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare</span>(<span class="hljs-params">t</span>):<br>    <span class="hljs-keyword">if</span> a[t]&gt;a[t+<span class="hljs-number">1</span>]:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare_list</span>(<span class="hljs-params">a</span>):<br>    lst=[]<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        lst.append(compare(i))<br>    <span class="hljs-keyword">return</span> lst<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">sum</span>(compare_list(a))&lt;<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>:<br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        <span class="hljs-keyword">if</span> compare(j)==<span class="hljs-number">0</span>:<br>            c=a[j+<span class="hljs-number">1</span>]<br>            a[j+<span class="hljs-number">1</span>]=a[j]<br>            a[j]=c<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure><h2 id="选择排序">选择排序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br>lst=[]<br>ini_length=<span class="hljs-built_in">len</span>(a)<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">len</span>(lst)&lt;ini_length:<br>    lst.append(<span class="hljs-built_in">max</span>(a))<br>    a.remove(<span class="hljs-built_in">max</span>(a))<br>lst=lst[::-<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(lst)<br></code></pre></td></tr></table></figure><h2 id="插入排序">插入排序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-built_in">len</span>(a)):<br>    j=<span class="hljs-number">0</span><br>    <span class="hljs-keyword">while</span> a[i]&gt;a[j]:<br>        j=j+<span class="hljs-number">1</span><br>    <span class="hljs-keyword">else</span>:<br>        a.insert(j,a[i])<br>        <span class="hljs-keyword">del</span> a[i+<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天试着用Python实现了冒泡排序、选择排序和插入排序，代码如下：&lt;/p&gt;
+&lt;h2 id=&quot;冒泡排序&quot;&gt;冒泡排序&lt;/h2&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span </summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>对面向对象编程的理解</title>
     <link href="http://example.com/2023/01/11/mianxiangduixiang/"/>
     <id>http://example.com/2023/01/11/mianxiangduixiang/</id>
     <published>2023-01-11T01:14:52.000Z</published>
-    <updated>2023-01-11T01:17:43.173Z</updated>
+    <updated>2023-01-11T05:13:02.409Z</updated>
     
     <content type="html"><![CDATA[<h2 id="面向对象编程">面向对象编程</h2><p>面向对象编程有三个基本特点：</p><p><strong>封装</strong>封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。</p><p><strong>继承</strong>继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。要实现继承，可以通过 <strong>继承和组合</strong> 来实现。</p><p><strong>多态性</strong>多态性是允许你将父对象设置成为和一个或更多的他的子对象相等的技术，赋值之后，父对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。简单说就是一句话：允许将子类类型的指针赋值给父类类型的指针。</p><p>简而言之，<strong>面向对象的编程方式使得每一个类都只做一件事</strong>。<strong>面向过程会让一个类越来越全能，就像一个管家一样做了所有的事</strong>。</p>]]></content>
     
@@ -37,6 +67,8 @@
     
     
     
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
@@ -196,6 +228,29 @@ id=&quot;由一道考研线性代数题目引发的思考&quot;&gt;由一道考�
     <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一些2023的目标</title>
+    <link href="http://example.com/2023/01/05/2023mubiao/"/>
+    <id>http://example.com/2023/01/05/2023mubiao/</id>
+    <published>2023-01-05T15:42:31.000Z</published>
+    <updated>2023-01-11T05:15:54.795Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一些2023的目标">一些2023的目标</h2><p>也许是去年11月到现在这段时间整个社会都太过动荡，思想、舆论极不安定；也可能是由于阳过以后还未敢恢复运动，原本耗散在跑步、骑行和摄影上的精力现在几乎全花在了游思妄想上，最近这些日子总觉得心神不太平静。想做的事情太多、太杂，时间却又太少。</p><p>人似乎总需要一个宣泄口，把头脑中各种杂乱的想法和思绪消解干净。现在每天在家，也不怎么外出，通过运动放空自己是不太可能了，于是建立了博客，想通过这种方式给生活留下一些用来反思和总结的缓冲区。借此机会回顾了一下近日的生活，发现也并非那么混乱不堪，学习和生活大体也还在正轨上运行着，只要再明确几个目标和原则，相信2023也不会太糟。</p><div class="note note-success">            <ol type="1"><li>保持独立思考能力，不要被信息的漩涡吞噬。信息太多，真假难辨，要学会独立思考，不把过多时间浪费在摄入大量网络信息上。</li><li>保持健康的身体。希望开春恢复到良好的运动状态，保有健康的生活习惯。</li><li>每天学点英语。</li><li>做一个学业优秀的学生。这一点无论何时都不能忘，是本职工作。</li><li>希望能把博客坚持写下去。</li></ol>          </div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一些2023的目标&quot;&gt;一些2023的目标&lt;/h2&gt;
+&lt;p&gt;也许是去年11月到现在这段时间整个社会都太过动荡，思想、舆论极不安定；也可能是由于阳过以后还未敢恢复运动，原本耗散在跑步、骑行和摄影上的精力现在几乎全花在了游思妄想上，最近这些日子总觉得心神不太平静。想做的</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
