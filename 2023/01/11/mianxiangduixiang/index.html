@@ -16,27 +16,25 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="海象运算符 海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+    <meta name="description" content="面向对象编程 面向对象编程有三个基本特点： 封装 封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。 继承 继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。 要实现继承，可以通过 继承和组合 来">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python 3.8中的新特性——海象运算符">
-<meta property="og:url" content="http://example.com/2023/01/09/walrus/index.html">
+<meta property="og:title" content="对面向对象编程的理解">
+<meta property="og:url" content="http://example.com/2023/01/11/mianxiangduixiang/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="海象运算符 海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+<meta property="og:description" content="面向对象编程 面向对象编程有三个基本特点： 封装 封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。 继承 继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。 要实现继承，可以通过 继承和组合 来">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-09T12:48:11.000Z">
-<meta property="article:modified_time" content="2023-01-11T01:14:32.417Z">
+<meta property="article:published_time" content="2023-01-11T01:14:52.000Z">
+<meta property="article:modified_time" content="2023-01-11T01:17:43.173Z">
 <meta property="article:author" content="神仙魚">
-<meta property="article:tag" content="技术">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="计算机">
-<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Python 3.8中的新特性——海象运算符 - 神仙魚</title>
+  <title>对面向对象编程的理解 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +220,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python 3.8中的新特性——海象运算符"></span>
+            <span id="subtitle" data-typed-text="对面向对象编程的理解"></span>
           
         </div>
 
@@ -238,8 +236,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-09 20:48" pubdate>
-          2023年1月9日 晚上
+        <time datetime="2023-01-11 09:14" pubdate>
+          2023年1月11日 上午
         </time>
       </span>
     
@@ -250,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          762 字
+          353 字
         
       </span>
     
@@ -261,7 +259,7 @@
         
         
         
-          5 分钟
+          3 分钟
         
       </span>
     
@@ -307,34 +305,21 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Python 3.8中的新特性——海象运算符</h1>
+            <h1 style="display: none">对面向对象编程的理解</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="海象运算符">海象运算符</h2>
-<p>海象运算符的英文原名叫 Assignment Expresions
-，即<strong>赋值表达式</strong>。是Python 3.8新增的语法 :=，在 PEP 572
-中提出。它的作用是<strong>在表达式内部为变量赋值</strong></p>
-<span id="more"></span>
-<h2 id="实例">实例</h2>
-<p>一般写法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">15</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p>改进写法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> a := <span class="hljs-number">15</span> &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p>可以在<code>Expression</code>的内部直接为变量赋值，可以简化代码和提升运算效率。</p>
-<h2 id="用于列表推导式">用于列表推导式</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([f(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> f(i) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>一共就 <code>4</code> 个数字，但是函数被执行了 <code>7</code>
-次。这是因为有三个数字满足列表推导式的条件，需要再额外计算
-<code>3</code>次。<strong>当程序数据巨大的时候，这将浪费大量性能。</strong></p>
-<p>改进：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([n <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> (n := f(i)) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>函数只执行了 <code>4</code> 次，函数执行结果被 <code>n</code>
-储存，不需要额外计算。性能优于不使用 <code>:=</code> 的。</p>
+                <h2 id="面向对象编程">面向对象编程</h2>
+<p>面向对象编程有三个基本特点：</p>
+<p><strong>封装</strong>
+封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。</p>
+<p><strong>继承</strong>
+继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。
+要实现继承，可以通过 <strong>继承和组合</strong> 来实现。</p>
+<p><strong>多态性</strong>
+多态性是允许你将父对象设置成为和一个或更多的他的子对象相等的技术，赋值之后，父对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。简单说就是一句话：允许将子类类型的指针赋值给父类类型的指针。</p>
+<p>简而言之，<strong>面向对象的编程方式使得每一个类都只做一件事</strong>。<strong>面向过程会让一个类越来越全能，就像一个管家一样做了所有的事</strong>。</p>
 
                 
               </div>
@@ -347,13 +332,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
-      
         <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
         <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
-      
-        <a href="/tags/Python/">#Python</a>
       
     </div>
   
@@ -365,8 +346,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python 3.8中的新特性——海象运算符</div>
-      <div>http://example.com/2023/01/09/walrus/</div>
+      <div>对面向对象编程的理解</div>
+      <div>http://example.com/2023/01/11/mianxiangduixiang/</div>
     </div>
     <div class="license-meta">
       
@@ -378,7 +359,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月9日</div>
+          <div>2023年1月11日</div>
         </div>
       
       
@@ -410,18 +391,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/10/manghunyajia/" title="Eason新歌盲婚哑嫁">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Eason新歌盲婚哑嫁</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/09/quadratic/" title="惯性定理的几何意义">
-                        <span class="hidden-mobile">惯性定理的几何意义</span>
+                      <a href="/2023/01/10/manghunyajia/" title="Eason新歌盲婚哑嫁">
+                        <span class="hidden-mobile">Eason新歌盲婚哑嫁</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

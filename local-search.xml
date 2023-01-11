@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>对面向对象编程的理解</title>
+    <link href="/2023/01/11/mianxiangduixiang/"/>
+    <url>/2023/01/11/mianxiangduixiang/</url>
+    
+    <content type="html"><![CDATA[<h2 id="面向对象编程">面向对象编程</h2><p>面向对象编程有三个基本特点：</p><p><strong>封装</strong>封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。</p><p><strong>继承</strong>继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。要实现继承，可以通过 <strong>继承和组合</strong> 来实现。</p><p><strong>多态性</strong>多态性是允许你将父对象设置成为和一个或更多的他的子对象相等的技术，赋值之后，父对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。简单说就是一句话：允许将子类类型的指针赋值给父类类型的指针。</p><p>简而言之，<strong>面向对象的编程方式使得每一个类都只做一件事</strong>。<strong>面向过程会让一个类越来越全能，就像一个管家一样做了所有的事</strong>。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+      <tag>计算机</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Eason新歌盲婚哑嫁</title>
     <link href="/2023/01/10/manghunyajia/"/>
     <url>/2023/01/10/manghunyajia/</url>
@@ -38,6 +59,8 @@
       <tag>技术</tag>
       
       <tag>学习</tag>
+      
+      <tag>计算机</tag>
       
       <tag>Python</tag>
       
