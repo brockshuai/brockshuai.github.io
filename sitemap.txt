@@ -14,10 +14,10 @@ http://example.com/2023/01/06/Jordan/
 http://example.com/2023/01/04/Blog%20test/
 http://example.com/
 http://example.com/tags/%E7%94%9F%E6%B4%BB/
-http://example.com/tags/%E5%AD%A6%E4%B9%A0/
 http://example.com/tags/%E6%8A%80%E6%9C%AF/
+http://example.com/tags/%E5%AD%A6%E4%B9%A0/
 http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/
 http://example.com/tags/C/
-http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/
 http://example.com/tags/%E6%95%B0%E5%AD%A6/
+http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/
 http://example.com/tags/Python/
