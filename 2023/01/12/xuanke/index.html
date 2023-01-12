@@ -16,27 +16,28 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="海象运算符海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+    <meta name="description" content="选课今天选课，高数6、物理4+1、化学5、程设3、近代史2、国防2、学术写作2、综工1体育0.5， 一共26.5，加上通识是28.5。总体而言课业比上学期要多一些。  想来其实这学期要上的课也挺鸡肋的——化学原理去年基本学过一遍了，配套的化学实验去年的上半学期更是完整地做过一遍；程序设计这种课基本也就靠自学了，听课学编程是决不可能有什么好效果的；体育课因为这学期的游泳II考核太难也换成了体适能。高">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python 3.8中的新特性——海象运算符">
-<meta property="og:url" content="http://example.com/2023/01/09/walrus/index.html">
+<meta property="og:title" content="2022-2023春季选课">
+<meta property="og:url" content="http://example.com/2023/01/12/xuanke/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="海象运算符海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+<meta property="og:description" content="选课今天选课，高数6、物理4+1、化学5、程设3、近代史2、国防2、学术写作2、综工1体育0.5， 一共26.5，加上通识是28.5。总体而言课业比上学期要多一些。  想来其实这学期要上的课也挺鸡肋的——化学原理去年基本学过一遍了，配套的化学实验去年的上半学期更是完整地做过一遍；程序设计这种课基本也就靠自学了，听课学编程是决不可能有什么好效果的；体育课因为这学期的游泳II考核太难也换成了体适能。高">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-09T12:48:11.000Z">
-<meta property="article:modified_time" content="2023-01-11T01:14:32.417Z">
+<meta property="og:image" content="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-12%2016.43.13.png">
+<meta property="article:published_time" content="2023-01-12T08:42:55.000Z">
+<meta property="article:modified_time" content="2023-01-12T09:03:10.479Z">
 <meta property="article:author" content="神仙魚">
+<meta property="article:tag" content="生活">
 <meta property="article:tag" content="学习">
-<meta property="article:tag" content="技术">
-<meta property="article:tag" content="计算机">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="碎碎念">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-12%2016.43.13.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Python 3.8中的新特性——海象运算符 - 神仙魚</title>
+  <title>2022-2023春季选课 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python 3.8中的新特性——海象运算符"></span>
+            <span id="subtitle" data-typed-text="2022-2023春季选课"></span>
           
         </div>
 
@@ -238,8 +239,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-09 20:48" pubdate>
-          2023年1月9日 晚上
+        <time datetime="2023-01-12 16:42" pubdate>
+          2023年1月12日 下午
         </time>
       </span>
     
@@ -250,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          762 字
+          1.7k 字
         
       </span>
     
@@ -261,7 +262,7 @@
         
         
         
-          5 分钟
+          11 分钟
         
       </span>
     
@@ -307,26 +308,24 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Python 3.8中的新特性——海象运算符</h1>
+            <h1 style="display: none">2022-2023春季选课</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="海象运算符"><a href="#海象运算符" class="headerlink" title="海象运算符"></a>海象运算符</h2><p>海象运算符的英文原名叫 Assignment Expresions ，即<strong>赋值表达式</strong>。是Python 3.8新增的语法 :=，在 PEP 572 中提出。它的作用是<strong>在表达式内部为变量赋值</strong></p>
-<span id="more"></span>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>一般写法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">15</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p>改进写法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> a := <span class="hljs-number">15</span> &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
-<p>可以在<code>Expression</code>的内部直接为变量赋值，可以简化代码和提升运算效率。</p>
-<h2 id="用于列表推导式"><a href="#用于列表推导式" class="headerlink" title="用于列表推导式"></a>用于列表推导式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([f(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> f(i) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
-<p>输出结果：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>一共就 <code>4</code> 个数字，但是函数被执行了 <code>7</code> 次。这是因为有三个数字满足列表推导式的条件，需要再额外计算 <code>3</code>次。<strong>当程序数据巨大的时候，这将浪费大量性能。</strong></p>
-<p>改进：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([n <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> (n := f(i)) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>函数只执行了 <code>4</code> 次，函数执行结果被 <code>n</code> 储存，不需要额外计算。性能优于不使用 <code>:=</code> 的。</p>
+                <h2 id="选课"><a href="#选课" class="headerlink" title="选课"></a>选课</h2><p>今天选课，高数6、物理4+1、化学5、程设3、近代史2、国防2、学术写作2、综工1体育0.5， 一共26.5，加上通识是28.5。总体而言课业比上学期要多一些。</p>
+<p><img src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-12%2016.43.13.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<p>想来其实这学期要上的课也挺鸡肋的——化学原理去年基本学过一遍了，配套的化学实验去年的上半学期更是完整地做过一遍；程序设计这种课基本也就靠自学了，听课学编程是决不可能有什么好效果的；体育课因为这学期的游泳II考核太难也换成了体适能。高分，但也几乎没什么趣味，估计下学期的锻炼也只能靠平时的跑步和骑行了。有那么些实际意义的课只剩下高数、大物和英语了——英语勉强算一个吧。化学实验要安排到周一的上午1-4节，等效计算下来，一周一共有18节课。还是不少的，至少比上个学期明显地多了。课多了，空余的、自由安排的时间便会减少——这些许会令人感到有些压力。但无论如何，比大二的学长们还是轻松不少，课少，也没他们那么难，这是值得庆幸的。</p>
+<p>选完课，又想到了<em>SurviveSJTUMaual</em>开篇振聋发聩的那几段话，这里再附上来：</p>
+<blockquote>
+<p>各位同学们，在本书的开始，我不得不遗憾地告诉大家一个消息。国内绝大部分大学的本科教学，不是濒临崩溃，而是早已崩溃。在此，我无意争论是否复旦、中科大、或者清华、北大是否比我们崩溃的更少一些——这种争论是没有意义的。我只是看到了无数充满求知欲、激情、与年轻梦想的同学们，将要把自己的四年青春，充满希望与信任地交给大学来塑造。这使我心中非常不安。</p>
+<p>在当今流水线式的教育体制下，我们就像廉价的零件一样被生产出来。因为数量巨大，没人会对每一个人的教学质量负责。</p>
+<p>领导不会为你负责。对于一个争做世界一流大学的研究型学校，管好科研，管好实验室才是当务之急。相比之下，本科生教学显得无利可图。教授也不会为你负责。拉到足够的经费发表足够的论文，满足学院要求才是生存大计。要说管学生，也肯定先要管好自己实验室的硕士博士，而非那一百多人大课堂里的某个本科生。就算是科研任务不太重的一些任课教师，他们也不会为你负责——学不懂？那是因为你智力低，要么就是自己底下不用功。为什么跟你一个班上的某某某同学，人家就能懂？诚然，就算是老师上课说孟加拉语，一个班上也非常有可能冒出一两个翻翻书看看图就能学到八九不离十的同学（或者根本就是以前学过）。真正在课堂上口传心授的教学，其质量是不会有人过问的。教学评估会考察实验报告格式是否合格，出勤率是否够，但是绝对不会考察上百人的班上到底有几个听懂了的。</p>
+<p>试想一下，每个学院每个系有成百上千的学生，每人有着不同的思想、不同的目标、不同的知识背景、不同的接受力，我们怎么可能去指望一个统一的“教学培养计划”强制应用在每个人头上的时候，能够产生效果？好比说食堂师傅炒一大锅菜给上千人吃，我敢说我分到的那盘，不是炒糊就肯定得夹生。</p>
+<p>所谓“教学培养计划”，其科学性必须经过教育权威的论证。然而现实中塞给我们的推荐课表，却让人失望。且不深究选修课的分类、学分、毕业条件每年一个样，三年大变样，使得不少同学毕业前夕竞相奔走；甚至连两门相依赖课程的教学先后顺序都搞错过，这样的教学培养计划，实在让人难以信任。</p>
+<p>而对于具体课程，教学大纲的陈旧程度也令人叹为观止。当然，以“教学经验”的名义，十年用同一本教科书是可以理解的。甚至我们可以容忍教学大纲里有一些广受诟病的古典残留物（例如《线性代数》中的 Cramer 法解方程）。但我们无法容忍对于一门只有几十年历史的新兴学科，我们的教科书竟然可以只涉及到上个世纪八十年代的“新技术”！这样的课程，之所以能够存在并延续下去，从根本上讲是因人设课——开设相应课程是为了不让部分教师下岗。这也无怪国外有华裔学者实在看不下去了，拍案疾呼道：“中国大学，怎么那么盛产‘活化石’！”。</p>
+</blockquote>
+<p>下学期又能从学校的老师那里学到多少有用的知识呢？我不知道，但应该不会太多罢。每个学期似乎都是这样，真正能从老师那里有很大收获的课并不多，但它们却占用了平时时间的大头。这令不只我，甚至学校的大部分学生都十分无奈。今年9月就要参加国赛，还有明年这个时候的美赛，自己还有不少想要学的东西——Python，粤语，还有搁置不少时间的摄影。这样看，似乎终究又还是要靠自己了。希望能顺利完成下学期的学业，完成既定的目标吧。</p>
 
                 
               </div>
@@ -339,13 +338,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
+        <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
+      
         <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
-      
-        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
-      
-        <a href="/tags/Python/">#Python</a>
+        <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">#碎碎念</a>
       
     </div>
   
@@ -357,8 +354,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python 3.8中的新特性——海象运算符</div>
-      <div>http://example.com/2023/01/09/walrus/</div>
+      <div>2022-2023春季选课</div>
+      <div>http://example.com/2023/01/12/xuanke/</div>
     </div>
     <div class="license-meta">
       
@@ -370,7 +367,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月9日</div>
+          <div>2023年1月12日</div>
         </div>
       
       
@@ -402,18 +399,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/10/manghunyajia/" title="Eason新歌盲婚哑嫁">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Eason新歌盲婚哑嫁</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/09/quadratic/" title="惯性定理的几何意义">
-                        <span class="hidden-mobile">惯性定理的几何意义</span>
+                      <a href="/2023/01/11/C/" title="近期C语言学习记录">
+                        <span class="hidden-mobile">近期C语言学习记录</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
