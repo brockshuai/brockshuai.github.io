@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-12T14:55:38.498Z</updated>
+  <updated>2023-01-13T14:21:50.338Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个有趣的线性代数二级结论</title>
+    <link href="http://example.com/2023/01/13/xiandaijielun/"/>
+    <id>http://example.com/2023/01/13/xiandaijielun/</id>
+    <published>2023-01-13T14:06:40.000Z</published>
+    <updated>2023-01-13T14:21:50.338Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一个有趣的二级结论">一个有趣的二级结论</h2><span id="more"></span><div class="note note-success">            <p>设<span class="math inline">\(A,B\)</span>是两个<spanclass="math inline">\(n\)</span>阶实方阵，<spanclass="math inline">\(M=\left[\array{A&amp;B\\B&amp;A}\right]\)</span>是一个分块矩阵，试证明<spanclass="math inline">\(\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\)</span>。</p>          </div><p>这一结论的证明非常简洁，也很短。之所以要记录下来是因为最后一步的变换连续使用了两次初等变换，可能是太久没有做过相关练习的缘故，一直没有看出来是如何变形得到结论的。证明如下：</p><p><strong>证</strong>： <span class="math display">\[\left[\begin{array}{ll}A &amp; B \\ B &amp; A\end{array}\right]\rightarrow\left[\begin{array}{cc}A &amp; B \\ A+B &amp;A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O&amp; A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp;\\ &amp; A+B\end{array}\right]\]</span> 因此，有 <span class="math display">\[\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\]</span></p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一个有趣的二级结论&quot;&gt;一个有趣的二级结论&lt;/h2&gt;</summary>
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>新冠阳康复健日记（一）</title>
