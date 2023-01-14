@@ -16,25 +16,26 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一个有趣的二级结论">
+    <meta name="description" content="简介 今天上午趁电脑不用的空闲时间更新到了最新的macOS Ventura 13.1系统。整体使用下来，感觉比较不错，没有发现恶性bug出现，整体UI的设计感又上升了一个台阶。 按照惯例，苹果电脑的新系统依旧以地名称呼，被命名为了“Ventura”，中译名则为文图拉，其位于美国的加利福尼亚州。文图拉是一座著名的旅游城市，四季阳光明媚，因此随着新系统一起发布的壁纸也是暖色调的花朵在湛蓝的天空下绽放的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一个有趣的线性代数二级结论">
-<meta property="og:url" content="http://example.com/2023/01/13/xiandaijielun/index.html">
+<meta property="og:title" content="macOS Ventura简评">
+<meta property="og:url" content="http://example.com/2023/01/14/ventura/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="一个有趣的二级结论">
+<meta property="og:description" content="简介 今天上午趁电脑不用的空闲时间更新到了最新的macOS Ventura 13.1系统。整体使用下来，感觉比较不错，没有发现恶性bug出现，整体UI的设计感又上升了一个台阶。 按照惯例，苹果电脑的新系统依旧以地名称呼，被命名为了“Ventura”，中译名则为文图拉，其位于美国的加利福尼亚州。文图拉是一座著名的旅游城市，四季阳光明媚，因此随着新系统一起发布的壁纸也是暖色调的花朵在湛蓝的天空下绽放的">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-13T14:06:40.000Z">
-<meta property="article:modified_time" content="2023-01-13T14:21:50.338Z">
+<meta property="article:published_time" content="2023-01-14T15:35:13.000Z">
+<meta property="article:modified_time" content="2023-01-14T15:57:16.788Z">
 <meta property="article:author" content="神仙魚">
-<meta property="article:tag" content="学习">
-<meta property="article:tag" content="数学">
+<meta property="article:tag" content="生活">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="计算机">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>一个有趣的线性代数二级结论 - 神仙魚</title>
+  <title>macOS Ventura简评 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -220,7 +221,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一个有趣的线性代数二级结论"></span>
+            <span id="subtitle" data-typed-text="macOS Ventura简评"></span>
           
         </div>
 
@@ -236,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-13 22:06" pubdate>
-          2023年1月13日 晚上
+        <time datetime="2023-01-14 23:35" pubdate>
+          2023年1月14日 晚上
         </time>
       </span>
     
@@ -248,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          538 字
+          921 字
         
       </span>
     
@@ -259,7 +260,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -305,26 +306,42 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一个有趣的线性代数二级结论</h1>
+            <h1 style="display: none">macOS Ventura简评</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="一个有趣的二级结论">一个有趣的二级结论</h2>
-<span id="more"></span>
-<div class="note note-success">
-            <p>设<span class="math inline">\(A,B\)</span>是两个<spanclass="math inline">\(n\)</span>阶实方阵，<spanclass="math inline">\(M=\left[\array{A&amp;B\\B&amp;A}\right]\)</span>是一个分块矩阵，试证明<spanclass="math inline">\(\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\)</span>。</p>
-          </div>
-<p>这一结论的证明非常简洁，也很短。之所以要记录下来是因为最后一步的变换连续使用了两次初等变换，可能是太久没有做过相关练习的缘故，一直没有看出来是如何变形得到结论的。证明如下：</p>
-<p><strong>证</strong>： <span class="math display">\[
-\left[\begin{array}{ll}A &amp; B \\ B &amp; A\end{array}\right]
-\rightarrow\left[\begin{array}{cc}A &amp; B \\ A+B &amp;
-A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
-&amp; A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp;
-\\ &amp; A+B\end{array}\right]
-\]</span> 因此，有 <span class="math display">\[
-\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)
-\]</span></p>
+                <h2 id="简介">简介</h2>
+<p>今天上午趁电脑不用的空闲时间更新到了最新的macOS Ventura
+13.1系统。整体使用下来，感觉比较不错，没有发现恶性bug出现，整体UI的设计感又上升了一个台阶。</p>
+<p>按照惯例，苹果电脑的新系统依旧以地名称呼，被命名为了“Ventura”，中译名则为文图拉，其位于美国的加利福尼亚州。文图拉是一座著名的旅游城市，四季阳光明媚，因此随着新系统一起发布的壁纸也是暖色调的花朵在湛蓝的天空下绽放的照片。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2023.40.16.png" srcset="/img/loading.gif" lazyload /></p>
+<p>新壁纸我个人还是非常喜欢的，颜色构成简单而富有活力，线条明晰而不生硬。下面简单来谈谈几个macOS
+Ventura新特性的使用体验。</p>
+<h2 id="新特性">新特性</h2>
+<h3 id="台前调度">台前调度</h3>
+<p>台前调度是新系统最重要的一个更新之一。这一功能需要在控制中心手动开启。整体使用下来，和原先的操作习惯并不冲突，操作也非常流畅，可以有效提高多任务处理的效率。左侧的应用预览UI也很具有设计感。这一功能应该会持续在我的电脑上开启。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2023.35.22.png" srcset="/img/loading.gif" lazyload /></p>
+<p>而且这一台前调度功能并不强制保持只有一个应用出现在桌面上，如果有需要的话，可以直接将左侧的应用拖拽出来，也可以实现原来多应用同时放置在桌面上的效果。</p>
+<h3 id="新ui">新UI</h3>
+<p>明显能看出来，这次的设置界面大改，有明显的朝iOS和iPadOS靠拢的意味。这使得大量只使用过移动操作系统的用户在使用macOS电脑后也可以快速上手。而且整个界面的改动也没有产生太多违和感，和macOS整体的圆润风格非常搭配。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2012.09.04.png" srcset="/img/loading.gif" lazyload /></p>
+<h3 id="更强的搜索功能">更强的搜索功能</h3>
+<p>这次系统更新以后，Spotlight可以通过关键字更全面、彻底地在系统中搜索你想要的信息。尤其是从图片扫描文字的功能十分实用，可以从平时课堂上拍摄的PPT照片中快速找到需要的信息。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2023.47.38.png" srcset="/img/loading.gif" lazyload /></p>
+<h3 id="新应用">新应用</h3>
+<p>这次的系统更新中，新增了天气和时钟应用，显然也是为了加强整个苹果生态的应用绑定。整体设计也继承了一贯的iOS风格，使用体验也非常好。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2023.52.49.png" srcset="/img/loading.gif" lazyload /></p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-14%2023.53.56.png" srcset="/img/loading.gif" lazyload /></p>
+<h2 id="结语">结语</h2>
+<p>通过macOS
+Ventura似乎能看到，苹果正着力打通macOS和iOS之间的壁垒。设计风格趋同，交互模式也趋于一致。不难发现，Mac电脑一系列的新功能，苹果都会在iOS、iPadOS上同步更新，这意味着苹果手机、平板、电脑的系统边界将愈发模糊，考虑到苹果已经用M系芯片，打通了各产品的底层架构，那么不同设备间的无缝体验，这可能就是苹果对于自家生态的新定义。</p>
 
                 
               </div>
@@ -337,9 +354,11 @@ A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
+        <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
       
-        <a href="/tags/%E6%95%B0%E5%AD%A6/">#数学</a>
+        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
+      
+        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
       
     </div>
   
@@ -351,8 +370,8 @@ A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>一个有趣的线性代数二级结论</div>
-      <div>http://example.com/2023/01/13/xiandaijielun/</div>
+      <div>macOS Ventura简评</div>
+      <div>http://example.com/2023/01/14/ventura/</div>
     </div>
     <div class="license-meta">
       
@@ -364,7 +383,7 @@ A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月13日</div>
+          <div>2023年1月14日</div>
         </div>
       
       
@@ -396,18 +415,12 @@ A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/14/ventura/" title="macOS Ventura简评">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">macOS Ventura简评</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/12/fujian1/" title="新冠阳康复健日记（一）">
-                        <span class="hidden-mobile">新冠阳康复健日记（一）</span>
+                      <a href="/2023/01/13/xiandaijielun/" title="一个有趣的线性代数二级结论">
+                        <span class="hidden-mobile">一个有趣的线性代数二级结论</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
