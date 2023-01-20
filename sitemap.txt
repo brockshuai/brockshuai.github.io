@@ -26,10 +26,10 @@ http://example.com/tags/%E5%AD%A6%E4%B9%A0/
 http://example.com/tags/%E6%8A%80%E6%9C%AF/
 http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/
 http://example.com/tags/C/
-http://example.com/tags/%E6%95%B0%E5%AD%A6/
 http://example.com/tags/%E8%BF%90%E5%8A%A8/
-http://example.com/tags/%E9%AA%91%E8%A1%8C/
 http://example.com/tags/%E8%B7%91%E6%AD%A5/
+http://example.com/tags/%E6%95%B0%E5%AD%A6/
+http://example.com/tags/%E9%AA%91%E8%A1%8C/
 http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/
 http://example.com/tags/%E9%9F%B3%E4%B9%90/
 http://example.com/tags/Python/
