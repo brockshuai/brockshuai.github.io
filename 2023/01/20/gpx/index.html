@@ -16,27 +16,26 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="今天试着用Python实现了冒泡排序、选择排序、插入排序和快速排序，代码如下： 冒泡排序 123456789101112131415161718a&#x3D;eval(input(&quot;请输入你要排序的列表：&quot;))def compare(t):    if a[t]&gt;a[t+1]:        return 0    else:        return 1def compare_">
+    <meta name="description" content="GPX Studio骑行路线可视化 翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想把这些骑行轨迹导出、合并到一张地图里，看看在西安这段时间去得最多的是哪里，最远端又能到哪。 但怎么可视化呢？如果在华为运动健康单独打开一个记录，只能查看一次的骑行轨迹，不能合并。好在运动健康">
 <meta property="og:type" content="article">
-<meta property="og:title" content="四种常见排序算法的Python实现">
-<meta property="og:url" content="http://example.com/2023/01/11/sanzhongpaixu/index.html">
+<meta property="og:title" content="一个骑行路线可视化方案">
+<meta property="og:url" content="http://example.com/2023/01/20/gpx/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="今天试着用Python实现了冒泡排序、选择排序、插入排序和快速排序，代码如下： 冒泡排序 123456789101112131415161718a&#x3D;eval(input(&quot;请输入你要排序的列表：&quot;))def compare(t):    if a[t]&gt;a[t+1]:        return 0    else:        return 1def compare_">
+<meta property="og:description" content="GPX Studio骑行路线可视化 翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想把这些骑行轨迹导出、合并到一张地图里，看看在西安这段时间去得最多的是哪里，最远端又能到哪。 但怎么可视化呢？如果在华为运动健康单独打开一个记录，只能查看一次的骑行轨迹，不能合并。好在运动健康">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-11T05:10:19.000Z">
-<meta property="article:modified_time" content="2023-01-11T09:21:52.205Z">
+<meta property="article:published_time" content="2023-01-20T01:38:53.000Z">
+<meta property="article:modified_time" content="2023-01-20T02:07:05.554Z">
 <meta property="article:author" content="神仙魚">
-<meta property="article:tag" content="学习">
+<meta property="article:tag" content="运动">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="计算机">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="骑行">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>四种常见排序算法的Python实现 - 神仙魚</title>
+  <title>一个骑行路线可视化方案 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +221,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="四种常见排序算法的Python实现"></span>
+            <span id="subtitle" data-typed-text="一个骑行路线可视化方案"></span>
           
         </div>
 
@@ -238,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-11 13:10" pubdate>
-          2023年1月11日 下午
+        <time datetime="2023-01-20 09:38" pubdate>
+          2023年1月20日 上午
         </time>
       </span>
     
@@ -250,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          990 字
+          865 字
         
       </span>
     
@@ -261,7 +260,7 @@
         
         
         
-          7 分钟
+          6 分钟
         
       </span>
     
@@ -307,21 +306,36 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">四种常见排序算法的Python实现</h1>
+            <h1 style="display: none">一个骑行路线可视化方案</h1>
             
             
               <div class="markdown-body">
                 
-                <p>今天试着用Python实现了冒泡排序、选择排序、插入排序和快速排序，代码如下：</p>
-<h2 id="冒泡排序">冒泡排序</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare</span>(<span class="hljs-params">t</span>):<br>    <span class="hljs-keyword">if</span> a[t]&gt;a[t+<span class="hljs-number">1</span>]:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">compare_list</span>(<span class="hljs-params">a</span>):<br>    lst=[]<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        lst.append(compare(i))<br>    <span class="hljs-keyword">return</span> lst<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">sum</span>(compare_list(a))&lt;<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>:<br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-built_in">len</span>(a)-<span class="hljs-number">1</span>):<br>        <span class="hljs-keyword">if</span> compare(j)==<span class="hljs-number">0</span>:<br>            c=a[j+<span class="hljs-number">1</span>]<br>            a[j+<span class="hljs-number">1</span>]=a[j]<br>            a[j]=c<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
-<h2 id="选择排序">选择排序</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br>lst=[]<br>ini_length=<span class="hljs-built_in">len</span>(a)<br><span class="hljs-keyword">while</span> <span class="hljs-built_in">len</span>(lst)&lt;ini_length:<br>    lst.append(<span class="hljs-built_in">max</span>(a))<br>    a.remove(<span class="hljs-built_in">max</span>(a))<br>lst=lst[::-<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(lst)<br></code></pre></td></tr></table></figure>
-<h2 id="插入排序">插入排序</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-built_in">len</span>(a)):<br>    j=<span class="hljs-number">0</span><br>    <span class="hljs-keyword">while</span> a[i]&gt;a[j]:<br>        j=j+<span class="hljs-number">1</span><br>    <span class="hljs-keyword">else</span>:<br>        a.insert(j,a[i])<br>        <span class="hljs-keyword">del</span> a[i+<span class="hljs-number">1</span>]<br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
-<h2 id="快速排序">快速排序</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">quick_sort</span>(<span class="hljs-params">data</span>):      <br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(data)&gt;=<span class="hljs-number">2</span>:        <br>        mid=data[<span class="hljs-built_in">len</span>(data)//<span class="hljs-number">2</span>]<br>        left,right=[],[]    <br>        data.remove(mid)     <br>        <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> data:            <br>            <span class="hljs-keyword">if</span> num&gt;=mid:                <br>                right.append(num)            <br>            <span class="hljs-keyword">else</span>:                <br>                left.append(num)        <br>        <span class="hljs-keyword">return</span> quick_sort(left)+[mid]+quick_sort(right)    <br>    <span class="hljs-keyword">else</span>:        <br>        <span class="hljs-keyword">return</span> data<br>a=<span class="hljs-built_in">eval</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;请输入你要排序的列表：&quot;</span>))<br><span class="hljs-built_in">print</span>(quick_sort(a))<br></code></pre></td></tr></table></figure>
-<p>这里的快速排序代码使用了分而治之和递归的思想，在定义的函数体中实现了递归，有效简化了代码。</p>
+                <h2 id="gpx-studio骑行路线可视化">GPX Studio骑行路线可视化</h2>
+<p>翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想把这些骑行轨迹导出、合并到一张地图里，看看在西安这段时间去得最多的是哪里，最远端又能到哪。</p>
+<p>但怎么可视化呢？如果在华为运动健康单独打开一个记录，只能查看一次的骑行轨迹，不能合并。好在运动健康的APP可以把运动记录导出成GPX文件，放到其他应用中处理。我先后尝试了Garmin
+BaseCamp、Google Earth、奥维互动地图、GPX
+Editor等七八个应用之后，都遇到了GPX文件只能单个导入、Waypoint太多导致应用卡顿、地图样式不美观等各种问题。不得不感叹Google的搜索功能强大，在搜索框里输入了“How
+to import mutiple GPX files in one time?”之后，排行第一的是名为GPX
+Studio的网页。用了之后，不得不说，它完美解决了之前所有应用的痛点。速度快、地图样式丰富、可以合并运动轨迹，使用体验非常好。下面具体说说如何操作。</p>
+<p>打开https://gpx.studio网页后，首先会出现一张空白的地图</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.36.34.png" srcset="/img/loading.gif" lazyload /></p>
+<p>点击上方的Load GPX，可以一次性将所有需要的GPX文件导入。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.53.55.png" srcset="/img/loading.gif" lazyload /></p>
+<p>这样便可以将所有GPX一次性地显示在一张地图上了，而且加载非常迅速。然而这时候的轨迹颜色各不相同，有的轨迹颜色和地图上的道路非常相近，不易辨识。所以我们可以在左侧的工具栏中把所有轨迹的颜色都更改为深青色。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.38.15.png" srcset="/img/loading.gif" lazyload /></p>
+<p>这样，轨迹可视化的效果就非常好了。一年多的骑行，最常去的地方还是学校周围及城墙附近；最北到渭河大桥，最东到蓝田县，最西到创新港，最南到秦岭北侧。</p>
+<p>研究了一下这个网页，发现GPX
+Studio不止可以很好地实现可视化，还可以查看每个轨迹的爬升变化、每个时刻的速度，还可以进行轨迹编辑、合并导出，可以说涵盖了所有常用的GPX编辑功能。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.00.53.png" srcset="/img/loading.gif" lazyload /></p>
+<p>此外，还有多种地图图层可以选择，这里更换成了卫星图。</p>
+<p><img
+src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.06.35.png" srcset="/img/loading.gif" lazyload /></p>
+<p>这是把回洛阳之后两次骑行可视化之后的效果。</p>
 
                 
               </div>
@@ -334,13 +348,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
+        <a href="/tags/%E8%BF%90%E5%8A%A8/">#运动</a>
       
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
       
-        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
-      
-        <a href="/tags/Python/">#Python</a>
+        <a href="/tags/%E9%AA%91%E8%A1%8C/">#骑行</a>
       
     </div>
   
@@ -352,8 +364,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>四种常见排序算法的Python实现</div>
-      <div>http://example.com/2023/01/11/sanzhongpaixu/</div>
+      <div>一个骑行路线可视化方案</div>
+      <div>http://example.com/2023/01/20/gpx/</div>
     </div>
     <div class="license-meta">
       
@@ -365,7 +377,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月11日</div>
+          <div>2023年1月20日</div>
         </div>
       
       
@@ -397,18 +409,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/11/C/" title="近期C语言学习记录">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">近期C语言学习记录</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/11/mianxiangduixiang/" title="对面向对象编程的理解">
-                        <span class="hidden-mobile">对面向对象编程的理解</span>
+                      <a href="/2023/01/18/gongjue350/" title="新冠阳康复健日记（二）">
+                        <span class="hidden-mobile">新冠阳康复健日记（二）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

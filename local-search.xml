@@ -4,7 +4,30 @@
   
   
   <entry>
-    <title>新冠杨康复健日记（二）</title>
+    <title>一个骑行路线可视化方案</title>
+    <link href="/2023/01/20/gpx/"/>
+    <url>/2023/01/20/gpx/</url>
+    
+    <content type="html"><![CDATA[<h2 id="gpx-studio骑行路线可视化">GPX Studio骑行路线可视化</h2><p>翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想把这些骑行轨迹导出、合并到一张地图里，看看在西安这段时间去得最多的是哪里，最远端又能到哪。</p><p>但怎么可视化呢？如果在华为运动健康单独打开一个记录，只能查看一次的骑行轨迹，不能合并。好在运动健康的APP可以把运动记录导出成GPX文件，放到其他应用中处理。我先后尝试了GarminBaseCamp、Google Earth、奥维互动地图、GPXEditor等七八个应用之后，都遇到了GPX文件只能单个导入、Waypoint太多导致应用卡顿、地图样式不美观等各种问题。不得不感叹Google的搜索功能强大，在搜索框里输入了“Howto import mutiple GPX files in one time?”之后，排行第一的是名为GPXStudio的网页。用了之后，不得不说，它完美解决了之前所有应用的痛点。速度快、地图样式丰富、可以合并运动轨迹，使用体验非常好。下面具体说说如何操作。</p><p>打开https://gpx.studio网页后，首先会出现一张空白的地图</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.36.34.png" /></p><p>点击上方的Load GPX，可以一次性将所有需要的GPX文件导入。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.53.55.png" /></p><p>这样便可以将所有GPX一次性地显示在一张地图上了，而且加载非常迅速。然而这时候的轨迹颜色各不相同，有的轨迹颜色和地图上的道路非常相近，不易辨识。所以我们可以在左侧的工具栏中把所有轨迹的颜色都更改为深青色。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.38.15.png" /></p><p>这样，轨迹可视化的效果就非常好了。一年多的骑行，最常去的地方还是学校周围及城墙附近；最北到渭河大桥，最东到蓝田县，最西到创新港，最南到秦岭北侧。</p><p>研究了一下这个网页，发现GPXStudio不止可以很好地实现可视化，还可以查看每个轨迹的爬升变化、每个时刻的速度，还可以进行轨迹编辑、合并导出，可以说涵盖了所有常用的GPX编辑功能。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.00.53.png" /></p><p>此外，还有多种地图图层可以选择，这里更换成了卫星图。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.06.35.png" /></p><p>这是把回洛阳之后两次骑行可视化之后的效果。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>运动</tag>
+      
+      <tag>技术</tag>
+      
+      <tag>骑行</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>新冠阳康复健日记（二）</title>
     <link href="/2023/01/18/gongjue350/"/>
     <url>/2023/01/18/gongjue350/</url>
     
@@ -41,9 +64,9 @@
       
       <tag>生活</tag>
       
-      <tag>碎碎念</tag>
-      
       <tag>音乐</tag>
+      
+      <tag>碎碎念</tag>
       
     </tags>
     
@@ -175,9 +198,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -200,9 +223,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -225,9 +248,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -269,9 +292,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
