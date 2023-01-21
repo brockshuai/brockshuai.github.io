@@ -3,11 +3,11 @@
   <title>神仙魚</title>
   
   <subtitle>從何時開始忌諱空山無人 從何時開始怕遙望星塵</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://brockshuai.github.io/"/>
   <updated>2023-01-20T15:43:08.701Z</updated>
-  <id>http://example.com/</id>
+  <id>https://brockshuai.github.io/</id>
   
   <author>
     <name>神仙魚</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Rime粵拼輸入法客製化方案</title>
-    <link href="http://example.com/2023/01/20/jyutping/"/>
-    <id>http://example.com/2023/01/20/jyutping/</id>
+    <link href="https://brockshuai.github.io/2023/01/20/jyutping/"/>
+    <id>https://brockshuai.github.io/2023/01/20/jyutping/</id>
     <published>2023-01-20T13:58:28.000Z</published>
     <updated>2023-01-20T15:43:08.701Z</updated>
     
@@ -38,18 +38,18 @@
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>一个骑行路线可视化方案</title>
-    <link href="http://example.com/2023/01/20/gpx/"/>
-    <id>http://example.com/2023/01/20/gpx/</id>
+    <link href="https://brockshuai.github.io/2023/01/20/gpx/"/>
+    <id>https://brockshuai.github.io/2023/01/20/gpx/</id>
     <published>2023-01-20T01:38:53.000Z</published>
     <updated>2023-01-20T02:07:05.554Z</updated>
     
@@ -65,18 +65,18 @@
     
     
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="运动" scheme="http://example.com/tags/%E8%BF%90%E5%8A%A8/"/>
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="骑行" scheme="http://example.com/tags/%E9%AA%91%E8%A1%8C/"/>
+    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>新冠阳康复健日记（二）</title>
-    <link href="http://example.com/2023/01/18/gongjue350/"/>
-    <id>http://example.com/2023/01/18/gongjue350/</id>
+    <link href="https://brockshuai.github.io/2023/01/18/gongjue350/"/>
+    <id>https://brockshuai.github.io/2023/01/18/gongjue350/</id>
     <published>2023-01-18T12:28:20.000Z</published>
     <updated>2023-01-18T13:32:37.633Z</updated>
     
@@ -95,20 +95,20 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="运动" scheme="http://example.com/tags/%E8%BF%90%E5%8A%A8/"/>
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="跑步" scheme="http://example.com/tags/%E8%B7%91%E6%AD%A5/"/>
+    <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
     
-    <category term="骑行" scheme="http://example.com/tags/%E9%AA%91%E8%A1%8C/"/>
+    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>林夕</title>
-    <link href="http://example.com/2023/01/16/lamzik/"/>
-    <id>http://example.com/2023/01/16/lamzik/</id>
+    <link href="https://brockshuai.github.io/2023/01/16/lamzik/"/>
+    <id>https://brockshuai.github.io/2023/01/16/lamzik/</id>
     <published>2023-01-16T14:10:16.000Z</published>
     <updated>2023-01-16T14:56:57.849Z</updated>
     
@@ -125,18 +125,18 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
-    <category term="音乐" scheme="http://example.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    <category term="音乐" scheme="https://brockshuai.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
   <entry>
     <title>疯狂的选课</title>
-    <link href="http://example.com/2023/01/15/xuanke-1/"/>
-    <id>http://example.com/2023/01/15/xuanke-1/</id>
+    <link href="https://brockshuai.github.io/2023/01/15/xuanke-1/"/>
+    <id>https://brockshuai.github.io/2023/01/15/xuanke-1/</id>
     <published>2023-01-15T08:49:35.000Z</published>
     <updated>2023-01-15T10:38:19.722Z</updated>
     
@@ -152,18 +152,18 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
   <entry>
     <title>macOS Ventura简评</title>
-    <link href="http://example.com/2023/01/14/ventura/"/>
-    <id>http://example.com/2023/01/14/ventura/</id>
+    <link href="https://brockshuai.github.io/2023/01/14/ventura/"/>
+    <id>https://brockshuai.github.io/2023/01/14/ventura/</id>
     <published>2023-01-14T15:35:13.000Z</published>
     <updated>2023-01-14T15:57:16.788Z</updated>
     
@@ -181,18 +181,18 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>一个有趣的线性代数二级结论</title>
-    <link href="http://example.com/2023/01/13/xiandaijielun/"/>
-    <id>http://example.com/2023/01/13/xiandaijielun/</id>
+    <link href="https://brockshuai.github.io/2023/01/13/xiandaijielun/"/>
+    <id>https://brockshuai.github.io/2023/01/13/xiandaijielun/</id>
     <published>2023-01-13T14:06:40.000Z</published>
     <updated>2023-01-13T14:21:50.338Z</updated>
     
@@ -204,16 +204,16 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>新冠阳康复健日记（一）</title>
-    <link href="http://example.com/2023/01/12/fujian1/"/>
-    <id>http://example.com/2023/01/12/fujian1/</id>
+    <link href="https://brockshuai.github.io/2023/01/12/fujian1/"/>
+    <id>https://brockshuai.github.io/2023/01/12/fujian1/</id>
     <published>2023-01-12T12:45:33.000Z</published>
     <updated>2023-01-12T14:55:38.498Z</updated>
     
@@ -230,18 +230,18 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="运动" scheme="http://example.com/tags/%E8%BF%90%E5%8A%A8/"/>
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="跑步" scheme="http://example.com/tags/%E8%B7%91%E6%AD%A5/"/>
+    <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
     
   </entry>
   
   <entry>
     <title>选课</title>
-    <link href="http://example.com/2023/01/12/suanke/"/>
-    <id>http://example.com/2023/01/12/suanke/</id>
+    <link href="https://brockshuai.github.io/2023/01/12/suanke/"/>
+    <id>https://brockshuai.github.io/2023/01/12/suanke/</id>
     <published>2023-01-12T08:42:35.000Z</published>
     <updated>2023-01-16T15:06:35.784Z</updated>
     
@@ -260,18 +260,18 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
   <entry>
     <title>近期C语言学习记录</title>
-    <link href="http://example.com/2023/01/11/C/"/>
-    <id>http://example.com/2023/01/11/C/</id>
+    <link href="https://brockshuai.github.io/2023/01/11/C/"/>
+    <id>https://brockshuai.github.io/2023/01/11/C/</id>
     <published>2023-01-11T13:48:11.000Z</published>
     <updated>2023-01-12T03:00:41.087Z</updated>
     
@@ -283,20 +283,20 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-    <category term="C" scheme="http://example.com/tags/C/"/>
+    <category term="C" scheme="https://brockshuai.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>四种常见排序算法的Python实现</title>
-    <link href="http://example.com/2023/01/11/sanzhongpaixu/"/>
-    <id>http://example.com/2023/01/11/sanzhongpaixu/</id>
+    <link href="https://brockshuai.github.io/2023/01/11/sanzhongpaixu/"/>
+    <id>https://brockshuai.github.io/2023/01/11/sanzhongpaixu/</id>
     <published>2023-01-11T05:10:19.000Z</published>
     <updated>2023-01-11T09:21:52.205Z</updated>
     
@@ -313,20 +313,20 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    <category term="Python" scheme="https://brockshuai.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>对面向对象编程的理解</title>
-    <link href="http://example.com/2023/01/11/mianxiangduixiang/"/>
-    <id>http://example.com/2023/01/11/mianxiangduixiang/</id>
+    <link href="https://brockshuai.github.io/2023/01/11/mianxiangduixiang/"/>
+    <id>https://brockshuai.github.io/2023/01/11/mianxiangduixiang/</id>
     <published>2023-01-11T01:14:52.000Z</published>
     <updated>2023-01-11T05:13:02.409Z</updated>
     
@@ -345,18 +345,18 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>Eason新歌盲婚哑嫁</title>
-    <link href="http://example.com/2023/01/10/manghunyajia/"/>
-    <id>http://example.com/2023/01/10/manghunyajia/</id>
+    <link href="https://brockshuai.github.io/2023/01/10/manghunyajia/"/>
+    <id>https://brockshuai.github.io/2023/01/10/manghunyajia/</id>
     <published>2023-01-10T08:23:51.000Z</published>
     <updated>2023-01-10T13:10:59.532Z</updated>
     
@@ -369,16 +369,16 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
   <entry>
     <title>Python 3.8中的新特性——海象运算符</title>
-    <link href="http://example.com/2023/01/09/walrus/"/>
-    <id>http://example.com/2023/01/09/walrus/</id>
+    <link href="https://brockshuai.github.io/2023/01/09/walrus/"/>
+    <id>https://brockshuai.github.io/2023/01/09/walrus/</id>
     <published>2023-01-09T12:48:11.000Z</published>
     <updated>2023-01-11T01:14:32.417Z</updated>
     
@@ -393,20 +393,20 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    <category term="Python" scheme="https://brockshuai.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>惯性定理的几何意义</title>
-    <link href="http://example.com/2023/01/09/quadratic/"/>
-    <id>http://example.com/2023/01/09/quadratic/</id>
+    <link href="https://brockshuai.github.io/2023/01/09/quadratic/"/>
+    <id>https://brockshuai.github.io/2023/01/09/quadratic/</id>
     <published>2023-01-09T02:05:12.000Z</published>
     <updated>2023-01-09T04:20:07.240Z</updated>
     
@@ -420,16 +420,16 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>相似矩阵知识点</title>
-    <link href="http://example.com/2023/01/08/similar-matrix/"/>
-    <id>http://example.com/2023/01/08/similar-matrix/</id>
+    <link href="https://brockshuai.github.io/2023/01/08/similar-matrix/"/>
+    <id>https://brockshuai.github.io/2023/01/08/similar-matrix/</id>
     <published>2023-01-08T01:34:52.000Z</published>
     <updated>2023-01-10T04:03:18.246Z</updated>
     
@@ -453,16 +453,16 @@ class=&quot;math inline&quot;&gt;\(k\)&lt;/span&gt;&lt;/li&gt;
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>也许不曾缺少善意</title>
-    <link href="http://example.com/2023/01/07/jingxiuqiancheng/"/>
-    <id>http://example.com/2023/01/07/jingxiuqiancheng/</id>
+    <link href="https://brockshuai.github.io/2023/01/07/jingxiuqiancheng/"/>
+    <id>https://brockshuai.github.io/2023/01/07/jingxiuqiancheng/</id>
     <published>2023-01-07T10:56:30.000Z</published>
     <updated>2023-01-07T14:23:03.629Z</updated>
     
@@ -478,16 +478,16 @@ class=&quot;math inline&quot;&gt;\(k\)&lt;/span&gt;&lt;/li&gt;
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="http://example.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
   <entry>
     <title>由一道考研线性代数题目引发的思考</title>
-    <link href="http://example.com/2023/01/06/Jordan/"/>
-    <id>http://example.com/2023/01/06/Jordan/</id>
+    <link href="https://brockshuai.github.io/2023/01/06/Jordan/"/>
+    <id>https://brockshuai.github.io/2023/01/06/Jordan/</id>
     <published>2023-01-06T04:33:07.000Z</published>
     <updated>2023-01-06T12:29:25.093Z</updated>
     
@@ -502,16 +502,16 @@ id=&quot;由一道考研线性代数题目引发的思考&quot;&gt;由一道考�
     
     
     
-    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>一些2023的目标</title>
-    <link href="http://example.com/2023/01/05/2023mubiao/"/>
-    <id>http://example.com/2023/01/05/2023mubiao/</id>
+    <link href="https://brockshuai.github.io/2023/01/05/2023mubiao/"/>
+    <id>https://brockshuai.github.io/2023/01/05/2023mubiao/</id>
     <published>2023-01-05T15:42:31.000Z</published>
     <updated>2023-01-11T05:15:54.795Z</updated>
     
@@ -527,14 +527,14 @@ id=&quot;由一道考研线性代数题目引发的思考&quot;&gt;由一道考�
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>第零篇博客</title>
-    <link href="http://example.com/2023/01/05/the-first-blog/"/>
-    <id>http://example.com/2023/01/05/the-first-blog/</id>
+    <link href="https://brockshuai.github.io/2023/01/05/the-first-blog/"/>
+    <id>https://brockshuai.github.io/2023/01/05/the-first-blog/</id>
     <published>2023-01-05T09:42:31.000Z</published>
     <updated>2023-01-06T14:14:49.568Z</updated>
     
@@ -547,7 +547,7 @@ id=&quot;由一道考研线性代数题目引发的思考&quot;&gt;由一道考�
     
     
     
-    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
