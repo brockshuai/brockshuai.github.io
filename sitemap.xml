@@ -209,7 +209,7 @@
 
   
   <url>
-    <loc>https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -217,6 +217,13 @@
   
   <url>
     <loc>https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -231,13 +238,6 @@
   
   <url>
     <loc>https://brockshuai.github.io/tags/C/</loc>
-    <lastmod>2023-01-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
