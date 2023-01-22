@@ -8,7 +8,7 @@
     <link href="/2023/01/22/gallery1/"/>
     <url>/2023/01/22/gallery1/</url>
     
-    <content type="html"><![CDATA[<p>最近这两天一直在探索<code>Hexo</code>+<code>fluid</code>环境下的相册配置方案，想要在博文之外单独开设一个相册栏目。</p><h2 id="影像年夜饭">「影像」年夜饭</h2>]]></content>
+    <content type="html"><![CDATA[<p>最近这两天一直在探索<code>Hexo</code>+<code>fluid</code>环境下的相册配置方案，想要在博文之外单独建立一个相册栏目。但搜寻良久，发现目前已有的方案中并没有令我特别满意的，有些是因为需要单独创建一个复杂的目录管理系统，不便于上传和更新，也有的是因为版面不够美观，最终还是没有找到一个合适的选择，只好作罢。</p><p>退而求其次，于是就先单独开设一个博文系列，把一些值得记忆和留念的照片放到这个系列中。干脆就取名为「影像」，简单直白。如果之后在找到合适的相册配置方案的话，也许便会把这个系列整体迁移到相册当中。现在先就这样吧。</p><h2 id="影像年夜饭">「影像」年夜饭</h2><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6523.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6545.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6569.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6573.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6575.JPG" /></p>]]></content>
     
     
     
@@ -150,9 +150,9 @@
       
       <tag>生活</tag>
       
-      <tag>音乐</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>音乐</tag>
       
     </tags>
     

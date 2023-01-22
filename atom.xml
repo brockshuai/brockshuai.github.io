@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-01-22T14:17:29.201Z</updated>
+  <updated>2023-01-22T14:30:00.739Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://brockshuai.github.io/2023/01/22/gallery1/"/>
     <id>https://brockshuai.github.io/2023/01/22/gallery1/</id>
     <published>2023-01-22T14:12:47.000Z</published>
-    <updated>2023-01-22T14:17:29.201Z</updated>
+    <updated>2023-01-22T14:30:00.739Z</updated>
     
-    <content type="html"><![CDATA[<p>最近这两天一直在探索<code>Hexo</code>+<code>fluid</code>环境下的相册配置方案，想要在博文之外单独开设一个相册栏目。</p><h2 id="影像年夜饭">「影像」年夜饭</h2>]]></content>
+    <content type="html"><![CDATA[<p>最近这两天一直在探索<code>Hexo</code>+<code>fluid</code>环境下的相册配置方案，想要在博文之外单独建立一个相册栏目。但搜寻良久，发现目前已有的方案中并没有令我特别满意的，有些是因为需要单独创建一个复杂的目录管理系统，不便于上传和更新，也有的是因为版面不够美观，最终还是没有找到一个合适的选择，只好作罢。</p><p>退而求其次，于是就先单独开设一个博文系列，把一些值得记忆和留念的照片放到这个系列中。干脆就取名为「影像」，简单直白。如果之后在找到合适的相册配置方案的话，也许便会把这个系列整体迁移到相册当中。现在先就这样吧。</p><h2 id="影像年夜饭">「影像」年夜饭</h2><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6523.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6545.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6569.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6573.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6575.JPG" /></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;最近这两天一直在探索&lt;code&gt;Hexo&lt;/code&gt;+&lt;code&gt;fluid&lt;/code&gt;环境下的相册配置方案，想要在博文之外单独开设一个相册栏目。&lt;/p&gt;
-&lt;h2 id=&quot;影像年夜饭&quot;&gt;「影像」年夜饭&lt;/h2&gt;
-</summary>
+    <summary type="html">&lt;p&gt;最近这两天一直在探索&lt;code&gt;Hexo&lt;/code&gt;+&lt;code&gt;fluid&lt;/code&gt;环境下的相册配置方案，想要在博文之外单独建立一个相册栏目。但搜寻良久，发现目前已有的方案中并没有令我特别满意的，有些是因为需要单独创建一个复杂的目录管理系统，不便于上传和更新，也有的</summary>
       
     
     
@@ -205,9 +203,9 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="音乐" scheme="https://brockshuai.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
-    
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="音乐" scheme="https://brockshuai.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
