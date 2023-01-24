@@ -242,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          538 字
+          489 字
         
       </span>
     
@@ -304,22 +304,16 @@
             
               <div class="markdown-body">
                 
-                <h2 id="一个有趣的二级结论">一个有趣的二级结论</h2>
-<span id="more"></span>
+                <h2 id="一个有趣的二级结论"><a href="#一个有趣的二级结论" class="headerlink" title="一个有趣的二级结论"></a>一个有趣的二级结论</h2><span id="more"></span>
 <div class="note note-success">
-            <p>设<span class="math inline">\(A,B\)</span>是两个<spanclass="math inline">\(n\)</span>阶实方阵，<spanclass="math inline">\(M=\left[\array{A&amp;B\\B&amp;A}\right]\)</span>是一个分块矩阵，试证明<spanclass="math inline">\(\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\)</span>。</p>
+            <p>设$A,B$是两个$n$阶实方阵，$M=\left[\array{A&amp;B\B&amp;A}\right]$是一个分块矩阵，试证明$\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)$。</p>
           </div>
 <p>这一结论的证明非常简洁，也很短。之所以要记录下来是因为最后一步的变换连续使用了两次初等变换，可能是太久没有做过相关练习的缘故，一直没有看出来是如何变形得到结论的。证明如下：</p>
-<p><strong>证</strong>： <span class="math display">\[
-\left[\begin{array}{ll}A &amp; B \\ B &amp; A\end{array}\right]
-\rightarrow\left[\begin{array}{cc}A &amp; B \\ A+B &amp;
-A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O
-&amp; A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp;
-\\ &amp; A+B\end{array}\right]
-\]</span> 因此，有 <span class="math display">\[
-\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)
-\]</span></p>
-
+<p><strong>证</strong>：</p>
+<script type="math/tex; mode=display">
+\left[\begin{array}{ll}A & B \\ B & A\end{array}\right] \rightarrow\left[\begin{array}{cc}A & B \\ A+B & A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B & B \\ O & A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B & \\ & A+B\end{array}\right]</script><p>因此，有</p>
+<script type="math/tex; mode=display">
+\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)</script>
                 
               </div>
             
