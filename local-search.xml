@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>高数复习（一）</title>
+    <link href="/2023/01/25/gaoshu/"/>
+    <url>/2023/01/25/gaoshu/</url>
+    
+    <content type="html"><![CDATA[<h2 id="高数复习">高数复习</h2><ol type="1"><li><p><span class="math display">\[\int F(x)\text{d}y=F(x)\cdot y\]</span></p><p>也即 <span class="math display">\[\int_{0}^x F(x)\text{d}y=xF(x)\]</span></p><hr /></li><li><p><span class="math display">\[\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})=\int_{0}^{1}f(x)\text{d}x\]</span></p><p>积分的上下限可以通过求和上下限以及<spanclass="math inline">\(f\)</span>的自变量调整.</p><hr /></li><li><p><span class="math display">\[\begin{aligned}&amp;~~~~~~ \int\dfrac{1}{2+\cos\pi x}\text{d}x\\&amp;=\int\dfrac{1}{2+2\cos^2\dfrac{\pi x}{2}-1}\text{d}x\\&amp;=\int\dfrac{1}{1+2\cos^2\dfrac{\pi x}{2}}\text{d}x\\&amp;=\dfrac{2}{\pi}\int\dfrac{1}{2+\sec^2\dfrac{\pix}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\&amp;=\dfrac{2}{\pi}\int\dfrac{1}{3+\tan^2\dfrac{\pix}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\&amp;=\dfrac{2}{\sqrt3}\cdot\arctan(\dfrac{\tan(\dfrac{\pi}{2}x)}{\sqrt3})+C\end{aligned}\]</span></p><hr /></li><li><p><span class="math display">\[I=\int \frac{\cos ^2 x-\sin x}{\cos x\left(1+\cos x \cdot\mathrm{e}^{\sin x}\right)} \mathrm{d} x\]</span></p><p>由于 <span class="math display">\[\left(\cos x \cdot \mathrm{e}^{\sin x}\right)^{\prime}=-\sin x \cdot\mathrm{e}^{\sin x}+\cos ^2 x \cdot \mathrm{e}^{\sin x}=\left(\cos ^2x-\sin x\right) \mathrm{e}^{\sin x}\]</span> 因此 <span class="math display">\[\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\left(\cos ^2x-\sin x\right) \mathrm{e}^{\sin x} \mathrm{~d} x\]</span> 故有 <span class="math display">\[\begin{aligned}I &amp; =\int \frac{\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sinx}}{\cos x \cdot \mathrm{e}^{\sin x}\left(1+\cos x \cdot\mathrm{e}^{\sin x}\right)} \mathrm{d} x=\int \frac{\mathrm{d}\left(\cosx \cdot \mathrm{e}^{\sin x}\right)}{\cos x \cdot \mathrm{e}^{\sinx}\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \\&amp; =\int\left(\frac{1}{\cos x \cdot \mathrm{e}^{\sinx}}-\frac{1}{1+\cos x \cdot \mathrm{e}^{\sin x}}\right)\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\ln\left|\frac{\cos x \cdot \mathrm{e}^{\sin x}}{1+\cos x \cdot\mathrm{e}^{\sin x}}\right|+C\end{aligned}\]</span></p></li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>清蒸鲈鱼</title>
     <link href="/2023/01/24/qingzhengluyu/"/>
     <url>/2023/01/24/qingzhengluyu/</url>
@@ -119,9 +140,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -330,9 +351,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -355,9 +376,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -380,9 +401,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
@@ -424,9 +445,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>学习</tag>
+      
+      <tag>技术</tag>
       
       <tag>计算机</tag>
       
