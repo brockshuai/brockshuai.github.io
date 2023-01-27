@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-01-26T01:40:33.502Z</updated>
+  <updated>2023-01-27T03:10:13.175Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高数复习（二）</title>
+    <link href="https://brockshuai.github.io/2023/01/26/gaoshufuxi2/"/>
+    <id>https://brockshuai.github.io/2023/01/26/gaoshufuxi2/</id>
+    <published>2023-01-26T09:20:59.000Z</published>
+    <updated>2023-01-27T03:10:13.175Z</updated>
+    
+    <content type="html"><![CDATA[<p><span class="math display">\[\begin{aligned}&amp; \int \frac{x^2 \mathrm{~d} x}{\left(x^2+a^2\right)^2}=\frac{1}{2}\int \frac{x \mathrm{~d} x^2}{\left(x^2+a^2\right)^2}=-\frac{1}{2} \intx \mathrm{~d}\left(\frac{1}{x^2+a^2}\right) \\&amp; =-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2} \int \frac{\mathrm{d}x}{x^2+a^2}=-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2 a} \arctan\frac{x}{a}+C .\end{aligned}\]</span></p><hr /><p>当被积函数的分母中的根式<spanclass="math inline">\(\sqrt{ax^2+bx+c}\)</span>外有因子<spanclass="math inline">\(x\)</span>时，可以先作变换<spanclass="math inline">\(x=\dfrac{1}{t}\)</span>（倒置变换），再配方用三角函数变换可以简化计算.</p><hr /><p><span class="math display">\[\begin{aligned}\int \sec ^3 x \mathrm{~d} x &amp; =\int \sec x \mathrm{dtan} x=\sec x\tan x-\int \tan ^2 x \sec x \mathrm{~d} x \\&amp; =\sec x \tan x-\int\left(\sec ^3 x-\sec x\right) \mathrm{d} x \\&amp; =\sec x \tan x-\int \sec ^3 x \mathrm{~d} x+\ln |\sec x+\tan x|,\\故\int \sec ^3 x \mathrm{~d} x &amp; =\frac{1}{2}(\sec x \tan x+\ln|\sec x+\tan x|)+C .\end{aligned}\]</span></p><hr /><p><span class="math display">\[\int_{-a}^{a}f(x)\text{d}x=\int_{0}^a\left[f(x)+f(-x)\right]\text{d}x\]</span></p><hr /><p><strong>无界函数</strong>一定不是Riemann可积的。这是因为Riemann积分定义为Riemann和在分划直径趋于<spanclass="math inline">\(0\)</span>时的极限。但无界函数的Riemann和一定不收敛。瑕积分虽然以Riemann积分为基础，但已经不是Riemann积分了，从定义上而言是一个变限积分的极限。虽然可以讨论无界函数的瑕积分，无界函数的瑕积分也可能收敛，但这并不是真正意义上的Riemann积分。无论如何，<strong>无界函数</strong>一定不是Riemann可积的。</p><hr /><p>函数Riemann可积的充要条件是不连续点的Lebesgue测度为<spanclass="math inline">\(0\)</span>。</p><p>任何单调函数都是Riemann可积的，因为<strong>任何单调函数的不连续点是最多可数个，测度是0</strong>。</p><p>因此，有无穷多个间断点的函数也有可能可积，比如 <spanclass="math display">\[f(x)= \begin{cases}0, &amp; x=\dfrac{1}{n}, n \in \mathbf{N}_{+} \\ x,&amp; x \neq \dfrac{1}{n} \end{cases}\]</span> <span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(\left[0,1\right]\)</span>上有无穷多个间断点，但依然可积。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+\begin{aligned}
+&amp;amp; \int \frac{x^2 \mathrm{~d} x}{\left(x^2+a^2\right)^2}=\frac{1}{2}
+\int \frac{x \mathr</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>高数复习（一）</title>
@@ -191,9 +218,9 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -440,9 +467,9 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -470,9 +497,9 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -502,9 +529,9 @@ src=&quot;https://picbed123.os</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -529,34 +556,6 @@ src=&quot;https://picbed123.os</summary>
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python 3.8中的新特性——海象运算符</title>
-    <link href="https://brockshuai.github.io/2023/01/09/walrus/"/>
-    <id>https://brockshuai.github.io/2023/01/09/walrus/</id>
-    <published>2023-01-09T12:48:11.000Z</published>
-    <updated>2023-01-11T01:14:32.417Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="海象运算符">海象运算符</h2><p>海象运算符的英文原名叫 Assignment Expresions，即<strong>赋值表达式</strong>。是Python 3.8新增的语法 :=，在 PEP 572中提出。它的作用是<strong>在表达式内部为变量赋值</strong></p><span id="more"></span><h2 id="实例">实例</h2><p>一般写法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">15</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure><p>改进写法</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> a := <span class="hljs-number">15</span> &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure><p>可以在<code>Expression</code>的内部直接为变量赋值，可以简化代码和提升运算效率。</p><h2 id="用于列表推导式">用于列表推导式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([f(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> f(i) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure><p>输出结果：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure><p>一共就 <code>4</code> 个数字，但是函数被执行了 <code>7</code>次。这是因为有三个数字满足列表推导式的条件，需要再额外计算<code>3</code>次。<strong>当程序数据巨大的时候，这将浪费大量性能。</strong></p><p>改进：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([n <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> (n := f(i)) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure><p>函数只执行了 <code>4</code> 次，函数执行结果被 <code>n</code>储存，不需要额外计算。性能优于不使用 <code>:=</code> 的。</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;海象运算符&quot;&gt;海象运算符&lt;/h2&gt;
-&lt;p&gt;海象运算符的英文原名叫 Assignment Expresions
-，即&lt;strong&gt;赋值表达式&lt;/strong&gt;。是Python 3.8新增的语法 :=，在 PEP 572
-中提出。它的作用是&lt;strong&gt;在表达式内部为变量赋值&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    <category term="Python" scheme="https://brockshuai.github.io/tags/Python/"/>
     
   </entry>
   

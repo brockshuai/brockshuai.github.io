@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>高数复习（二）</title>
+    <link href="/2023/01/26/gaoshufuxi2/"/>
+    <url>/2023/01/26/gaoshufuxi2/</url>
+    
+    <content type="html"><![CDATA[<p><span class="math display">\[\begin{aligned}&amp; \int \frac{x^2 \mathrm{~d} x}{\left(x^2+a^2\right)^2}=\frac{1}{2}\int \frac{x \mathrm{~d} x^2}{\left(x^2+a^2\right)^2}=-\frac{1}{2} \intx \mathrm{~d}\left(\frac{1}{x^2+a^2}\right) \\&amp; =-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2} \int \frac{\mathrm{d}x}{x^2+a^2}=-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2 a} \arctan\frac{x}{a}+C .\end{aligned}\]</span></p><hr /><p>当被积函数的分母中的根式<spanclass="math inline">\(\sqrt{ax^2+bx+c}\)</span>外有因子<spanclass="math inline">\(x\)</span>时，可以先作变换<spanclass="math inline">\(x=\dfrac{1}{t}\)</span>（倒置变换），再配方用三角函数变换可以简化计算.</p><hr /><p><span class="math display">\[\begin{aligned}\int \sec ^3 x \mathrm{~d} x &amp; =\int \sec x \mathrm{dtan} x=\sec x\tan x-\int \tan ^2 x \sec x \mathrm{~d} x \\&amp; =\sec x \tan x-\int\left(\sec ^3 x-\sec x\right) \mathrm{d} x \\&amp; =\sec x \tan x-\int \sec ^3 x \mathrm{~d} x+\ln |\sec x+\tan x|,\\故\int \sec ^3 x \mathrm{~d} x &amp; =\frac{1}{2}(\sec x \tan x+\ln|\sec x+\tan x|)+C .\end{aligned}\]</span></p><hr /><p><span class="math display">\[\int_{-a}^{a}f(x)\text{d}x=\int_{0}^a\left[f(x)+f(-x)\right]\text{d}x\]</span></p><hr /><p><strong>无界函数</strong>一定不是Riemann可积的。这是因为Riemann积分定义为Riemann和在分划直径趋于<spanclass="math inline">\(0\)</span>时的极限。但无界函数的Riemann和一定不收敛。瑕积分虽然以Riemann积分为基础，但已经不是Riemann积分了，从定义上而言是一个变限积分的极限。虽然可以讨论无界函数的瑕积分，无界函数的瑕积分也可能收敛，但这并不是真正意义上的Riemann积分。无论如何，<strong>无界函数</strong>一定不是Riemann可积的。</p><hr /><p>函数Riemann可积的充要条件是不连续点的Lebesgue测度为<spanclass="math inline">\(0\)</span>。</p><p>任何单调函数都是Riemann可积的，因为<strong>任何单调函数的不连续点是最多可数个，测度是0</strong>。</p><p>因此，有无穷多个间断点的函数也有可能可积，比如 <spanclass="math display">\[f(x)= \begin{cases}0, &amp; x=\dfrac{1}{n}, n \in \mathbf{N}_{+} \\ x,&amp; x \neq \dfrac{1}{n} \end{cases}\]</span> <span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(\left[0,1\right]\)</span>上有无穷多个间断点，但依然可积。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>高数复习（一）</title>
     <link href="/2023/01/25/gaoshu/"/>
     <url>/2023/01/25/gaoshu/</url>
@@ -140,9 +161,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -351,9 +372,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -376,9 +397,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -401,9 +422,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -445,9 +466,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
