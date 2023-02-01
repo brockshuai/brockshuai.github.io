@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-01-31T16:08:24.397Z</updated>
+  <updated>2023-02-01T14:11:24.453Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>5000mPB!</title>
+    <link href="https://brockshuai.github.io/2023/02/01/5kpb/"/>
+    <id>https://brockshuai.github.io/2023/02/01/5kpb/</id>
+    <published>2023-02-01T13:59:32.000Z</published>
+    <updated>2023-02-01T14:11:24.453Z</updated>
+    
+    <content type="html"><![CDATA[<p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8490.JPG" /></p><p>今天5000m机跑成功PB！全程按照14km/h的跑步机最大速度跑，成功顶了下来。虽然过程跟上次在田径场测5k的时候一样，都很煎熬，跑到全程一半的时候已经有比较明显的疲惫感了，最后1km完全是靠意志力和“再减速就要掉下跑步机”的念头坚持下来的。不过不管怎样，最终还是按照预定速度跑完了全程，算是对冬训成果的检验。这次的成绩和上次的21:58不同，跑步机的里程完全没有水分，是真真正正把5000m记录提高了近半分钟。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8489.JPG" /></p><p>上次在B站上请教了“藏原0626”后，就有意增加了有氧区间训练量，摒弃了以前“以强度换距离”的错误思想。最终这个成绩也说明，这一段时间的有氧训练是十分有效的。即使是感染新冠，对身体机能造成一定影响的情况下，绝对水平相较于之前仍然有很明显的提高。</p><p>这次跑完下来，肌肉的疲惫感比较明显，甚至超过了心肺受到的压力。再过几天回学校之后，有了田径场，会制定进一步的训练计划，重点训练速度能力和耐乳酸能力。</p><div class="note note-success">            <p>希望下学期的5000m成绩能顺利sub20！</p>          </div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img
+src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8490.JPG&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;今天5000m机跑成功PB！全程按照14km/h的跑步机最大速度跑，成功顶了下来。虽然过程跟上次在田径场测</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+    <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高数复习（三）</title>
+    <link href="https://brockshuai.github.io/2023/02/01/%E9%AB%98%E6%95%B03/"/>
+    <id>https://brockshuai.github.io/2023/02/01/%E9%AB%98%E6%95%B03/</id>
+    <published>2023-02-01T10:54:00.000Z</published>
+    <updated>2023-02-01T13:59:18.475Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="高数复习">高数复习</h2><p>极坐标曲线<spanclass="math inline">\(\rho=\varphi(\theta)\)</span>以及射线<spanclass="math inline">\(\theta=\alpha\)</span>，<spanclass="math inline">\(\theta=\beta\)</span>所围成的平面图形的面积微元为<span class="math display">\[\text{d}A=\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span> 因此总面积为 <span class="math display">\[\int_{\alpha}^{\beta}\text{d}A=\int_{\alpha}^{\beta}\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span></p><hr />]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;高数复习&quot;&gt;高数复习&lt;/h2&gt;
+&lt;p&gt;极坐标曲线&lt;span
+class=&quot;math inline&quot;&gt;\(\rho=\varphi(\theta)\)&lt;/span&gt;以及射线&lt;span
+class=&quot;math inline&quot;&gt;\(\theta=\alpha\)&lt;/sp</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>「影像」伊河</title>
@@ -68,9 +123,9 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F20
     
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
-    
     <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
+    
+    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
   </entry>
   
@@ -333,9 +388,9 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     
     
     
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
@@ -367,9 +422,9 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
-    
     <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
+    
+    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
   </entry>
   
@@ -503,61 +558,6 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
     <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>选课</title>
-    <link href="https://brockshuai.github.io/2023/01/12/%E9%80%89%E8%AF%BE/"/>
-    <id>https://brockshuai.github.io/2023/01/12/%E9%80%89%E8%AF%BE/</id>
-    <published>2023-01-12T08:42:35.000Z</published>
-    <updated>2023-01-16T15:06:35.784Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="选课">选课</h2><p>今天选课，高数6、物理4+1、化学5、程设3、近代史2、国防2、学术写作2、综工1体育0.5，一共26.5，加上通识是28.5。总体而言课业比上学期多一些。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-12%2016.43.13.png" /></p><p>想来其实这学期要上的课也挺鸡肋的——化学原理去年基本学过一遍了，配套的化学实验去年的上半学期更是完整地做过一遍；程序设计这种课基本也就靠自学了，听课学编程是决不可能有什么好效果的；体育课因为这学期的游泳II考核太难也换成了体适能。高分，但也几乎没什么趣味，估计下学期的锻炼也只能靠平时的跑步和骑行了。有那么些实际意义的课只剩下高数、大物和英语了——英语勉强算一个吧。化学实验要安排到周一的上午1-4节，等效计算下来，一周一共有18节课。还是不少的，至少比上个学期明显地多了。课多了，空余的、自由安排的时间便会减少——这些许会令人感到有些压力。但无论如何，比大二的学长们还是轻松不少，课少，也没他们那么难，这是值得庆幸的。</p><p>选完课，又想到了<em>SurviveSJTUMaual</em>开篇振聋发聩的那几段话，这里再附上来：</p><blockquote><p>各位同学们，在本书的开始，我不得不遗憾地告诉大家一个消息。国内绝大部分大学的本科教学，不是濒临崩溃，而是早已崩溃。在此，我无意争论是否复旦、中科大、或者清华、北大是否比我们崩溃的更少一些——这种争论是没有意义的。我只是看到了无数充满求知欲、激情、与年轻梦想的同学们，将要把自己的四年青春，充满希望与信任地交给大学来塑造。这使我心中非常不安。</p></blockquote><blockquote><p>在当今流水线式的教育体制下，我们就像廉价的零件一样被生产出来。因为数量巨大，没人会对每一个人的教学质量负责。</p></blockquote><blockquote><p>领导不会为你负责。对于一个争做世界一流大学的研究型学校，管好科研，管好实验室才是当务之急。相比之下，本科生教学显得无利可图。教授也不会为你负责。拉到足够的经费发表足够的论文，满足学院要求才是生存大计。要说管学生，也肯定先要管好自己实验室的硕士博士，而非那一百多人大课堂里的某个本科生。就算是科研任务不太重的一些任课教师，他们也不会为你负责——学不懂？那是因为你智力低，要么就是自己底下不用功。为什么跟你一个班上的某某某同学，人家就能懂？诚然，就算是老师上课说孟加拉语，一个班上也非常有可能冒出一两个翻翻书看看图就能学到八九不离十的同学（或者根本就是以前学过）。真正在课堂上口传心授的教学，其质量是不会有人过问的。教学评估会考察实验报告格式是否合格，出勤率是否够，但是绝对不会考察上百人的班上到底有几个听懂了的。</p></blockquote><blockquote><p>试想一下，每个学院每个系有成百上千的学生，每人有着不同的思想、不同的目标、不同的知识背景、不同的接受力，我们怎么可能去指望一个统一的“教学培养计划”强制应用在每个人头上的时候，能够产生效果？好比说食堂师傅炒一大锅菜给上千人吃，我敢说我分到的那盘，不是炒糊就肯定得夹生。</p></blockquote><blockquote><p>所谓“教学培养计划”，其科学性必须经过教育权威的论证。然而现实中塞给我们的推荐课表，却让人失望。且不深究选修课的分类、学分、毕业条件每年一个样，三年大变样，使得不少同学毕业前夕竞相奔走；甚至连两门相依赖课程的教学先后顺序都搞错过，这样的教学培养计划，实在让人难以信任。</p></blockquote><blockquote><p>而对于具体课程，教学大纲的陈旧程度也令人叹为观止。当然，以“教学经验”的名义，十年用同一本教科书是可以理解的。甚至我们可以容忍教学大纲里有一些广受诟病的古典残留物（例如《线性代数》中的Cramer法解方程）。但我们无法容忍对于一门只有几十年历史的新兴学科，我们的教科书竟然可以只涉及到上个世纪八十年代的“新技术”！这样的课程，之所以能够存在并延续下去，从根本上讲是因人设课——开设相应课程是为了不让部分教师下岗。这也无怪国外有华裔学者实在看不下去了，拍案疾呼道：“中国大学，怎么那么盛产‘活化石’！”。</p></blockquote><p>下学期又能从学校的老师那里学到多少有用的知识呢？我不知道，但应该不会太多罢。每个学期似乎都是这样，真正能从老师那里有很大收获的课并不多，但它们却占用了平时时间的大头。这令不只我，甚至学校的大部分学生都十分无奈。今年9月就要参加国赛，还有明年这个时候的美赛，自己还有不少想要学的东西——Python，粤语，还有搁置不少时间的摄影。这样看，似乎终究又还是要靠自己了。希望能顺利完成下学期的学业，完成既定的目标吧。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;选课&quot;&gt;选课&lt;/h2&gt;
-&lt;p&gt;今天选课，高数6、物理4+1、化学5、程设3、近代史2、国防2、学术写作2、综工1体育0.5，
-一共26.5，加上通识是28.5。总体而言课业比上学期多一些。&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://picbed123.os</summary>
-      
-    
-    
-    
-    
-    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近期C语言学习记录</title>
-    <link href="https://brockshuai.github.io/2023/01/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    <id>https://brockshuai.github.io/2023/01/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
-    <published>2023-01-11T13:48:11.000Z</published>
-    <updated>2023-01-12T03:00:41.087Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="第一个c语言程序代码加法器">第一个C语言程序代码——加法器</h2><span id="more"></span><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>    <span class="hljs-type">float</span> a,b,c;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;请输入第一个数：&quot;</span>);<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%f&quot;</span>,&amp;a);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;请输入第二个数：&quot;</span>);<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%f&quot;</span>,&amp;b);<br>    c=a+b;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%f\n&quot;</span>,c);<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="自增运算符">自增运算符</h2><p><code>i++</code>和<code>++i</code>都是实现变量i的自增，两者的区别在于<code>i++</code>是先运算，再加<code>1</code>，而<code>++i</code>是先加<code>1</code>，后运算。但是不管是<code>i++</code>还是<code>++i</code>，最后i的值都是相同的。</p><p>举例如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br> <br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>   <span class="hljs-type">int</span> c;<br>   <span class="hljs-type">int</span> a = <span class="hljs-number">10</span>;<br>   c = a++; <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;先赋值后运算：\n&quot;</span>);<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 1 - c 的值是 %d\n&quot;</span>, c );<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 2 - a 的值是 %d\n&quot;</span>, a );<br>   a = <span class="hljs-number">10</span>;<br>   c = a--; <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 3 - c 的值是 %d\n&quot;</span>, c );<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 4 - a 的值是 %d\n&quot;</span>, a );<br> <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;先运算后赋值：\n&quot;</span>);<br>   a = <span class="hljs-number">10</span>;<br>   c = ++a; <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 5 - c 的值是 %d\n&quot;</span>, c );<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 6 - a 的值是 %d\n&quot;</span>, a );<br>   a = <span class="hljs-number">10</span>;<br>   c = --a; <br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 7 - c 的值是 %d\n&quot;</span>, c );<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Line 8 - a 的值是 %d\n&quot;</span>, a );<br> <br>&#125;<br></code></pre></td></tr></table></figure><p>输出结果：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs C">先赋值后运算：<br>Line <span class="hljs-number">1</span> - c 的值是 <span class="hljs-number">10</span><br>Line <span class="hljs-number">2</span> - a 的值是 <span class="hljs-number">11</span><br>Line <span class="hljs-number">3</span> - c 的值是 <span class="hljs-number">10</span><br>Line <span class="hljs-number">4</span> - a 的值是 <span class="hljs-number">9</span><br>先运算后赋值：<br>Line <span class="hljs-number">5</span> - c 的值是 <span class="hljs-number">11</span><br>Line <span class="hljs-number">6</span> - a 的值是 <span class="hljs-number">11</span><br>Line <span class="hljs-number">7</span> - c 的值是 <span class="hljs-number">9</span><br>Line <span class="hljs-number">8</span> - a 的值是 <span class="hljs-number">9</span><br></code></pre></td></tr></table></figure><h2 id="指针实现交换函数">指针实现交换函数</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">exchange</span><span class="hljs-params">(<span class="hljs-type">int</span> *p, <span class="hljs-type">int</span> *q)</span> <br>&#123;<br>   <span class="hljs-type">int</span> a;<br>   a=*p;<br>   *p=*q;<br>   *q=a;<br>   <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span><br>&#123;<br>   <span class="hljs-type">int</span> x,y;<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;请输入x：&quot;</span>);<br>   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;x);<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;请输入y：&quot;</span>);<br>   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;y);<br>   exchange(&amp;x,&amp;y);<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;交换后，x=%d\n&quot;</span>,x);<br>   <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;交换后，y=%d\n&quot;</span>,y);<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;第一个c语言程序代码加法器&quot;&gt;第一个C语言程序代码——加法器&lt;/h2&gt;</summary>
-    
-    
-    
-    
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    <category term="C" scheme="https://brockshuai.github.io/tags/C/"/>
     
   </entry>
   

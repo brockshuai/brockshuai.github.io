@@ -4,6 +4,50 @@
   
   
   <entry>
+    <title>5000mPB!</title>
+    <link href="/2023/02/01/5kpb/"/>
+    <url>/2023/02/01/5kpb/</url>
+    
+    <content type="html"><![CDATA[<p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8490.JPG" /></p><p>今天5000m机跑成功PB！全程按照14km/h的跑步机最大速度跑，成功顶了下来。虽然过程跟上次在田径场测5k的时候一样，都很煎熬，跑到全程一半的时候已经有比较明显的疲惫感了，最后1km完全是靠意志力和“再减速就要掉下跑步机”的念头坚持下来的。不过不管怎样，最终还是按照预定速度跑完了全程，算是对冬训成果的检验。这次的成绩和上次的21:58不同，跑步机的里程完全没有水分，是真真正正把5000m记录提高了近半分钟。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8489.JPG" /></p><p>上次在B站上请教了“藏原0626”后，就有意增加了有氧区间训练量，摒弃了以前“以强度换距离”的错误思想。最终这个成绩也说明，这一段时间的有氧训练是十分有效的。即使是感染新冠，对身体机能造成一定影响的情况下，绝对水平相较于之前仍然有很明显的提高。</p><p>这次跑完下来，肌肉的疲惫感比较明显，甚至超过了心肺受到的压力。再过几天回学校之后，有了田径场，会制定进一步的训练计划，重点训练速度能力和耐乳酸能力。</p><div class="note note-success">            <p>希望下学期的5000m成绩能顺利sub20！</p>          </div>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>生活</tag>
+      
+      <tag>运动</tag>
+      
+      <tag>跑步</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>高数复习（三）</title>
+    <link href="/2023/02/01/%E9%AB%98%E6%95%B03/"/>
+    <url>/2023/02/01/%E9%AB%98%E6%95%B03/</url>
+    
+    <content type="html"><![CDATA[<h2 id="高数复习">高数复习</h2><p>极坐标曲线<spanclass="math inline">\(\rho=\varphi(\theta)\)</span>以及射线<spanclass="math inline">\(\theta=\alpha\)</span>，<spanclass="math inline">\(\theta=\beta\)</span>所围成的平面图形的面积微元为<span class="math display">\[\text{d}A=\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span> 因此总面积为 <span class="math display">\[\int_{\alpha}^{\beta}\text{d}A=\int_{\alpha}^{\beta}\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span></p><hr />]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>「影像」伊河</title>
     <link href="/2023/02/01/%E5%BD%B1%E5%83%8F%E4%BC%8A%E6%B2%B3/"/>
     <url>/2023/02/01/%E5%BD%B1%E5%83%8F%E4%BC%8A%E6%B2%B3/</url>
@@ -39,9 +83,9 @@
       
       <tag>运动</tag>
       
-      <tag>骑行</tag>
-      
       <tag>跑步</tag>
+      
+      <tag>骑行</tag>
       
     </tags>
     
@@ -257,9 +301,9 @@
     
     <tags>
       
-      <tag>技术</tag>
-      
       <tag>运动</tag>
+      
+      <tag>技术</tag>
       
       <tag>骑行</tag>
       
@@ -284,9 +328,9 @@
       
       <tag>运动</tag>
       
-      <tag>骑行</tag>
-      
       <tag>跑步</tag>
+      
+      <tag>骑行</tag>
       
     </tags>
     
