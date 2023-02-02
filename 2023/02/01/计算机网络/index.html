@@ -17,26 +17,27 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="面向对象编程 面向对象编程有三个基本特点： 封装 封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。 继承 继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。 要实现继承，可以通过 继承和组合 来">
+    <meta name="description" content="近一周在YouTube上看了不少电丸科技AK关于GFW的相关视频（硬核翻墙视频系列），内容非常硬核，深感AK技术力之强。此外，也了解了很多进阶的网络技术相关的内容，在一边感叹大佬技术力的同时，发现针对“计算机网络”这个我们每天都在使用的技术，其原理，许多相关的概念，我们并不甚了解，甚至对底层原理一无所知。 最近两天还在折腾NAS，按照网上的教程实现了不少实用的功能，目前效果还不错，能实现手机照片自">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对面向对象编程的理解">
-<meta property="og:url" content="https://brockshuai.github.io/2023/01/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%90%86%E8%A7%A3/index.html">
+<meta property="og:title" content="计算机网络初步">
+<meta property="og:url" content="https://brockshuai.github.io/2023/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="面向对象编程 面向对象编程有三个基本特点： 封装 封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。 继承 继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。 要实现继承，可以通过 继承和组合 来">
+<meta property="og:description" content="近一周在YouTube上看了不少电丸科技AK关于GFW的相关视频（硬核翻墙视频系列），内容非常硬核，深感AK技术力之强。此外，也了解了很多进阶的网络技术相关的内容，在一边感叹大佬技术力的同时，发现针对“计算机网络”这个我们每天都在使用的技术，其原理，许多相关的概念，我们并不甚了解，甚至对底层原理一无所知。 最近两天还在折腾NAS，按照网上的教程实现了不少实用的功能，目前效果还不错，能实现手机照片自">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-11T01:14:52.000Z">
-<meta property="article:modified_time" content="2023-01-11T05:13:02.409Z">
+<meta property="article:published_time" content="2023-02-01T14:19:41.000Z">
+<meta property="article:modified_time" content="2023-02-02T01:59:58.920Z">
 <meta property="article:author" content="神仙魚">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="计算机">
+<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>对面向对象编程的理解 - 神仙魚</title>
+  <title>计算机网络初步 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="对面向对象编程的理解"></span>
+            <span id="subtitle" data-typed-text="计算机网络初步"></span>
           
         </div>
 
@@ -231,8 +232,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-11 09:14" pubdate>
-          2023年1月11日 上午
+        <time datetime="2023-02-01 22:19" pubdate>
+          2023年2月1日 晚上
         </time>
       </span>
     
@@ -243,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          353 字
+          659 字
         
       </span>
     
@@ -254,7 +255,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -313,21 +314,29 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">对面向对象编程的理解</h1>
+            <h1 style="display: none">计算机网络初步</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="面向对象编程">面向对象编程</h2>
-<p>面向对象编程有三个基本特点：</p>
-<p><strong>封装</strong>
-封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。</p>
-<p><strong>继承</strong>
-继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来类的情况下对这些功能进行扩展。通过继承创建的新类称为「子类」或「派生类」，被继承的类称为「基类」、「父类」或「超类」。
-要实现继承，可以通过 <strong>继承和组合</strong> 来实现。</p>
-<p><strong>多态性</strong>
-多态性是允许你将父对象设置成为和一个或更多的他的子对象相等的技术，赋值之后，父对象就可以根据当前赋值给它的子对象的特性以不同的方式运作。简单说就是一句话：允许将子类类型的指针赋值给父类类型的指针。</p>
-<p>简而言之，<strong>面向对象的编程方式使得每一个类都只做一件事</strong>。<strong>面向过程会让一个类越来越全能，就像一个管家一样做了所有的事</strong>。</p>
+                <p>近一周在YouTube上看了不少电丸科技AK关于GFW的相关视频（硬核翻墙视频系列），内容非常硬核，深感AK技术力之强。此外，也了解了很多进阶的网络技术相关的内容，在一边感叹大佬技术力的同时，发现针对“计算机网络”这个我们每天都在使用的技术，其原理，许多相关的概念，我们并不甚了解，甚至对底层原理一无所知。</p>
+<p>最近两天还在折腾NAS，按照网上的教程实现了不少实用的功能，目前效果还不错，能实现手机照片自动同步、电脑重要文件定时备份、离线下载和多设备影音库。但无一例外，都是利用已有的套件和教程照葫芦画瓢完成的。更进阶的使用，依然需要基本网络知识的加持。</p>
+<p>所以今天晚上尝试系统地学习一下计算机网络的原理，并对其内容进行整理。</p>
+<h2 id="计算机网络">计算机网络</h2>
+<p>基本思想：1.标识 2.转发 以简化线路</p>
+<p><strong>由此产生第一种设备：HUB（集线器），进行消息转发，简化线路</strong>，<strong>处于物理层</strong></p>
+<p>问题：一台设备消息会广播到所有设备上，造成浪费，且不安全；线路中的店信号会互相干扰，杂糅。</p>
+<p>解决方案：CSMA/CD协议，先进行载波侦听，确认没有干扰再进行发送。</p>
+<p>缺点：不能同时发送数据，效率低</p>
+<p><strong>第二种设备：SW，即交换机。</strong></p>
+<p>功能：1. 记录地址（mac地址），mac地址对应物理端口
+2.全双工，数据不会冲突。</p>
+<p>交换机处于<strong>数据链路层</strong>，数据头记录了目的地址；交换机可以进行桥接。</p>
+<p>问题：mac地址表容量有限，不便于构建更大规模的网络，广播效率低。</p>
+<p><strong>第三种设备：网关（路由器）</strong>，<strong>处于网络层</strong></p>
+<p>IP地址：标识网络、标识设备，实现跨网络设备交互</p>
+<p>路由表建立非常复杂，有各种算法</p>
+<p>网络内传输仍然需要mac地址 ARP协议</p>
 
                 
               </div>
@@ -346,6 +355,8 @@
       
         <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
       
+        <a href="/tags/%E7%BD%91%E7%BB%9C/">#网络</a>
+      
     </div>
   
 </div>
@@ -356,8 +367,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>对面向对象编程的理解</div>
-      <div>https://brockshuai.github.io/2023/01/11/面向对象理解/</div>
+      <div>计算机网络初步</div>
+      <div>https://brockshuai.github.io/2023/02/01/计算机网络/</div>
     </div>
     <div class="license-meta">
       
@@ -369,7 +380,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月11日</div>
+          <div>2023年2月1日</div>
         </div>
       
       
@@ -401,18 +412,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/11/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="四种常见排序算法的Python实现">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">四种常见排序算法的Python实现</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/10/%E7%9B%B2%E5%A9%9A%E5%93%91%E5%AB%81/" title="Eason新歌盲婚哑嫁">
-                        <span class="hidden-mobile">Eason新歌盲婚哑嫁</span>
+                      <a href="/2023/02/01/5kpb/" title="5000mPB!">
+                        <span class="hidden-mobile">5000mPB!</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
