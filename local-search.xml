@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>高数复习（四）</title>
+    <link href="/2023/02/03/%E9%AB%98%E6%95%B04/"/>
+    <url>/2023/02/03/%E9%AB%98%E6%95%B04/</url>
+    
+    <content type="html"><![CDATA[<p>判断敛散性： <span class="math display">\[\int_a^{b} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}\]</span></p><p><span class="math display">\[\int_a^{\frac{a+b}{2}} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{c\rightarrow 0^{+}} \int_{a+c}^{\frac{a b b}{2}} \frac{\mathrm{d}x}{\sqrt{\left(\frac{b-a}{2}\right)^2-\left(x-\frac{b+a}{2}\right)^2}}\]</span></p><p><span class="math display">\[\text { 令 } x-\frac{b+a}{2}=\frac{b-a}{2} \sin \theta,~于是\lim _{\varepsilon \rightarrow 0^{+}} \int_{\arcsin \frac{\sigma-(b-a) /2}{(b-a) / 2}}^0 \mathrm{~d} \theta=\lim _{\delta \rightarrow0^{+}}\left[-\arcsin \frac{\varepsilon-(b-a) / 2}{(b-a) /2}\right]=\frac{\pi}{2}\]</span></p><p>又 <span class="math display">\[\lim_{\delta\rightarrow0^+}\int_{\frac{a+b}{2}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{\delta \rightarrow 0^{+}}\arcsin \frac{(b-a) / 2-\delta}{(b-a) / 2}=\frac{\pi}{2},\]</span></p><p>故原积分收敛,且 <span class="math display">\[\begin{aligned}\int_a^b \frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}= &amp; \lim_{\varepsilon \rightarrow 0^{+}} \int_{a +\varepsilon}^{\frac{a+b}{2}}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}} \\&amp; +\lim _{\delta \rightarrow 0^{+}} \int_{\frac{a+b}{b}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}=\pi.\end{aligned}\]</span></p><hr /><p>广义积分判断准则： <span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}g(x)\text{d}x收敛，则\int_{a}^{+\infty}f(x)\text{d}x收敛\]</span></p><p><span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}f(x)\text{d}x发散，则\int_{a}^{+\infty}g(x)\text{d}x发散\]</span></p><hr />]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>计算机网络初步</title>
     <link href="/2023/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     <url>/2023/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
@@ -14,11 +35,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
       <tag>网络</tag>
       
@@ -299,11 +320,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
       <tag>语言</tag>
       
@@ -399,9 +420,9 @@
       
       <tag>生活</tag>
       
-      <tag>学习</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>学习</tag>
       
     </tags>
     
@@ -489,9 +510,9 @@
       
       <tag>生活</tag>
       
-      <tag>学习</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>学习</tag>
       
     </tags>
     
@@ -510,11 +531,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
       <tag>C</tag>
       
@@ -535,11 +556,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
       <tag>Python</tag>
       
@@ -560,11 +581,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
     </tags>
     
@@ -604,11 +625,11 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
       
       <tag>计算机</tag>
+      
+      <tag>学习</tag>
       
       <tag>Python</tag>
       

@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-02-02T01:59:58.920Z</updated>
+  <updated>2023-02-03T13:49:49.828Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高数复习（四）</title>
+    <link href="https://brockshuai.github.io/2023/02/03/%E9%AB%98%E6%95%B04/"/>
+    <id>https://brockshuai.github.io/2023/02/03/%E9%AB%98%E6%95%B04/</id>
+    <published>2023-02-03T13:11:52.000Z</published>
+    <updated>2023-02-03T13:49:49.828Z</updated>
+    
+    <content type="html"><![CDATA[<p>判断敛散性： <span class="math display">\[\int_a^{b} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}\]</span></p><p><span class="math display">\[\int_a^{\frac{a+b}{2}} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{c\rightarrow 0^{+}} \int_{a+c}^{\frac{a b b}{2}} \frac{\mathrm{d}x}{\sqrt{\left(\frac{b-a}{2}\right)^2-\left(x-\frac{b+a}{2}\right)^2}}\]</span></p><p><span class="math display">\[\text { 令 } x-\frac{b+a}{2}=\frac{b-a}{2} \sin \theta,~于是\lim _{\varepsilon \rightarrow 0^{+}} \int_{\arcsin \frac{\sigma-(b-a) /2}{(b-a) / 2}}^0 \mathrm{~d} \theta=\lim _{\delta \rightarrow0^{+}}\left[-\arcsin \frac{\varepsilon-(b-a) / 2}{(b-a) /2}\right]=\frac{\pi}{2}\]</span></p><p>又 <span class="math display">\[\lim_{\delta\rightarrow0^+}\int_{\frac{a+b}{2}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{\delta \rightarrow 0^{+}}\arcsin \frac{(b-a) / 2-\delta}{(b-a) / 2}=\frac{\pi}{2},\]</span></p><p>故原积分收敛,且 <span class="math display">\[\begin{aligned}\int_a^b \frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}= &amp; \lim_{\varepsilon \rightarrow 0^{+}} \int_{a +\varepsilon}^{\frac{a+b}{2}}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}} \\&amp; +\lim _{\delta \rightarrow 0^{+}} \int_{\frac{a+b}{b}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}=\pi.\end{aligned}\]</span></p><hr /><p>广义积分判断准则： <span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}g(x)\text{d}x收敛，则\int_{a}^{+\infty}f(x)\text{d}x收敛\]</span></p><p><span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}f(x)\text{d}x发散，则\int_{a}^{+\infty}g(x)\text{d}x发散\]</span></p><hr />]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;判断敛散性： &lt;span class=&quot;math display&quot;&gt;\[
+\int_a^{b} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+\in</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络初步</title>
@@ -34,11 +62,11 @@
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="网络" scheme="https://brockshuai.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
@@ -77,7 +105,7 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_8490.JPG&quot; /
     <link href="https://brockshuai.github.io/2023/02/01/%E9%AB%98%E6%95%B03/"/>
     <id>https://brockshuai.github.io/2023/02/01/%E9%AB%98%E6%95%B03/</id>
     <published>2023-02-01T10:54:00.000Z</published>
-    <updated>2023-02-01T13:59:18.475Z</updated>
+    <updated>2023-02-03T13:11:06.690Z</updated>
     
     <content type="html"><![CDATA[<h2 id="高数复习">高数复习</h2><p>极坐标曲线<spanclass="math inline">\(\rho=\varphi(\theta)\)</span>以及射线<spanclass="math inline">\(\theta=\alpha\)</span>，<spanclass="math inline">\(\theta=\beta\)</span>所围成的平面图形的面积微元为<span class="math display">\[\text{d}A=\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span> 因此总面积为 <span class="math display">\[\int_{\alpha}^{\beta}\text{d}A=\int_{\alpha}^{\beta}\dfrac12\left[\varphi(\theta)\right]^2\text{d}\theta\]</span></p><hr />]]></content>
     
@@ -385,11 +413,11 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="语言" scheme="https://brockshuai.github.io/tags/%E8%AF%AD%E8%A8%80/"/>
     
@@ -505,9 +533,9 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -537,27 +565,6 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个有趣的线性代数二级结论</title>
-    <link href="https://brockshuai.github.io/2023/01/13/%E7%BA%BF%E4%BB%A3%E7%9F%A5%E8%AF%86/"/>
-    <id>https://brockshuai.github.io/2023/01/13/%E7%BA%BF%E4%BB%A3%E7%9F%A5%E8%AF%86/</id>
-    <published>2023-01-13T14:06:40.000Z</published>
-    <updated>2023-01-13T14:21:50.338Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一个有趣的二级结论">一个有趣的二级结论</h2><span id="more"></span><div class="note note-success">            <p>设<span class="math inline">\(A,B\)</span>是两个<spanclass="math inline">\(n\)</span>阶实方阵，<spanclass="math inline">\(M=\left[\array{A&amp;B\\B&amp;A}\right]\)</span>是一个分块矩阵，试证明<spanclass="math inline">\(\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\)</span>。</p>          </div><p>这一结论的证明非常简洁，也很短。之所以要记录下来是因为最后一步的变换连续使用了两次初等变换，可能是太久没有做过相关练习的缘故，一直没有看出来是如何变形得到结论的。证明如下：</p><p><strong>证</strong>： <span class="math display">\[\left[\begin{array}{ll}A &amp; B \\ B &amp; A\end{array}\right]\rightarrow\left[\begin{array}{cc}A &amp; B \\ A+B &amp;A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp; B \\ O&amp; A+B\end{array}\right] \rightarrow\left[\begin{array}{cc}A-B &amp;\\ &amp; A+B\end{array}\right]\]</span> 因此，有 <span class="math display">\[\text{r}(M)=\text{r}(A+B)+\text{r}(A-B)\]</span></p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;一个有趣的二级结论&quot;&gt;一个有趣的二级结论&lt;/h2&gt;</summary>
-    
-    
-    
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
