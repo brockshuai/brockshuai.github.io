@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-02-09T06:15:45.468Z</updated>
+  <updated>2023-02-09T15:16:04.862Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>田径场首跑</title>
+    <link href="https://brockshuai.github.io/2023/02/09/%E7%94%B0%E5%BE%84%E5%9C%BA%E9%A6%96%E8%B7%91/"/>
+    <id>https://brockshuai.github.io/2023/02/09/%E7%94%B0%E5%BE%84%E5%9C%BA%E9%A6%96%E8%B7%91/</id>
+    <published>2023-02-09T15:05:46.000Z</published>
+    <updated>2023-02-09T15:16:04.862Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="田径场首跑">田径场首跑</h2><p>今天晚上是回学校后第一次在田径场跑步。与之前持续了近两个月的机跑相比，还是有不少不同的感受和体验。</p><h3 id="身体感受">身体感受</h3><p>身体感受上，场地跑和机跑最大的区别恐怕还是在于：场地跑更累。与机跑维持在传送带上身体的位置不变不同，在真正的田径场上跑时，你真的需要一步一步将身体“往前送”，体感上明显需要耗费更多力量。心率上也反映地十分明显，今天2.5km的配速是5'24''，平均心率已经达到了163，而同样的速度机跑可能只有150+。也可能是晚上吃的太多，身体也没有调整到最佳状态，但事实证明，场地跑和机跑所谓的“相同速度”其实对身体造成的压力是不同的。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_5BF96409E9FD-1.jpeg" /></p><h3 id="gt-runner-操场模式">GT Runner 操场模式</h3><p>不得不说GTRunner的操场模式真的很准！等到GPS信号变绿后从800m起点线起跑，基本每次报圈误差在1m范围内。更重要的是，操场模式下手表会进行自动校准，不会随着圈数增多积累误差，这一点对精准控时是非常友好的。因此长距离的实际误差就是最后那个不到一圈的“零头”带来的。以后应该在学校都会用这个模式了，毕竟平时基本也没有什么路跑的机会。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_3C322A55E70D-1.jpeg" /></p><h3 id="下一步计划">下一步计划</h3><p>可能是这两天事情比较多，也比较疲惫，接下来会尝试进一步适应在户外场地跑的感受。毕竟这才是真正的跑步能力。之后开春天气会转暖，在继续练有氧的同时也会加一些力量和速度的训练。明天继续。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;田径场首跑&quot;&gt;田径场首跑&lt;/h2&gt;
+&lt;p&gt;今天晚上是回学校后第一次在田径场跑步。与之前持续了近两个月的机跑相比，还是有不少不同的感受和体验。&lt;/p&gt;
+&lt;h3 id=&quot;身体感受&quot;&gt;身体感受&lt;/h3&gt;
+&lt;p&gt;身体感受上，场地跑和机跑最大的区别恐怕还是在于：场地跑更累。</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+    <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>返校</title>
@@ -125,9 +154,9 @@
     
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     <category term="网络" scheme="https://brockshuai.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
     
@@ -476,13 +505,13 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     <category term="语言" scheme="https://brockshuai.github.io/tags/%E8%AF%AD%E8%A8%80/"/>
     
     <category term="粤语" scheme="https://brockshuai.github.io/tags/%E7%B2%A4%E8%AF%AD/"/>
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -505,9 +534,9 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     
     
     
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
@@ -542,34 +571,6 @@ src=&quot;https://picbed123.oss-cn-beijing.ali</summary>
     <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
     
     <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>林夕</title>
-    <link href="https://brockshuai.github.io/2023/01/16/%E6%9E%97%E5%A4%95/"/>
-    <id>https://brockshuai.github.io/2023/01/16/%E6%9E%97%E5%A4%95/</id>
-    <published>2023-01-16T14:10:16.000Z</published>
-    <updated>2023-01-16T14:56:57.849Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="林夕">林夕</h2><p>听了夕爷不知道多少首歌曲，每忽觉一首歌歌词令人倾倒，翻至末尾，十中有八都注着“<strong>创作人：林夕</strong>”。今天不具体谈论哪一首歌，就来斗胆说说对夕爷的总体看法吧。</p><p>林夕是细腻而敏感的，最灵的是，这个人能够用笔将这些细枝末节的东西漂亮地记录下来。</p><p>这个世界上，悲伤的人如果拥有了灵动的语言，那就可怕得太尖锐了，对我来说林夕便是这样。</p><p>儿时的林夕生活在一个备受折磨的环境中，由于父亲脾气暴躁，林夕经常遭到父亲的批评，甚至辱骂，有时候因为洗澡时间长了一些，都会惨遭责骂。在残忍的现实生活面前，年少的林夕表现出异于常人的成熟，为了找寻自己精神的寄托，他将全部的身心投入到阅读的世界之中，他涉猎极广，不仅读现代的杂志，还读古典文学，渐渐的林夕深深的迷恋上古典诗词文学，尤为喜欢柳永、苏轼等文豪那些凄美的作品，这些诗词营造的意境仿佛是自己内心世界的真实写照，在文学的世界里，年少的林夕倾吐着心中的孤单无助与凄苦悲凉。</p><p>成人之后，林夕的情感也是灰色的。关于林夕在情感上的挫败，在八卦新闻中随处可见，不再复述。感情细腻而敏感的林夕难以自拔，甚至一度有了自杀的倾向，但是为了不给对方增添负罪感，所以又放弃了轻生的念头。</p><p>有了儿时通过阅读摆脱痛苦的经验，成年的林夕为了忘记现实情感的痛苦，便全身心的投身到歌词创作的事业之中。为了纪念这段感情便写出了《富士山下》《至少还有你》。</p><p>我一直觉得，我们大多数人都是有“接触世界困难症”的人，如果不是，也至少都是有“描述世界困难症”的人。绝大多数人的人生并不常有刻骨铭心的悲伤，感同身受就更不要提。即使有，又有几个能用笔和纸写下来呢？</p><p>所以大多数人主动选择了麻木。可以<em>“聚脚于康庄旅途然后同沐浴温泉“</em>，便不在雨伞外独行。这其中，有人是幸运的，从来也没有机会感同身受；有的人没有那么幸运，但笔力枯空，便无从倾吐。</p><p>然而林夕却是那极少数中的佼佼者。他有一双敏感而多思的眼睛，这双眼能在洞穿情爱、出尘入世、友谊和生死之后写出千百万人的那么多辈子的愁肠百结，以一人的纸笔之力通往万千人心中最绵软柔弱之地。</p><p>即使因为政治原因，林夕在许多内地平台上都处于近乎被抹去的状态，翻开QQ音乐热歌榜，却还能看到近十年没有再创作的夕爷四五首歌都还在榜。</p><p>真正听懂了林夕，听懂他写人生、写哲学，收获到的不会是任何单独一首歌曲所要传递的某种特定的情感，而是彻悟之后的坦然勇敢。</p><p>夕爷作词，把自己的每一次心碎、沉思，全部化成了艺术。他不认识我，却有可能是最懂我的人之一。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;林夕&quot;&gt;林夕&lt;/h2&gt;
-&lt;p&gt;听了夕爷不知道多少首歌曲，每忽觉一首歌歌词令人倾倒，翻至末尾，十中有八都注着“&lt;strong&gt;创作人：林夕&lt;/strong&gt;”。今天不具体谈论哪一首歌，就来斗胆说说对夕爷的总体看法吧。&lt;/p&gt;
-&lt;p&gt;林夕是细腻而敏感的，最灵的是，这个</summary>
-      
-    
-    
-    
-    
-    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    <category term="音乐" scheme="https://brockshuai.github.io/tags/%E9%9F%B3%E4%B9%90/"/>
     
   </entry>
   
