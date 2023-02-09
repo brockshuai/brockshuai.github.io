@@ -28,8 +28,8 @@
 <meta property="article:modified_time" content="2023-02-02T01:59:58.920Z">
 <meta property="article:author" content="神仙魚">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="学习">
 <meta property="article:tag" content="计算机">
+<meta property="article:tag" content="学习">
 <meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -322,13 +322,15 @@
                 <p>近一周在YouTube上看了不少电丸科技AK关于GFW的相关视频（硬核翻墙视频系列），内容非常硬核，深感AK技术力之强。此外，也了解了很多进阶的网络技术相关的内容，在一边感叹大佬技术力的同时，发现针对“计算机网络”这个我们每天都在使用的技术，其原理，许多相关的概念，我们并不甚了解，甚至对底层原理一无所知。</p>
 <p>最近两天还在折腾NAS，按照网上的教程实现了不少实用的功能，目前效果还不错，能实现手机照片自动同步、电脑重要文件定时备份、离线下载和多设备影音库。但无一例外，都是利用已有的套件和教程照葫芦画瓢完成的。更进阶的使用，依然需要基本网络知识的加持。</p>
 <p>所以今天晚上尝试系统地学习一下计算机网络的原理，并对其内容进行整理。</p>
-<h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><p>基本思想：1.标识 2.转发 以简化线路</p>
+<h2 id="计算机网络">计算机网络</h2>
+<p>基本思想：1.标识 2.转发 以简化线路</p>
 <p><strong>由此产生第一种设备：HUB（集线器），进行消息转发，简化线路</strong>，<strong>处于物理层</strong></p>
 <p>问题：一台设备消息会广播到所有设备上，造成浪费，且不安全；线路中的店信号会互相干扰，杂糅。</p>
 <p>解决方案：CSMA/CD协议，先进行载波侦听，确认没有干扰再进行发送。</p>
 <p>缺点：不能同时发送数据，效率低</p>
 <p><strong>第二种设备：SW，即交换机。</strong></p>
-<p>功能：1. 记录地址（mac地址），mac地址对应物理端口 2.全双工，数据不会冲突。</p>
+<p>功能：1. 记录地址（mac地址），mac地址对应物理端口
+2.全双工，数据不会冲突。</p>
 <p>交换机处于<strong>数据链路层</strong>，数据头记录了目的地址；交换机可以进行桥接。</p>
 <p>问题：mac地址表容量有限，不便于构建更大规模的网络，广播效率低。</p>
 <p><strong>第三种设备：网关（路由器）</strong>，<strong>处于网络层</strong></p>
@@ -349,9 +351,9 @@
       
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
       
-        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
-      
         <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
         <a href="/tags/%E7%BD%91%E7%BB%9C/">#网络</a>
       

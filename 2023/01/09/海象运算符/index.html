@@ -17,19 +17,19 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="海象运算符海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+    <meta name="description" content="海象运算符 海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 3.8中的新特性——海象运算符">
 <meta property="og:url" content="https://brockshuai.github.io/2023/01/09/%E6%B5%B7%E8%B1%A1%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="海象运算符海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
+<meta property="og:description" content="海象运算符 海象运算符的英文原名叫 Assignment Expresions ，即赋值表达式。是Python 3.8新增的语法 :&#x3D;，在 PEP 572 中提出。它的作用是在表达式内部为变量赋值">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-09T12:48:11.000Z">
 <meta property="article:modified_time" content="2023-01-11T01:14:32.417Z">
 <meta property="article:author" content="神仙魚">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="学习">
 <meta property="article:tag" content="计算机">
+<meta property="article:tag" content="学习">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -319,21 +319,29 @@
             
               <div class="markdown-body">
                 
-                <h2 id="海象运算符"><a href="#海象运算符" class="headerlink" title="海象运算符"></a>海象运算符</h2><p>海象运算符的英文原名叫 Assignment Expresions ，即<strong>赋值表达式</strong>。是Python 3.8新增的语法 :=，在 PEP 572 中提出。它的作用是<strong>在表达式内部为变量赋值</strong></p>
+                <h2 id="海象运算符">海象运算符</h2>
+<p>海象运算符的英文原名叫 Assignment Expresions
+，即<strong>赋值表达式</strong>。是Python 3.8新增的语法 :=，在 PEP 572
+中提出。它的作用是<strong>在表达式内部为变量赋值</strong></p>
 <span id="more"></span>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>一般写法</p>
+<h2 id="实例">实例</h2>
+<p>一般写法</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">a = <span class="hljs-number">15</span><br><span class="hljs-keyword">if</span> a &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
 <p>改进写法</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> a := <span class="hljs-number">15</span> &gt; <span class="hljs-number">10</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hello, walrus operator!&#x27;</span>)<br></code></pre></td></tr></table></figure>
 <p>可以在<code>Expression</code>的内部直接为变量赋值，可以简化代码和提升运算效率。</p>
-<h2 id="用于列表推导式"><a href="#用于列表推导式" class="headerlink" title="用于列表推导式"></a>用于列表推导式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([f(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> f(i) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
+<h2 id="用于列表推导式">用于列表推导式</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([f(i) <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> f(i) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
 <p>输出结果：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>一共就 <code>4</code> 个数字，但是函数被执行了 <code>7</code> 次。这是因为有三个数字满足列表推导式的条件，需要再额外计算 <code>3</code>次。<strong>当程序数据巨大的时候，这将浪费大量性能。</strong></p>
+<p>一共就 <code>4</code> 个数字，但是函数被执行了 <code>7</code>
+次。这是因为有三个数字满足列表推导式的条件，需要再额外计算
+<code>3</code>次。<strong>当程序数据巨大的时候，这将浪费大量性能。</strong></p>
 <p>改进：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">nums = [<span class="hljs-number">16</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>]<br><span class="hljs-keyword">def</span> <span class="hljs-title function_">f</span>(<span class="hljs-params">x</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;运行了函数f(x)1次。&#x27;</span>)<br>    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">0.5</span><br><span class="hljs-built_in">print</span>([n <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> (n := f(i)) &gt; <span class="hljs-number">5</span>])<br></code></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>运行了函数f(x)<span class="hljs-number">1</span>次。<br>[<span class="hljs-number">6.0</span>, <span class="hljs-number">7.0</span>, <span class="hljs-number">8.0</span>]<br></code></pre></td></tr></table></figure>
-<p>函数只执行了 <code>4</code> 次，函数执行结果被 <code>n</code> 储存，不需要额外计算。性能优于不使用 <code>:=</code> 的。</p>
+<p>函数只执行了 <code>4</code> 次，函数执行结果被 <code>n</code>
+储存，不需要额外计算。性能优于不使用 <code>:=</code> 的。</p>
 
                 
               </div>
@@ -348,9 +356,9 @@
       
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
       
-        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
-      
         <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
         <a href="/tags/Python/">#Python</a>
       
