@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-02-09T15:50:36.679Z</updated>
+  <updated>2023-02-14T04:39:20.124Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无伤运动</title>
+    <link href="https://brockshuai.github.io/2023/02/14/%E6%97%A0%E4%BC%A4%E8%BF%90%E5%8A%A8/"/>
+    <id>https://brockshuai.github.io/2023/02/14/%E6%97%A0%E4%BC%A4%E8%BF%90%E5%8A%A8/</id>
+    <published>2023-02-14T03:46:05.000Z</published>
+    <updated>2023-02-14T04:39:20.124Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="无伤运动">“无伤”运动</h2><p>人们常说，要评判一件事值不值得做，只需要看这件事的风险是否大过收益，以及可能带来的最大风险是否能承担。运动也是如此。无论是跑步、骑行还是其他竞技类运动，完全做到“无伤”几乎是不可能的。肌肉酸痛，姿势不正确带来的伤病，以及运动过程中可能出现的意外，都是运动固有的风险。如果说要完全避免伤病，那就只能不运动。但为什么普遍的观点还是人需要运动呢？很简单，运动对身心带来的收益显然远大于风险，因此建议我们每个人都要进行运动。</p><p>但在身边数个同学都因为运动直接或者间接导致比较严重的伤病后，我现在深感，运动所带来的风险完全不可以忽视。无论是不合理的运动强度，伤病后缺乏充足的修养抑或是不科学的训练方法，都会给身体带来严重的后果。</p><p>运动永远无法做到真正无伤，但在合理的强度和训练指导下，可以把风险降到最低。希望可以无伤跑到60岁。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;无伤运动&quot;&gt;“无伤”运动&lt;/h2&gt;
+&lt;p&gt;人们常说，要评判一件事值不值得做，只需要看这件事的风险是否大过收益，以及可能带来的最大风险是否能承担。运动也是如此。无论是跑步、骑行还是其他竞技类运动，完全做到“无伤”几乎是不可能的。肌肉酸痛，姿势不正确带来的伤病，以及运</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>有趣的照片</title>
@@ -539,33 +564,6 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     <category term="语言" scheme="https://brockshuai.github.io/tags/%E8%AF%AD%E8%A8%80/"/>
     
     <category term="粤语" scheme="https://brockshuai.github.io/tags/%E7%B2%A4%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个骑行路线可视化方案</title>
-    <link href="https://brockshuai.github.io/2023/01/20/GPX/"/>
-    <id>https://brockshuai.github.io/2023/01/20/GPX/</id>
-    <published>2023-01-20T01:38:53.000Z</published>
-    <updated>2023-01-20T02:07:05.554Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="gpx-studio骑行路线可视化">GPX Studio骑行路线可视化</h2><p>翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想把这些骑行轨迹导出、合并到一张地图里，看看在西安这段时间去得最多的是哪里，最远端又能到哪。</p><p>但怎么可视化呢？如果在华为运动健康单独打开一个记录，只能查看一次的骑行轨迹，不能合并。好在运动健康的APP可以把运动记录导出成GPX文件，放到其他应用中处理。我先后尝试了GarminBaseCamp、Google Earth、奥维互动地图、GPXEditor等七八个应用之后，都遇到了GPX文件只能单个导入、Waypoint太多导致应用卡顿、地图样式不美观等各种问题。不得不感叹Google的搜索功能强大，在搜索框里输入了“Howto import mutiple GPX files in one time?”之后，排行第一的是名为GPXStudio的网页。用了之后，不得不说，它完美解决了之前所有应用的痛点。速度快、地图样式丰富、可以合并运动轨迹，使用体验非常好。下面具体说说如何操作。</p><p>打开https://gpx.studio网页后，首先会出现一张空白的地图</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.36.34.png" /></p><p>点击上方的Load GPX，可以一次性将所有需要的GPX文件导入。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.53.55.png" /></p><p>这样便可以将所有GPX一次性地显示在一张地图上了，而且加载非常迅速。然而这时候的轨迹颜色各不相同，有的轨迹颜色和地图上的道路非常相近，不易辨识。所以我们可以在左侧的工具栏中把所有轨迹的颜色都更改为深青色。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2009.38.15.png" /></p><p>这样，轨迹可视化的效果就非常好了。一年多的骑行，最常去的地方还是学校周围及城墙附近；最北到渭河大桥，最东到蓝田县，最西到创新港，最南到秦岭北侧。</p><p>研究了一下这个网页，发现GPXStudio不止可以很好地实现可视化，还可以查看每个轨迹的爬升变化、每个时刻的速度，还可以进行轨迹编辑、合并导出，可以说涵盖了所有常用的GPX编辑功能。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.00.53.png" /></p><p>此外，还有多种地图图层可以选择，这里更换成了卫星图。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-20%2010.06.35.png" /></p><p>这是把回洛阳之后两次骑行可视化之后的效果。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;gpx-studio骑行路线可视化&quot;&gt;GPX Studio骑行路线可视化&lt;/h2&gt;
-&lt;p&gt;翻看着华为运动健康上记录的骑行路线，发现骑行的总里程已经将近700km。虽然这可能只是大Pro半个月的骑行里程，但至少这700km的里程还是带我去了西安不少地方。所以我一直想</summary>
-      
-    
-    
-    
-    
-    <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
-    
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="骑行" scheme="https://brockshuai.github.io/tags/%E9%AA%91%E8%A1%8C/"/>
     
   </entry>
   
