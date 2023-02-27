@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-02-22T14:51:44.995Z</updated>
+  <updated>2023-02-27T10:46:12.844Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一些胶卷冲洗的改进</title>
+    <link href="https://brockshuai.github.io/2023/02/27/%E8%83%B6%E5%8D%B7%E5%8E%BB%E6%B0%B4%E6%B8%8D/"/>
+    <id>https://brockshuai.github.io/2023/02/27/%E8%83%B6%E5%8D%B7%E5%8E%BB%E6%B0%B4%E6%B8%8D/</id>
+    <published>2023-02-27T10:12:21.000Z</published>
+    <updated>2023-02-27T10:46:12.844Z</updated>
+    
+    <content type="html"><![CDATA[<p>几天前第一次按流程自己手冲出了黑白胶卷，确实是一件非常有成就感的事情。不过实际上得到的可用的影像并不多，只有五六张，而且从拍摄到冲洗的过程也存在不少问题。经过这两天，又冲了两卷，发现了不少新的问题，有的是拍摄上的，有的是因为冲洗手法，但经过思考和处理基本都已经解决。下面进行一下总结。</p><h2 id="拍摄">拍摄</h2><h3 id="测光">测光</h3><p>佳能FTb可能因为年份太久，到今天还能使用的机器，测光或多或少都会有不准的情况。像我手里这台，开最大光圈（f1.8）时测光基本准确，但收小光圈之后测光会严重偏离准确值，会欠两档甚至三档，严重影响到了拍摄。我刚冲出来这一卷也是因为这个问题，导致有七八张在户外拍的完全没有留下影像。本来以为是冲洗问题，后来经过分析和对比，得出的结论是机身自带测光有问题。</p><p>比较好的解决方法是使用七工匠的测光顶或者Lightmate软件。目前用下来，这两种方法测出来的数值都还比较准确。测光顶使用方面，就在相机的上方，可以拍摄时直接使用，但不足之处是它的测光接近于正前方区域的点测光，遇到光比较大的场景可能会有些麻烦。用手机Lightmate测光也是很准确的，而且可以自由点击，选择测光点。但每次使用需要拿出手机，稍有不便。</p><h2 id="冲洗">冲洗</h2><h3 id="灰尘">灰尘</h3><p>灰尘是冲洗完成后扫描时的一个十分令人头疼的问题，会严重影响照片观感。目前的解决办法如下：</p><ol type="1"><li>前期冲洗时戴橡胶手套，如果不想戴手套一定要把手洗干净，并用毛巾擦干，保证操作时手是干燥的。冲洗完成取卷时要小心，不要让胶卷掉到地上。</li><li>晾干时一定不要用手触碰，或者频繁地看胶卷，这样可能会使胶卷沾上灰尘。</li><li>晾干后及时把底片放到新的无酸纸袋里。</li><li>扫描前用气吹把片夹处理干净，同时也吹一下底片上的灰尘。装片时也要保证手的洁净。</li><li>后期用PS对灰尘进行消除。</li></ol><h3 id="水渍">水渍</h3><p>水洗要充分！用自来水进行大量水洗之后，一定要再用蒸馏水最后再洗一遍底片，加3-5滴水洗促进液，浸泡、搅拌<strong>5分钟以上</strong>。时间不够，拿出来之后水渍依然会残留在底片上。晾干前如果需要用海绵擦拭底片，也要提前把海绵浸泡在蒸馏水当中，并进行多次清洗，以免污染底片。</p><p>如果完全遵循了以上的操作步骤，相信最终冲扫的效果不会太差。希望下一卷可以再提高一些出片率，保证36张至少能做到30张可用的水平。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;几天前第一次按流程自己手冲出了黑白胶卷，确实是一件非常有成就感的事情。不过实际上得到的可用的影像并不多，只有五六张，而且从拍摄到冲洗的过程也存在不少问题。经过这两天，又冲了两卷，发现了不少新的问题，有的是拍摄上的，有的是因为冲洗手法，但经过思考和处理基本都已经解决。下面进行</summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="胶卷" scheme="https://brockshuai.github.io/tags/%E8%83%B6%E5%8D%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第一次手冲黑白胶卷</title>
     <link href="https://brockshuai.github.io/2023/02/22/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%89%8B%E5%86%B2%E9%BB%91%E7%99%BD%E8%83%B6%E5%8D%B7/"/>
     <id>https://brockshuai.github.io/2023/02/22/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%89%8B%E5%86%B2%E9%BB%91%E7%99%BD%E8%83%B6%E5%8D%B7/</id>
     <published>2023-02-22T12:23:32.000Z</published>
-    <updated>2023-02-22T14:51:44.995Z</updated>
+    <updated>2023-02-27T10:16:25.527Z</updated>
     
     <content type="html"><![CDATA[<h2 id="第一次手冲黑白胶卷">第一次手冲黑白胶卷</h2><p>前两个学期虽然跟预师傅进过许多次暗房，也亲眼见过黑白、彩负胶卷的冲洗和放大、扫描，但是一直没有通过正式的暗房考试，也就没能完全自己上手冲一卷胶卷。</p><p>最近回到学校，重新拾起胶片，把原来本以为已经坏掉的CanodateE相机换上了新电池，满血复活，便想，既然又要开始拍胶片了，为什么不自己学学冲洗呢？毕竟现在由于价格原因，大部分拍摄肯定都是黑白，而黑白的冲洗并没有特别严格的温度和流程要求。因此在TB店铺“青年黑白摄影”上买了一套黑白冲洗套装。这家店的店主非常负责，每一款出售的胶卷产品都有大量的文字教程资料，还有店主亲自出镜录制的视频教程，而且每一期视频中店主展现出的操作技术都是非常专业且熟练的。</p><p>果不其然，冲洗器材到货后，按照说明一步步配置了药品（D-76显影液、停影液，F-5定影液），并静置了24小时后，再按视频教程冲洗出来的胶卷，效果十分出众，不输冲洗店的机冲。</p><h3 id="效果展示">效果展示</h3><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-02-22%2022.46.28.png" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-02-22%2022.47.58.png" /></p><p>其实仔细看还是能看到一点点灰尘的，可能是因为宿舍环境下人频繁进出，晾干的时候空气中的灰尘容易附着在胶卷上。不过整体而言不是很影响观感，后期也可以进行除尘。</p><p>CanodateE的测光还是非常准确的，配合上合适的冲洗工艺，亮部暗部都非常均匀好看。</p><h3 id="问题">问题</h3><p>冲洗到最后因为急于看成果，水洗时并不是很充分，时间不够十分钟，可能会造成定影液残留，导致胶片变脆。下次冲洗会多次换水冲洗，洗够十分钟。</p>]]></content>
     
@@ -39,6 +65,8 @@
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="胶卷" scheme="https://brockshuai.github.io/tags/%E8%83%B6%E5%8D%B7/"/>
     
   </entry>
   
@@ -431,9 +459,9 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F20
     
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
-    
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
@@ -538,32 +566,6 @@ A Life(live)版中唱作“cau1 tai3”，而录音棚</summary>
     <category term="语言" scheme="https://brockshuai.github.io/tags/%E8%AF%AD%E8%A8%80/"/>
     
     <category term="粤语" scheme="https://brockshuai.github.io/tags/%E7%B2%A4%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>「影像」年夜饭</title>
-    <link href="https://brockshuai.github.io/2023/01/22/%E5%BD%B1%E5%83%8F%E5%B9%B4%E5%A4%9C%E9%A5%AD/"/>
-    <id>https://brockshuai.github.io/2023/01/22/%E5%BD%B1%E5%83%8F%E5%B9%B4%E5%A4%9C%E9%A5%AD/</id>
-    <published>2023-01-22T14:12:47.000Z</published>
-    <updated>2023-01-22T14:30:00.739Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近这两天一直在探索<code>Hexo</code>+<code>fluid</code>环境下的相册配置方案，想要在博文之外单独建立一个相册栏目。但搜寻良久，发现目前已有的方案中并没有令我特别满意的，有些是因为需要单独创建一个复杂的目录管理系统，不便于上传和更新，也有的是因为版面不够美观，最终还是没有找到一个合适的选择，只好作罢。</p><p>退而求其次，于是就先单独开设一个博文系列，把一些值得记忆和留念的照片放到这个系列中。干脆就取名为「影像」，简单直白。如果之后在找到合适的相册配置方案的话，也许便会把这个系列整体迁移到相册当中。现在先就这样吧。</p><h2 id="影像年夜饭">「影像」年夜饭</h2><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6523.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6545.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6569.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6573.JPG" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6575.JPG" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;最近这两天一直在探索&lt;code&gt;Hexo&lt;/code&gt;+&lt;code&gt;fluid&lt;/code&gt;环境下的相册配置方案，想要在博文之外单独建立一个相册栏目。但搜寻良久，发现目前已有的方案中并没有令我特别满意的，有些是因为需要单独创建一个复杂的目录管理系统，不便于上传和更新，也有的</summary>
-      
-    
-    
-    
-    
-    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
