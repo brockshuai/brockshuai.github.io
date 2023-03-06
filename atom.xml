@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-03-04T15:15:12.159Z</updated>
+  <updated>2023-03-05T08:56:56.333Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高数II（一）</title>
+    <link href="https://brockshuai.github.io/2023/03/05/%E9%AB%98%E6%95%B0II%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://brockshuai.github.io/2023/03/05/%E9%AB%98%E6%95%B0II%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2023-03-05T07:44:18.000Z</published>
+    <updated>2023-03-05T08:56:56.333Z</updated>
+    
+    <content type="html"><![CDATA[<p>求分界点、不连续点处的函数偏导数可以使用定义：</p><p>设<span class="math inline">\(z=f(x,y)=\sqrt{|xy|}\)</span>，求<spanclass="math inline">\(f_{x}(0,0)\)</span>和<spanclass="math inline">\(f_y(0,0)\)</span></p><p><strong>解：</strong> <span class="math display">\[\begin{aligned}&amp; f_x(0, 0)=\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}=0\\&amp; f_y(0,0)=\lim _{y \rightarrow 0} \frac{\sqrt{|y \cdot 0|}-0}{y}=0\end{aligned}\]</span></p><blockquote><p>固定一个变量，让另一个趋于所给的值。</p></blockquote><p><span class="math display">\[f(x, y)= \begin{cases}\dfrac{x y}{x^2+y^2}, &amp; x^2+y^2 \neq 0 \\ 0,&amp; x^2+y^2=0\end{cases}\]</span></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.02.34.png" /></p><p>这一函数沿<span class="math inline">\(x\)</span>轴和<spanclass="math inline">\(y\)</span>轴上的值恒为0，可偏导，但在卦限内部出现了函数值的突变，因此不连续。</p><hr /><p>如果函数可微，则函数在该点处连续。</p><p>多元函数可偏导不一定可微。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.56.20.png" /></p><p>这一函数沿<span class="math inline">\(x\)</span>轴和<spanclass="math inline">\(y\)</span>轴上的值恒为0，但在卦限上有增量。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;求分界点、不连续点处的函数偏导数可以使用定义：&lt;/p&gt;
+&lt;p&gt;设&lt;span class=&quot;math inline&quot;&gt;\(z=f(x,y)=\sqrt{|xy|}\)&lt;/span&gt;，求&lt;span
+class=&quot;math inline&quot;&gt;\(f_{x}(0,0)\)&lt;/span</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>周记（二）</title>
@@ -40,9 +66,9 @@
     
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
     <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
@@ -150,9 +176,9 @@
     
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
@@ -346,9 +372,9 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img</summary>
     
     
     
-    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -489,9 +515,9 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F20
     
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
-    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
     <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
   </entry>
   
@@ -548,27 +574,6 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F20
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>清蒸鲈鱼</title>
-    <link href="https://brockshuai.github.io/2023/01/24/%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC/"/>
-    <id>https://brockshuai.github.io/2023/01/24/%E6%B8%85%E8%92%B8%E9%B2%88%E9%B1%BC/</id>
-    <published>2023-01-24T12:42:54.000Z</published>
-    <updated>2023-01-24T13:30:59.948Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="清蒸鲈鱼的做法">清蒸鲈鱼的做法</h2><span id="more"></span><p>最近试着做了两次清蒸鲈鱼，基本成功，能做到「比较可吃」的水平。这里记录一下做法。</p><div class="note note-success">            <ol type="1"><li>将鲈鱼清洗干净，内脏去除。</li><li>用热水冲一碗葱姜水，葱姜捣开压碎，使其汁水渗出。将葱姜水均匀地淋在鲈鱼上。可在鲈鱼的背部划两刀，一是能让鲈鱼在盘中立起来，比较好看，二是使葱姜水渗入其中。</li><li>加入适量料酒和盐，腌制20分钟（事实证明，腌制20分钟和一晚上的效果几乎没有区别）。盐不需要太多，比平常腌肉盐量少。</li><li>再切若干姜和葱，铺在鱼下方，上锅蒸制15min（根据鱼大小而定）。</li><li>用适量胡萝卜、香菜、芹菜、青椒等具有香味的蔬菜和香料熬制蔬菜水。水量控制好，煮沸蒸发至最终得到蔬菜水铺满炒锅锅底即可。</li><li>将蔬菜水和酱油混合，调汁。</li><li>准备葱丝、姜丝和红椒丝，铺在鱼上。烧热油，油温8成热时浇到鱼上。最后加入调好的酱油汁。</li></ol>          </div><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-01-24%2021.30.31.png" /></p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;清蒸鲈鱼的做法&quot;&gt;清蒸鲈鱼的做法&lt;/h2&gt;</summary>
-    
-    
-    
-    
-    <category term="美食" scheme="https://brockshuai.github.io/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
-    <category term="烹饪" scheme="https://brockshuai.github.io/tags/%E7%83%B9%E9%A5%AA/"/>
     
   </entry>
   
