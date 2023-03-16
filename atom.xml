@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-03-05T08:56:56.333Z</updated>
+  <updated>2023-03-16T15:20:28.109Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近期学习总结</title>
+    <link href="https://brockshuai.github.io/2023/03/16/%E8%BF%91%E6%9C%9F%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>https://brockshuai.github.io/2023/03/16/%E8%BF%91%E6%9C%9F%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
+    <published>2023-03-16T14:56:30.000Z</published>
+    <updated>2023-03-16T15:20:28.109Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近各个课业的讲授都开启了全速模式，一些课程（如高数、大物）相对而言还是较有难度的。同时，摄影学会近期在筹办40周年会庆的各项活动，各种课余的事情也比较繁杂，因此一下子将近十天没有更新博客了。这篇文章来总结一下最近的学习情况。</p><h3 id="高数">高数</h3><p>最近的一节课讲到了多元微分学在几何当中的应用。整体难度相比于上学期肯定是有所增加的，毕竟是从一元微积分拓展到了多元微积分。但单论思考难度而言面，其实没有特别明显的提升，最大的变化还是计算量的猛增。</p><p>上学期，最多求一个<spanclass="math inline">\(f&#39;&#39;(x)\)</span>，<spanclass="math inline">\(\dfrac{\text{d}y}{\text{d}x}\)</span>，翻来覆去还是对一个变量的处理。然而，学了多元微分学之后，要算各种<spanclass="math inline">\(f_{xx}\)</span>，<spanclass="math inline">\(f_{yy}\)</span>，<span class="math inline">\(\gradf\)</span>，甚至还有多元向量值函数的矩阵形式微分，梯度，计算量是成倍增加的。</p><p>现在基本保持作业进度比布置进度快一节，每次课保证当天就把课上的内容搞懂。这个进度基本上比周围的其他同学要快两节左右，相当于3-4天的授课量。虽然每次课下看起来会多花一些时间，但是可以避免出现每次赶作业DDL的情况，而且这样可以避免课余活动短期内比较多，一下打断学习进度的情况出现。</p><h3 id="大物">大物</h3><p>大物这门课有点怪，最近几周的授课老师是王小力，讲得特别好，讲话口齿清晰，解题思路明了，是不可多得的好老师。但我发现，即使上课不怎么听，课下留的作业题也几乎都能做出来，没有感到什么难度。即使有概念不太理解，看教材也能很快搞懂，解题能力似乎和老师的授课关系又没有那么大。</p><p>不过能看出来，老师上课讲的例题还是精挑细选出来的，有一些颇有难度，并不是一眼就能看出解题方法的。所以每次上完课，PPT都是要照例再过一遍的，特别有代表性的题目也要挑出来再做一做，整理一下。</p><p>再摸索摸索吧，看怎么学比较合适。如果上课全部听讲总感觉有些浪费时间，毕竟作业和考试题确实没有那么难；但上课的内容又有不少有价值的部分，课下又需要整理。可能是最近讲授的部分还比较简单，可以这么半听讲半自学，等到后面开电磁学，难度提升之后，估计要真正开始认真听课了。</p><h3 id="化学">化学</h3><p>不得不说，现在的培养方案的确有缺陷。目前化学原理这门课讲的大部分内容去年都学过，有的内容（比如配合物）讲得甚至还没有去年学的深。这就造成，上课讲的大部分内容是不需要重新再听一遍的。为数不多的新内容（溶液依数性、热力学）也就只好通过课下自学来完成了。</p><p>虽然是去年学过一遍的内容，有些东西还是不免遗忘了，比如这次的作业题里，分子轨道就又有点不太会写了（虽然去年这个时候搞得十分清楚）。但不论如何，化学基本上都是课下挑之前没有学过的或者有些遗忘的内容进行自学，上课很难再听讲了。</p><h3 id="英语">英语</h3><p>选了学术写作，目前还没有开始动笔写文章。等到开始动笔，应该会和同学合租一个GPT-4，让它来帮自己写一写论文。相当好奇最终的效果会怎么样。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近各个课业的讲授都开启了全速模式，一些课程（如高数、大物）相对而言还是较有难度的。同时，摄影学会近期在筹办40周年会庆的各项活动，各种课余的事情也比较繁杂，因此一下子将近十天没有更新博客了。这篇文章来总结一下最近的学习情况。&lt;/p&gt;
+&lt;h3 id=&quot;高数&quot;&gt;高数&lt;/h3&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迫冲</title>
+    <link href="https://brockshuai.github.io/2023/03/16/%E8%BF%AB%E5%86%B2/"/>
+    <id>https://brockshuai.github.io/2023/03/16/%E8%BF%AB%E5%86%B2/</id>
+    <published>2023-03-16T14:54:08.000Z</published>
+    <updated>2023-03-16T14:56:08.256Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="迫冲">迫冲</h2><p>既然开始自己冲卷，迫冲、减冲这种基本的冲洗工艺肯定是要试试的。这次尝试把一卷Fomapan400按照1600拍，显影时间增加到20min进行了迫冲。最终的效果和普遍描述的一样，整体的曝光度达到了正常水平，亮的地方足够亮，但由于胶卷本身的感光度不足，暗部细节还是损失了很多。后期的调整对暗部的还原也是十分有限的。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0061.png" /></p><p>这样看来迫冲只能用于应急夜拍，并不能作为一种普遍使用的的冲洗手段。按照胶卷标注的感光度拍摄才能达到最好的效果。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0061.png" /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;迫冲&quot;&gt;迫冲&lt;/h2&gt;
+&lt;p&gt;既然开始自己冲卷，迫冲、减冲这种基本的冲洗工艺肯定是要试试的。这次尝试把一卷Fomapan400按照1600拍，显影时间增加到20min进行了迫冲。最终的效果和普遍描述的一样，整体的曝光度达到了正常水平，亮的地方足够亮，但由于胶卷本身</summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+    <category term="胶卷" scheme="https://brockshuai.github.io/tags/%E8%83%B6%E5%8D%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>高数II（一）</title>
@@ -176,9 +230,9 @@ class=&quot;math inline&quot;&gt;\(f_{x}(0,0)\)&lt;/span</summary>
     
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
@@ -372,9 +426,9 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img</summary>
     
     
     
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
     <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
@@ -518,62 +572,6 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F20
     <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高数复习（二）</title>
-    <link href="https://brockshuai.github.io/2023/01/26/%E9%AB%98%E6%95%B02/"/>
-    <id>https://brockshuai.github.io/2023/01/26/%E9%AB%98%E6%95%B02/</id>
-    <published>2023-01-26T09:20:59.000Z</published>
-    <updated>2023-01-27T03:10:13.175Z</updated>
-    
-    <content type="html"><![CDATA[<p><span class="math display">\[\begin{aligned}&amp; \int \frac{x^2 \mathrm{~d} x}{\left(x^2+a^2\right)^2}=\frac{1}{2}\int \frac{x \mathrm{~d} x^2}{\left(x^2+a^2\right)^2}=-\frac{1}{2} \intx \mathrm{~d}\left(\frac{1}{x^2+a^2}\right) \\&amp; =-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2} \int \frac{\mathrm{d}x}{x^2+a^2}=-\frac{1}{2} \frac{x}{x^2+a^2}+\frac{1}{2 a} \arctan\frac{x}{a}+C .\end{aligned}\]</span></p><hr /><p>当被积函数的分母中的根式<spanclass="math inline">\(\sqrt{ax^2+bx+c}\)</span>外有因子<spanclass="math inline">\(x\)</span>时，可以先作变换<spanclass="math inline">\(x=\dfrac{1}{t}\)</span>（倒置变换），再配方用三角函数变换可以简化计算.</p><hr /><p><span class="math display">\[\begin{aligned}\int \sec ^3 x \mathrm{~d} x &amp; =\int \sec x \mathrm{dtan} x=\sec x\tan x-\int \tan ^2 x \sec x \mathrm{~d} x \\&amp; =\sec x \tan x-\int\left(\sec ^3 x-\sec x\right) \mathrm{d} x \\&amp; =\sec x \tan x-\int \sec ^3 x \mathrm{~d} x+\ln |\sec x+\tan x|,\\故\int \sec ^3 x \mathrm{~d} x &amp; =\frac{1}{2}(\sec x \tan x+\ln|\sec x+\tan x|)+C .\end{aligned}\]</span></p><hr /><p><span class="math display">\[\int_{-a}^{a}f(x)\text{d}x=\int_{0}^a\left[f(x)+f(-x)\right]\text{d}x\]</span></p><hr /><p><strong>无界函数</strong>一定不是Riemann可积的。这是因为Riemann积分定义为Riemann和在分划直径趋于<spanclass="math inline">\(0\)</span>时的极限。但无界函数的Riemann和一定不收敛。瑕积分虽然以Riemann积分为基础，但已经不是Riemann积分了，从定义上而言是一个变限积分的极限。虽然可以讨论无界函数的瑕积分，无界函数的瑕积分也可能收敛，但这并不是真正意义上的Riemann积分。无论如何，<strong>无界函数</strong>一定不是Riemann可积的。</p><hr /><p>函数Riemann可积的充要条件是不连续点的Lebesgue测度为<spanclass="math inline">\(0\)</span>。</p><p>任何单调函数都是Riemann可积的，因为<strong>任何单调函数的不连续点是最多可数个，测度是0</strong>。</p><p>因此，有无穷多个间断点的函数也有可能可积，比如 <spanclass="math display">\[f(x)= \begin{cases}0, &amp; x=\dfrac{1}{n}, n \in \mathbf{N}_{+} \\ x,&amp; x \neq \dfrac{1}{n} \end{cases}\]</span> <span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(\left[0,1\right]\)</span>上有无穷多个间断点，但依然可积。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
-\begin{aligned}
-&amp;amp; \int \frac{x^2 \mathrm{~d} x}{\left(x^2+a^2\right)^2}=\frac{1}{2}
-\int \frac{x \mathr</summary>
-      
-    
-    
-    
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高数复习（一）</title>
-    <link href="https://brockshuai.github.io/2023/01/25/%E9%AB%98%E6%95%B01/"/>
-    <id>https://brockshuai.github.io/2023/01/25/%E9%AB%98%E6%95%B01/</id>
-    <published>2023-01-25T02:15:55.000Z</published>
-    <updated>2023-01-26T01:40:33.502Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="高数复习">高数复习</h2><ol type="1"><li><p><span class="math display">\[\int F(x)\text{d}y=F(x)\cdot y\]</span></p><p>也即 <span class="math display">\[\int_{0}^x F(x)\text{d}y=xF(x)\]</span></p><hr /></li><li><p><span class="math display">\[\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})=\int_{0}^{1}f(x)\text{d}x\]</span></p><p>积分的上下限可以通过求和上下限以及<spanclass="math inline">\(f\)</span>的自变量调整.</p><hr /></li><li><p><span class="math display">\[\begin{aligned}&amp;~~~~~~ \int\dfrac{1}{2+\cos\pi x}\text{d}x\\&amp;=\int\dfrac{1}{2+2\cos^2\dfrac{\pi x}{2}-1}\text{d}x\\&amp;=\int\dfrac{1}{1+2\cos^2\dfrac{\pi x}{2}}\text{d}x\\&amp;=\dfrac{2}{\pi}\int\dfrac{1}{2+\sec^2\dfrac{\pix}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\&amp;=\dfrac{2}{\pi}\int\dfrac{1}{3+\tan^2\dfrac{\pix}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\&amp;=\dfrac{2}{\sqrt3}\cdot\arctan(\dfrac{\tan(\dfrac{\pi}{2}x)}{\sqrt3})+C\end{aligned}\]</span></p><hr /></li><li><p><span class="math display">\[I=\int \frac{\cos ^2 x-\sin x}{\cos x\left(1+\cos x \cdot\mathrm{e}^{\sin x}\right)} \mathrm{d} x\]</span></p><p>由于 <span class="math display">\[\left(\cos x \cdot \mathrm{e}^{\sin x}\right)^{\prime}=-\sin x \cdot\mathrm{e}^{\sin x}+\cos ^2 x \cdot \mathrm{e}^{\sin x}=\left(\cos ^2x-\sin x\right) \mathrm{e}^{\sin x}\]</span> 因此 <span class="math display">\[\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\left(\cos ^2x-\sin x\right) \mathrm{e}^{\sin x} \mathrm{~d} x\]</span> 故有 <span class="math display">\[\begin{aligned}I &amp; =\int \frac{\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sinx}}{\cos x \cdot \mathrm{e}^{\sin x}\left(1+\cos x \cdot\mathrm{e}^{\sin x}\right)} \mathrm{d} x=\int \frac{\mathrm{d}\left(\cosx \cdot \mathrm{e}^{\sin x}\right)}{\cos x \cdot \mathrm{e}^{\sinx}\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \\&amp; =\int\left(\frac{1}{\cos x \cdot \mathrm{e}^{\sinx}}-\frac{1}{1+\cos x \cdot \mathrm{e}^{\sin x}}\right)\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\ln\left|\frac{\cos x \cdot \mathrm{e}^{\sin x}}{1+\cos x \cdot\mathrm{e}^{\sin x}}\right|+C\end{aligned}\]</span></p></li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;高数复习&quot;&gt;高数复习&lt;/h2&gt;
-&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
-\int F(x)\text{d}y=F(x)\cdot y
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;也即 &lt;span class=&quot;m</summary>
-      
-    
-    
-    
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
