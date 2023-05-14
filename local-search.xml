@@ -4,6 +4,50 @@
   
   
   <entry>
+    <title>单片机实验报告</title>
+    <link href="/2023/05/14/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
+    <url>/2023/05/14/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</url>
+    
+    <content type="html"><![CDATA[<h2 id="环境舒适度监测系统应用与设计">环境舒适度监测系统应用与设计</h2><h3 id="概述">概述</h3><p>众所周知，人们平时的工作环境对工作效率和生产力有很大的影响。如果工作环境不够舒适，温度、湿度不适宜，光照条件不佳（过亮或者过暗），人们工作时的心情和效率都会受到很大影响。正因此，随着人们对工作环境要求的提高以及科技的不断进步，尤其是各类依托于电子技术的环境感知技术的发展，能够监测环境舒适度参数、并在基础上对环境参数进行调控的产品亟需开发。</p><p>在上述背景下，本项目利用Arduino开发板、DHT11温湿度传感器、二极管、光敏传感器以及各种相关电子元器件开发了<strong>温湿度传感器</strong>和<strong>光控灯</strong>两个典型的环境舒适度监测系统。</p><p>在本项目中，温湿度传感器适用于一般的工作环境温湿度监测（即湿度5-95%RH，温度-20-+60℃），可以将当前环境的温湿度数据以2s一次的频率以串口输出的方式显示在上位机显示屏上；光控灯可以将环境光的亮度值输出到上位机显示屏上，同时根据环境光亮度控制所连接二极管的亮度——环境光越亮，则二极管越暗。</p><p>温湿度传感器的设计参考了DHT11的文档，在不使用现有库的情况下编写代码，驱动了DHT11与主机的交互和数据传输工作，并将原始数据进行了进制转换，变为了直接可读的数据。而光控灯利用了光敏传感器模块“在环境光亮度不同时会输出大小不同的模拟值”这一特性，依托模拟值的大小对灯的亮度进行控制，实现了光控灯的效果。</p><h3 id="相关技术">相关技术</h3><ul><li>本项目的开发硬件环境：Windows10 PC、Arduino Uno开发板</li><li>本项目用到的电子器件：面包板、各规格杜邦线、USB连接线、DHT11传感器、二极管、光敏传感器</li><li>软件环境：<em>Arduino</em> <em>IDE</em></li></ul><p>下面具体介绍ArduinoUno开发板、DHT11、发光二极管、光敏传感器以及<em>Arduino</em><em>IDE</em>的相关信息。</p><h5 id="arduino-uno开发板">Arduino Uno开发板</h5><p>ArduinoUno开发板是Arduino开源硬件开发平台系列中一款基础的开发板。配合外围器件以及其上的各类接口，便可以轻易地开发各种实用的电子电路。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E5%9B%BE%E7%89%8720230506215700.png" /></p><h5 id="dht11">DHT11</h5><p>DHT11是一款湿温度一体化的数字传感器。该传感器包括一个电阻式测湿元件和一个NTC测温元件，并与一个高性能8位单片机相连接。通过单片机等微处理器简单的电路连接就能够实时的采集本地湿度和温度。</p><p>DHT11采用单总线数据格式，通过简单的流程就可以实现与主机的数据通讯，将温湿度数据实时传输给主机。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/image-20230506215959923.png" /></p><h5 id="发光二极管">发光二极管</h5><p>发光二极管，简称为LED，是一种常用的发光器件，通过电子与空穴复合释放能量发光。LED具有单向导电性，当加上正向电压时，从P区注入到N区的空穴和由N区注入到P区的电子，在PN结附近数微米内分别与N区的电子和P区的空穴复合，便会产生自发辐射的荧光。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/watermark,image_d2F0ZXIvYmFpa2UxODA=,g_7,xp_5,yp_5.png" /></p><h5 id="光敏传感器">光敏传感器</h5><p>光敏传感器主要由一个定值电阻和一个光敏电阻（阻值会随着环境光亮暗而变化）串联构成。当环境光变化时，光敏电阻对应的分压值也会随之变化，模拟引脚点的电压值便会改变。这一引脚点连接到主机上，呈现的便是一个0-1023之间的值。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/image-20230506220556265.png" /></p><h5 id="arduino-ide">Arduino IDE</h5><p>ArduinoIDE是专用于Arduino开发板的集成开发环境。它依托于C语言进行代码编写，在连接Arduino之后，可以给所连接的控制板上传程序，还能与控制板相互通信。</p><h3 id="项目设计过程">项目设计过程</h3><h5 id="温湿度传感器">温湿度传感器</h5><h6 id="设计思路">设计思路</h6><p>该系统的硬件组成较为简单，只需要将Arduino开发板连接到上位机，DHT11连接至Arduino开发板即可。其中开发板和DHT11之间进行双向通信（请求数据、接收数据和校验），而Arduino开发板和上位机之间进行单向通信。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2022.44.33.png" /></p><p>此项目的主要难点在于不利用已有库的条件下完成DHT11与开发板之间的通信和数据校验。代码部分使用了三个自定义函数实现了这一功能，具体的介绍在软件部分详细展开。</p><h6 id="软件流程">软件流程</h6><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2022.56.28.png" /></p><p>软件部分基于DHT11的固有传输流程编写代码，通过<code>wait_for_dht11()</code>、<code>start_signal</code>、<code>read_dht11</code>三个主要函数实现了数据的传输、检验和输出。程序的开头部分，首先编写了进制转换函数，用于将原始数据转换为可读的10进制数据。在<code>wait_for_dht11()</code>中，我们等待2s，使DHT11初始化；在<code>start_signal</code>中，先拉低电阻18ms，再拉高，之后将接口模式改为输入，准备接收数据；在<code>read_dht11</code>中，我们根据信号时间长短分别读入0和1作为原始数据、对数据进行校验，并最终输出。具体的代码会在附录中完整给出。</p><h6 id="实现效果">实现效果</h6><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2023.03.53.png" /></p><h5 id="光控灯">光控灯</h5><h6 id="设计思路-1">设计思路</h6><p>这一系统包含两个子功能：</p><ul><li>通过传感器获取到环境光亮度值，进行串口输出</li><li>根据获取到的环境光亮度值控制LED亮度</li></ul><p>因此Arduino开发板需要与上位机、LED和光敏传感器同时相连。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2023.14.26.png" /></p><p>软件流程</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2023.18.10.png" /></p><p>软件流程相对而言比较简单：先进行初始化，之后从传感器处用<code>analogRead</code>读取亮度模拟值并赋给变量<code>val</code>，进行输出；再用<code>val</code>对LED接口进行<code>analogWrite</code>，对亮度进行控制。上述过程每隔0.5s循环一次。具体代码会在附录中完整给出。</p><h6 id="实现效果-1">实现效果</h6><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2023.20.25.png" /></p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-05-06%2023.20.39.png" /></p><h3 id="实验总结">实验总结</h3><p>在本次实验中，我们组对单片机的功能和应用有了初步的了解——单片机事实上就相当于一个微型的电脑，可以依托于程序实现收发信号、数据存储以及数据处理。在本课程中，我们通过两个例子对单片机的使用流程有了具体的认识，即先搭建硬件电路、再通过上位机向单片机中注入程序并使其运行，便可以实现我们想要的功能。</p><p>在本实验中，我们遇到的主要难点是编写DHT11与MCU的数据传输代码。由于不能使用现有库，我们需要用最基本的C语言及内建函数实现和现有库类似的功能，这一点需要对DHT11的标准数据传输流程有清晰的把握。这一问题的解决是通过查阅现有库文件的注释，以及参考<em>Stack</em><em>Overflow</em>上的资料完成的。</p><p>通过完成这一项目，我们认识到，对于单片机编程的学习，更有效的方法是从底层做起。如果仅仅是把别人已经写好的功能“拿来就用”，最多算是对已有成果的堆砌，并不能真正帮助我们从根本上理解电子器件以及单片机的工作原理。只有由最基础的操作一步一步实现最终的目标，才能使我们真正掌握单片机的使用方法，也能根据实际场景更灵活地进行运用。</p><h3 id="附录">附录</h3><h6 id="dht11温湿度传感器代码">DHT11温湿度传感器代码</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">()</span><br>&#123;<br>Serial.begin(<span class="hljs-number">9600</span>); <span class="hljs-comment">//设置波特率</span><br>&#125;<br><span class="hljs-type">void</span> <span class="hljs-title function_">dec2bin</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span><br>&#123;<br>  <span class="hljs-type">int</span> c, k;<br>  <span class="hljs-keyword">for</span> (c = <span class="hljs-number">15</span>; c &gt;= <span class="hljs-number">0</span>; c--)<br>    &#123;<br>        k = n &gt;&gt; c;<br>        <span class="hljs-keyword">if</span> (k &amp; <span class="hljs-number">1</span>)<br>            Serial.print(<span class="hljs-string">&quot;1&quot;</span>);<br>        <span class="hljs-keyword">else</span><br>            Serial.print(<span class="hljs-string">&quot;0&quot;</span>);<br>        &#125;<br>    &#125; <br><span class="hljs-type">void</span> <span class="hljs-title function_">dec2bin8</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span><br>&#123;<br>  <span class="hljs-type">int</span> c, k;<br>  <span class="hljs-keyword">for</span> (c = <span class="hljs-number">7</span>; c &gt;= <span class="hljs-number">0</span>; c--)<br>    &#123;<br>        k = n &gt;&gt; c;<br>        <span class="hljs-keyword">if</span> (k &amp; <span class="hljs-number">1</span>)<br>            Serial.print(<span class="hljs-string">&quot;1&quot;</span>);<br>        <span class="hljs-keyword">else</span><br>            Serial.print(<span class="hljs-string">&quot;0&quot;</span>);<br>        &#125;<br>    &#125;<br><span class="hljs-comment">//定义两个进制转换函数，用于最终的输出</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">wait_for_dht11</span><span class="hljs-params">()</span><br>&#123;<br>delay(<span class="hljs-number">2000</span>); <span class="hljs-comment">//初始化函数</span><br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">start_signal</span><span class="hljs-params">(<span class="hljs-type">uint8_t</span> dht11_pin)</span>&#123;<br>pinMode(dht11_pin, OUTPUT);<br>digitalWrite(dht11_pin, LOW); <br>delay(<span class="hljs-number">18</span>);<br>digitalWrite(dht11_pin, HIGH);<br>pinMode(dht11_pin, INPUT);<br>digitalWrite(dht11_pin, HIGH); <br>&#125;<span class="hljs-comment">//与传感器握手，请求数据</span><br><br><span class="hljs-type">void</span> <span class="hljs-title function_">read_dht11</span><span class="hljs-params">(<span class="hljs-type">uint8_t</span> dht11_pin)</span><br>&#123;<br>  <span class="hljs-type">uint16_t</span> rawHumidity = <span class="hljs-number">0</span>;<br>  <span class="hljs-type">uint16_t</span> rawTemperature = <span class="hljs-number">0</span>;<br>  <span class="hljs-type">uint8_t</span> checkSum = <span class="hljs-number">0</span>;<br>  <span class="hljs-type">uint16_t</span> data = <span class="hljs-number">0</span>;<br><br>  <span class="hljs-type">uint8_t</span> humi;<br>  <span class="hljs-type">uint8_t</span> humd;<br>  <span class="hljs-type">uint8_t</span> tempi;<br>  <span class="hljs-type">uint8_t</span> tempd; <br><br>  <span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> startTime;<br>  <br>  <span class="hljs-keyword">for</span> ( <span class="hljs-type">int8_t</span> i = <span class="hljs-number">-3</span> ; i &lt; <span class="hljs-number">80</span>; i++ ) &#123;<br>    byte live;<br>    startTime = micros();<br><br>    <span class="hljs-keyword">do</span> &#123;<br>      live = (<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span>)(micros() - startTime);<br>      <span class="hljs-keyword">if</span> ( live &gt; <span class="hljs-number">90</span> ) &#123;<br>        Serial.println(<span class="hljs-string">&quot;ERROR_TIMEOUT&quot;</span>);<br>        <span class="hljs-keyword">return</span>;<br>      &#125;<br>    &#125;<br>    <span class="hljs-keyword">while</span> ( digitalRead(dht11_pin) == (i &amp; <span class="hljs-number">1</span>) ? HIGH : LOW );<br><span class="hljs-comment">//当接口电平在90ms内由高转至低时，do while循环将退出，表示DHT11正确响应；</span><br><span class="hljs-comment">//若live&gt;90时仍未推出，则报错</span><br>    <span class="hljs-keyword">if</span> ( i &gt;= <span class="hljs-number">0</span> &amp;&amp; (i &amp; <span class="hljs-number">1</span>) ) &#123;<br>      data &lt;&lt;= <span class="hljs-number">1</span>;<br>      <span class="hljs-keyword">if</span> ( live &gt; <span class="hljs-number">30</span> ) &#123;<br>        data |= <span class="hljs-number">1</span>; <span class="hljs-comment">// 持续时长大于30ms则为1</span><br>      &#125;<br>    &#125;<br><br>    <span class="hljs-keyword">switch</span> ( i ) &#123;<br>      <span class="hljs-keyword">case</span> <span class="hljs-number">31</span>:<br>        rawHumidity = data;<br>        <span class="hljs-keyword">break</span>;<br>      <span class="hljs-keyword">case</span> <span class="hljs-number">63</span>:<br>        rawTemperature = data;<br>      <span class="hljs-keyword">case</span> <span class="hljs-number">79</span>: <br>        checkSum = data;<br>        data = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">break</span>;<br>    &#125;<br>  &#125;<br><span class="hljs-comment">//根据循环次数判断数据属于温度、湿度还是检查和位</span><br>Serial.println(<span class="hljs-string">&quot;Humidity: &quot;</span>);<br>dec2bin(rawHumidity);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>humi = rawHumidity &gt;&gt; <span class="hljs-number">8</span>;<br>dec2bin8(humi);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>rawHumidity = rawHumidity &lt;&lt; <span class="hljs-number">8</span>;<br>humd = rawHumidity &gt;&gt; <span class="hljs-number">8</span>;<br>dec2bin8(humd);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>Serial.print(humi);<br>Serial.print(<span class="hljs-string">&quot;.&quot;</span>);<br>Serial.print(humd);<br>Serial.print(<span class="hljs-string">&quot;%&quot;</span>);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br><br>Serial.println(<span class="hljs-string">&quot;Temperature Degree Celcius: &quot;</span>);<br>dec2bin(rawTemperature);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>tempi = rawTemperature &gt;&gt; <span class="hljs-number">8</span>;<br>dec2bin8(tempi);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>rawTemperature = rawTemperature &lt;&lt; <span class="hljs-number">8</span>;<br>tempd = rawTemperature &gt;&gt; <span class="hljs-number">8</span>;<br><span class="hljs-comment">//tempd = (byte)rawTemperature;</span><br>dec2bin8(tempd);<br>Serial.print(<span class="hljs-string">&quot;\t&quot;</span>);<br>Serial.print(tempi);<br>Serial.print(<span class="hljs-string">&quot;.&quot;</span>);<br>Serial.print(tempd);<br>Serial.print(<span class="hljs-string">&quot;C&quot;</span>);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br><br>Serial.println(<span class="hljs-string">&quot;Checksum Byte: &quot;</span>);<br>dec2bin8(checkSum);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br>dec2bin8(tempi + tempd + humi + humd);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br><span class="hljs-keyword">if</span>((byte)checkSum == (byte)(tempi + tempd + humi + humd))&#123;Serial.print(<span class="hljs-string">&quot;CHECKSUM_OK&quot;</span>);&#125;<br><span class="hljs-keyword">else</span> &#123;Serial.print(<span class="hljs-string">&quot;CHECKSUM_ERROR&quot;</span>);&#125;<br><span class="hljs-comment">//检查和</span><br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br>Serial.println(<span class="hljs-string">&quot;&quot;</span>);<br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">loop</span><span class="hljs-params">()</span><br>&#123;<br><span class="hljs-keyword">for</span>(<span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> x = <span class="hljs-number">0</span>; x &lt; <span class="hljs-number">1000</span>; x++)<br>&#123;<br>wait_for_dht11();<br>start_signal(<span class="hljs-number">2</span>);<br>read_dht11(<span class="hljs-number">2</span>);<br>&#125;<br>Serial.end(); <br>&#125;<br><span class="hljs-comment">//主程序，输出1000次</span><br></code></pre></td></tr></table></figure><h6 id="光控灯代码">光控灯代码</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">define</span> PIN_A 0</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> PIN_D 2</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> LED 3</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">()</span> <br>&#123;<br>  Serial.begin(<span class="hljs-number">9600</span>);<br>  pinMode(LED, OUTPUT);<br>&#125;<br> <br><span class="hljs-type">void</span> <span class="hljs-title function_">loop</span><span class="hljs-params">()</span> <br>&#123;<br>  <span class="hljs-type">int</span> val;<br>  val=analogRead(PIN_A);<br>  Serial.print(<span class="hljs-string">&quot;a:&quot;</span>);<br>  Serial.print(val);<br>  analogWrite(LED, val/<span class="hljs-number">40</span>);<br>  Serial.print(<span class="hljs-string">&quot;, d:&quot;</span>);<br>  val=digitalRead(PIN_D);<br>  Serial.println(val);<br>  delay(<span class="hljs-number">500</span>);<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>学习</tag>
+      
+      <tag>计算机</tag>
+      
+      <tag>C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Project Research</title>
+    <link href="/2023/05/14/Project-Research/"/>
+    <url>/2023/05/14/Project-Research/</url>
+    
+    <content type="html"><![CDATA[<p><strong>1. What has been found?</strong></p><p><em>Of the survey:</em> We conducted a survey for undergraduates ofvarious majors and grades in Xi'an Jiaotong University. The resultsshowed that among the 114 respondents, 66 believed that the currentvideo games can be regarded as a kind of art. For the remaining 48respondents who held the opposite opinion, we conducted face-to-faceinterviews with 8 of them. In this interview, 6 out of 8 respondentssaid that although they believe that video games are not yet an artform, video games already have the characteristics of art and can bringaesthetic experience. The remaining 2 people said that video games arejust electronic industrial products for profit, and have nothing to dowith art.</p><p>In further questions, 81% of the respondents said that the story ofthe game plays a vital role in the artistry, and the story is secondonly to aesthetic elements such as pictures and music in terms ofimportance. We also asked participants to share the games with highartistic value. Among the games that are mentioned 3 times and above bythe participants, 4 out of 8 have outstanding story, including <em>Tothe moon</em> and <em>Titanfall</em>.</p><hr /><p><em>Of existing documents:</em> The concept of video games as a formof art is a commonly debated topic within the entertainment industry.While some would debate that video games are just a mindlessdistraction, many would argue that it is indeed art. The Supreme Courtof the United States has afforded legal protection to video games ascreative works. The National Endowment of the Arts (NEA) also classifiedvideo games as art in 2011, and in 2012, the New York Museum of ModernArt (MoMA) purchased 14 video games including "Elf" and "Tetris" intoits collection.</p><p><strong>2. How are your findings related to your researchquestions?</strong></p><p>The findings provide a possible answer to our reaseach questions,including 'what people think about the artistry of video games' and'what role does story(plot) play in video game artistry'.</p><p><strong>3. What do the findings suggest?</strong></p><p>We can draw the following conclusions from the survey results:</p><ul><li>Most students agree that video games can be called an art form, orthey think games are at least artistic.</li><li>Many official bodies have also gradually recognized video games asan art form in recent years.</li><li>Story plays an important role in the success of video games, andmany outstanding works are supported by excellent plots.</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>分水岭</title>
     <link href="/2023/05/13/%E5%88%86%E6%B0%B4%E5%B2%AD/"/>
     <url>/2023/05/13/%E5%88%86%E6%B0%B4%E5%B2%AD/</url>
@@ -271,9 +315,9 @@
       
       <tag>运动</tag>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>碎碎念</tag>
       
@@ -422,9 +466,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -707,9 +751,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -918,9 +962,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -943,9 +987,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -968,9 +1012,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
@@ -1012,9 +1056,9 @@
     
     <tags>
       
-      <tag>学习</tag>
-      
       <tag>技术</tag>
+      
+      <tag>学习</tag>
       
       <tag>计算机</tag>
       
