@@ -17,27 +17,27 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="最近忙得不可开交，从上次甲流恢复之后各种事情就接踵而至。社团里的、学习上的、还有平常各种杂事。这周末总算是摄影学会40周年的活动搞完了，算是圆满成功；昨天晚上在图书馆从九点学到今早四点，也把没来得及听的课和作业全部补回来了，甚至还有一定提前；刚刚写了近现代史的作业，抄了两页实在抄不动了，准备早些睡觉，从最近三四天的伊朗作息调回到中国作息。然而突然想起来博客有很长一段时间没有更新了，现在也还算早，还">
+    <meta name="description" content="字符串数组  strcat的使用需要注意数组长度的设置。  12345678#include &lt;stdio.h&gt; #include &lt;string.h&gt;int main()&amp;#123;    char str1[10]&#x3D;&quot;People&quot;;    char str2[]&#x3D;&quot;China&quot;;    printf(&quot;%s&quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="周记（三）">
-<meta property="og:url" content="https://brockshuai.github.io/2023/04/03/%E5%91%A8%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89/index.html">
+<meta property="og:title" content="字符串数组">
+<meta property="og:url" content="https://brockshuai.github.io/2023/05/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="最近忙得不可开交，从上次甲流恢复之后各种事情就接踵而至。社团里的、学习上的、还有平常各种杂事。这周末总算是摄影学会40周年的活动搞完了，算是圆满成功；昨天晚上在图书馆从九点学到今早四点，也把没来得及听的课和作业全部补回来了，甚至还有一定提前；刚刚写了近现代史的作业，抄了两页实在抄不动了，准备早些睡觉，从最近三四天的伊朗作息调回到中国作息。然而突然想起来博客有很长一段时间没有更新了，现在也还算早，还">
+<meta property="og:description" content="字符串数组  strcat的使用需要注意数组长度的设置。  12345678#include &lt;stdio.h&gt; #include &lt;string.h&gt;int main()&amp;#123;    char str1[10]&#x3D;&quot;People&quot;;    char str2[]&#x3D;&quot;China&quot;;    printf(&quot;%s&quot;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-03T15:04:33.000Z">
-<meta property="article:modified_time" content="2023-04-03T15:44:05.810Z">
+<meta property="article:published_time" content="2023-05-22T08:10:01.000Z">
+<meta property="article:modified_time" content="2023-05-22T10:01:43.836Z">
 <meta property="article:author" content="神仙魚">
-<meta property="article:tag" content="生活">
+<meta property="article:tag" content="技术">
 <meta property="article:tag" content="学习">
-<meta property="article:tag" content="碎碎念">
-<meta property="article:tag" content="摄影">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="C">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>周记（三） - 神仙魚</title>
+  <title>字符串数组 - 神仙魚</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="周记（三）"></span>
+            <span id="subtitle" data-typed-text="字符串数组"></span>
           
         </div>
 
@@ -244,8 +244,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-03 23:04" pubdate>
-          2023年4月3日 晚上
+        <time datetime="2023-05-22 16:10" pubdate>
+          2023年5月22日 下午
         </time>
       </span>
     
@@ -256,7 +256,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.6k 字
         
       </span>
     
@@ -326,44 +326,57 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">周记（三）</h1>
+            <h1 style="display: none">字符串数组</h1>
             
             
               <div class="markdown-body">
                 
-                <p>最近忙得不可开交，从上次甲流恢复之后各种事情就接踵而至。社团里的、学习上的、还有平常各种杂事。这周末总算是摄影学会40周年的活动搞完了，算是圆满成功；昨天晚上在图书馆从九点学到今早四点，也把没来得及听的课和作业全部补回来了，甚至还有一定提前；刚刚写了近现代史的作业，抄了两页实在抄不动了，准备早些睡觉，从最近三四天的伊朗作息调回到中国作息。然而突然想起来博客有很长一段时间没有更新了，现在也还算早，还不到十一点，于是便坐下来，写篇周记，把最近各种事情总结一下。</p>
-<h2 id="摄影学会40周年">摄影学会40周年</h2>
-<p>不得不说这次40周年的会庆以及回顾展最终的效果都是绝佳的。现任会长朱昊宁很有能力和想法，把这次的会庆从社团内部的小范围活动直接上升到了关系到全校师生和校友，以摄影和展览的方式提升众人对学校认同感的大范围活动。摄学一直以来最大的问题就是缺钱，但在和学校博物馆、档案馆取得联系，尤其是和李一鸣馆长达成共识之后，学校给我们提供了鼎力的资金支持，原先的老会员甚至为我们募捐了20万的基金，用于举办摄学的各类活动。摄学里自然不缺少有想法的人，有了资金，办好这场展览可以说是理所应当的事情了。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_9267.JPG" srcset="/img/loading.gif" lazyload /></p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_9226.JPG" srcset="/img/loading.gif" lazyload /></p>
-<p>为了办好展览和会庆，我们理事会还有平时比较活跃的几位同学出了极大的力。张贴海报、联系老会员、整理展品、布展，每一项任务都花费了大量的时间和精力。然而，正因为这件事情完全是出于我们对摄影的热爱以及在摄影学会的归属感，而不是被动的任务安排，我们所有人在进行筹备工作的时候都是饱含热情的。这里特别提一下预师傅，作为摄学在会的最老会员之一，能真切地看出他对摄影学会社团事业的热爱。筹备过程中，他花了最多的时间，做了最多的统筹工作；临近毕业将要离开，每次我们一起聊天的时候他都有一种“长辈感”，怀着隐隐担忧地，和我们讨论着社团以后的发展和建设工作。</p>
-<p>这次邀请几位老校友（会员）参加展览和会庆，和老前辈们一起在B917聊到深夜，也带给了不仅是我，也有在座所有的在会会员极大的触动。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-04-02%2002.07.24.png" srcset="/img/loading.gif" lazyload /></p>
-<p>何力钧学长的讲话，以及之后跟我们聊天过程中的一言一语，到现在还历历在目，令人感动。</p>
-<p>这次会庆筹办确实非常辛苦，旷了三四节课，花了不知道多少时间赶着4.1之前做好准备工作。不过最后的结果，令我们所有人都非常满意。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0131.png" srcset="/img/loading.gif" lazyload /></p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0127.png" srcset="/img/loading.gif" lazyload /></p>
-<h2 id="骑行">骑行</h2>
-<p>这学期来学校之前本来有好多打算要去的地方，打算开春就一个一个完成。不过这段时间实在是太忙了，计划表里的路线一个勾也没有打。</p>
-<p>目前准备等到4.16高数期中结束，把近期的任务都忙完，去走一趟分水岭。都说分水岭是西安骑行者“考驾照”的路线，意义非凡，我觉得以现在的能力还是非常有必要挑战一下的。一趟往返120公里，总爬升1800m，爬坡长度33公里，大概早上八点出发，下午六点前就能返回。不过，具体的安排之后再考虑，先把近期的任务全部处理完再说。</p>
-<p>其他几个想走的路线列表如下：</p>
+                <h2 id="字符串数组">字符串数组</h2>
 <ul>
-<li><p>沣河——秦岭——灞河大环线</p></li>
-<li><p>西安鄠邑往返</p></li>
-<li><p>雁塔城骑</p></li>
+<li><code>strcat</code>的使用需要注意数组长度的设置。</li>
 </ul>
-<h2 id="学习">学习</h2>
-<h3 id="高数">高数</h3>
-<p>最近确实忙，不过还是通过短时间调成伊朗作息把各科的课业任务都完成了。高数方面刚开始讲三重积分，期中考到二重积分结束。感觉整体计算量会比一元微积分大不少，不过思考难度也没有特别高，二重积分感觉只要把积分区域确定，写出正确的上下限表达式，其实就是多算几次定积分的事情了。综合题的变换也没有特别难理解的或者难度过大的。不过还是要多做题练习，准备考完物理就开始。</p>
-<h3 id="物理">物理</h3>
-<p>物理也挺奇怪的，转动惯量之前的部分感觉就是高中的力学运动学加上了一些微积分计算的应用，思考难度也不大。转动惯量部分（刚体）确实是新接触的，不过思考难度也不大，用运动学的方法类比过来就完全可以做。现在主要问题还是各种公式不是特别熟悉（角动量、转动惯量、力矩、转动动能）。这周作业不出意外已经处理完了，只剩下一个需要抄写的近代史，明天上课就能搞定。剩下的时间（尤其是周三、周六）就要开始大量做题练习了。根据往年的经验，阶段考不难，而且占比不大，但还是要尽量考好。</p>
-<h3 id="化学">化学</h3>
-<p>化学确实讲的快（16周的课程压缩到8周），授课内容也有难度，需要花不少时间来理解，尤其是化学一直以来不是强项。但感觉做的题目似乎更多的是公式的套用，并不需要特别深入的理解。公式确实比较多，热力学部分的、平衡部分、速率部分，公式都还不少。后面应该会专门花时间整理一下常用的公式。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>会报错：<code>zsh: illegal hardware instruction  "/Users/bob/Desktop/C/平行四边形/"b</code></p>
+<p>原因是<code>strcat(str1,str2)</code>是把<code>str2</code>的内容直接加在了<code>str1</code>的尾部，但是并不会预先检测<code>str1</code>的长度是否足够容纳两个字符串的内容。这一函数是不安全的，不会再运行时进行越界检查。</p>
+<p>修改：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">20</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C">PeopleChina<br></code></pre></td></tr></table></figure>
+<ul>
+<li>字符串数组赋值语法</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&quot;abcd&quot;</span>&#125;;<br></code></pre></td></tr></table></figure>
+<p>等价于</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&#x27;a&#x27;</span>,<span class="hljs-string">&#x27;b&#x27;</span>,<span class="hljs-string">&#x27;c&#x27;</span>,<span class="hljs-string">&#x27;d&#x27;</span>&#125;;<br></code></pre></td></tr></table></figure>
+<p>等价于</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=<span class="hljs-string">&quot;abcd&quot;</span>;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>strcpy</code>函数进行字符串复制</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>],str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br><span class="hljs-built_in">strcpy</span>(str1,str2);<br></code></pre></td></tr></table></figure>
+<p>也相当于</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>];<br><span class="hljs-built_in">strcpy</span>(str1,<span class="hljs-string">&quot;China&quot;</span>);<br></code></pre></td></tr></table></figure>
+<p><strong>❌错误写法：</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">5</span>],str2[<span class="hljs-number">5</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br>    str1=str2;<br>    <span class="hljs-built_in">puts</span>(str1);<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>这段代码会在编译时出错，因为它试图将一个字符串数组的地址赋给另一个数组名称。这是非法的，因为数组名称实际上是一个常量指针，不能被赋值。如果需要将一个字符串数组复制到另一个数组，应该使用库函数strcpy()或memcpy()。修改后的代码如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>	<span class="hljs-type">char</span> str1[<span class="hljs-number">6</span>], str2[<span class="hljs-number">6</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br>	<span class="hljs-built_in">strcpy</span>(str1, str2);<br>	<span class="hljs-built_in">puts</span>(str1);<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>strncpy</code>函数</li>
+</ul>
+<p><code>strncpy(str1,str2,2)</code>作用是将<code>str2</code>中最前面<strong>2</strong>个字符复制到<code>str1</code>中，<code>str1</code>中原有的最前面<strong>2</strong>个字符。</p>
+<ul>
+<li><code>strcmp</code>函数</li>
+</ul>
+<p><code>strcmp(str1,str2)</code>返回一个整数。</p>
+<p>两个字符串自左向右逐个字符相比（按ASCII值大小相比较），直到出现不同的字符或遇'\0'为止。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">int</span> t;<br>    t=<span class="hljs-built_in">strcmp</span>(<span class="hljs-string">&quot;CHina&quot;</span>,<span class="hljs-string">&quot;China&quot;</span>);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,t);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-number">-1</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>strlen</code>函数输出字符串的实际长度</li>
+<li><code>strlwr</code>把大写转换为小写</li>
+<li><code>strupr</code>把小写转换为大写</li>
+</ul>
 
                 
               </div>
@@ -376,13 +389,13 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0127.png" srcset="/img
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
+        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
       
         <a href="/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
       
-        <a href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">#碎碎念</a>
+        <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">#计算机</a>
       
-        <a href="/tags/%E6%91%84%E5%BD%B1/">#摄影</a>
+        <a href="/tags/C/">#C</a>
       
     </div>
   
@@ -394,8 +407,8 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0127.png" srcset="/img
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>周记（三）</div>
-      <div>https://brockshuai.github.io/2023/04/03/周记（三）/</div>
+      <div>字符串数组</div>
+      <div>https://brockshuai.github.io/2023/05/22/程序设计复习/</div>
     </div>
     <div class="license-meta">
       
@@ -407,7 +420,7 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0127.png" srcset="/img
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月3日</div>
+          <div>2023年5月22日</div>
         </div>
       
       
@@ -439,18 +452,12 @@ src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/img0127.png" srcset="/img
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/02/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F/" title="五一假期">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">五一假期</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/18/%E4%B8%AD%E6%8B%9B%E7%94%B2%E6%B5%81/" title="中招甲流">
-                        <span class="hidden-mobile">中招甲流</span>
+                      <a href="/2023/05/14/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" title="单片机实验报告">
+                        <span class="hidden-mobile">单片机实验报告</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

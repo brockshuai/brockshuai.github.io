@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>字符串数组</title>
+    <link href="/2023/05/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/"/>
+    <url>/2023/05/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="字符串数组">字符串数组</h2><ul><li><code>strcat</code>的使用需要注意数组长度的设置。</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>会报错：<code>zsh: illegal hardware instruction  "/Users/bob/Desktop/C/平行四边形/"b</code></p><p>原因是<code>strcat(str1,str2)</code>是把<code>str2</code>的内容直接加在了<code>str1</code>的尾部，但是并不会预先检测<code>str1</code>的长度是否足够容纳两个字符串的内容。这一函数是不安全的，不会再运行时进行越界检查。</p><p>修改：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">20</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>结果：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C">PeopleChina<br></code></pre></td></tr></table></figure><ul><li>字符串数组赋值语法</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&quot;abcd&quot;</span>&#125;;<br></code></pre></td></tr></table></figure><p>等价于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&#x27;a&#x27;</span>,<span class="hljs-string">&#x27;b&#x27;</span>,<span class="hljs-string">&#x27;c&#x27;</span>,<span class="hljs-string">&#x27;d&#x27;</span>&#125;;<br></code></pre></td></tr></table></figure><p>等价于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=<span class="hljs-string">&quot;abcd&quot;</span>;<br></code></pre></td></tr></table></figure><ul><li><code>strcpy</code>函数进行字符串复制</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>],str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br><span class="hljs-built_in">strcpy</span>(str1,str2);<br></code></pre></td></tr></table></figure><p>也相当于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>];<br><span class="hljs-built_in">strcpy</span>(str1,<span class="hljs-string">&quot;China&quot;</span>);<br></code></pre></td></tr></table></figure><p><strong>❌错误写法：</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">5</span>],str2[<span class="hljs-number">5</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br>    str1=str2;<br>    <span class="hljs-built_in">puts</span>(str1);<br>&#125;<br></code></pre></td></tr></table></figure><p>这段代码会在编译时出错，因为它试图将一个字符串数组的地址赋给另一个数组名称。这是非法的，因为数组名称实际上是一个常量指针，不能被赋值。如果需要将一个字符串数组复制到另一个数组，应该使用库函数strcpy()或memcpy()。修改后的代码如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br><span class="hljs-type">char</span> str1[<span class="hljs-number">6</span>], str2[<span class="hljs-number">6</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br><span class="hljs-built_in">strcpy</span>(str1, str2);<br><span class="hljs-built_in">puts</span>(str1);<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li><code>strncpy</code>函数</li></ul><p><code>strncpy(str1,str2,2)</code>作用是将<code>str2</code>中最前面<strong>2</strong>个字符复制到<code>str1</code>中，<code>str1</code>中原有的最前面<strong>2</strong>个字符。</p><ul><li><code>strcmp</code>函数</li></ul><p><code>strcmp(str1,str2)</code>返回一个整数。</p><p>两个字符串自左向右逐个字符相比（按ASCII值大小相比较），直到出现不同的字符或遇'\0'为止。</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">int</span> t;<br>    t=<span class="hljs-built_in">strcmp</span>(<span class="hljs-string">&quot;CHina&quot;</span>,<span class="hljs-string">&quot;China&quot;</span>);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,t);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>输出：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-number">-1</span><br></code></pre></td></tr></table></figure><ul><li><code>strlen</code>函数输出字符串的实际长度</li><li><code>strlwr</code>把大写转换为小写</li><li><code>strupr</code>把小写转换为大写</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>学习</tag>
+      
+      <tag>计算机</tag>
+      
+      <tag>C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>单片机实验报告</title>
     <link href="/2023/05/14/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/"/>
     <url>/2023/05/14/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</url>
@@ -110,9 +135,9 @@
       
       <tag>学习</tag>
       
-      <tag>摄影</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>摄影</tag>
       
     </tags>
     
@@ -223,9 +248,9 @@
       
       <tag>学习</tag>
       
-      <tag>摄影</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>摄影</tag>
       
     </tags>
     
@@ -583,9 +608,9 @@
       
       <tag>生活</tag>
       
-      <tag>摄影</tag>
-      
       <tag>碎碎念</tag>
+      
+      <tag>摄影</tag>
       
     </tags>
     

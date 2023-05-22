@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-05-14T06:35:19.901Z</updated>
+  <updated>2023-05-22T10:01:43.836Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字符串数组</title>
+    <link href="https://brockshuai.github.io/2023/05/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://brockshuai.github.io/2023/05/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/</id>
+    <published>2023-05-22T08:10:01.000Z</published>
+    <updated>2023-05-22T10:01:43.836Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="字符串数组">字符串数组</h2><ul><li><code>strcat</code>的使用需要注意数组长度的设置。</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>会报错：<code>zsh: illegal hardware instruction  "/Users/bob/Desktop/C/平行四边形/"b</code></p><p>原因是<code>strcat(str1,str2)</code>是把<code>str2</code>的内容直接加在了<code>str1</code>的尾部，但是并不会预先检测<code>str1</code>的长度是否足够容纳两个字符串的内容。这一函数是不安全的，不会再运行时进行越界检查。</p><p>修改：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">20</span>]=<span class="hljs-string">&quot;People&quot;</span>;<br>    <span class="hljs-type">char</span> str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s&quot;</span>, <span class="hljs-built_in">strcat</span>(str1,str2));<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>结果：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C">PeopleChina<br></code></pre></td></tr></table></figure><ul><li>字符串数组赋值语法</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&quot;abcd&quot;</span>&#125;;<br></code></pre></td></tr></table></figure><p>等价于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[]=&#123;<span class="hljs-string">&#x27;a&#x27;</span>,<span class="hljs-string">&#x27;b&#x27;</span>,<span class="hljs-string">&#x27;c&#x27;</span>,<span class="hljs-string">&#x27;d&#x27;</span>&#125;;<br></code></pre></td></tr></table></figure><p>等价于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[]=<span class="hljs-string">&quot;abcd&quot;</span>;<br></code></pre></td></tr></table></figure><ul><li><code>strcpy</code>函数进行字符串复制</li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>],str2[]=<span class="hljs-string">&quot;China&quot;</span>;<br><span class="hljs-built_in">strcpy</span>(str1,str2);<br></code></pre></td></tr></table></figure><p>也相当于</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-type">char</span> str1[<span class="hljs-number">10</span>];<br><span class="hljs-built_in">strcpy</span>(str1,<span class="hljs-string">&quot;China&quot;</span>);<br></code></pre></td></tr></table></figure><p><strong>❌错误写法：</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span> </span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">char</span> str1[<span class="hljs-number">5</span>],str2[<span class="hljs-number">5</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br>    str1=str2;<br>    <span class="hljs-built_in">puts</span>(str1);<br>&#125;<br></code></pre></td></tr></table></figure><p>这段代码会在编译时出错，因为它试图将一个字符串数组的地址赋给另一个数组名称。这是非法的，因为数组名称实际上是一个常量指针，不能被赋值。如果需要将一个字符串数组复制到另一个数组，应该使用库函数strcpy()或memcpy()。修改后的代码如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br><span class="hljs-type">char</span> str1[<span class="hljs-number">6</span>], str2[<span class="hljs-number">6</span>]=<span class="hljs-string">&quot;China&quot;</span>;<br><span class="hljs-built_in">strcpy</span>(str1, str2);<br><span class="hljs-built_in">puts</span>(str1);<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><ul><li><code>strncpy</code>函数</li></ul><p><code>strncpy(str1,str2,2)</code>作用是将<code>str2</code>中最前面<strong>2</strong>个字符复制到<code>str1</code>中，<code>str1</code>中原有的最前面<strong>2</strong>个字符。</p><ul><li><code>strcmp</code>函数</li></ul><p><code>strcmp(str1,str2)</code>返回一个整数。</p><p>两个字符串自左向右逐个字符相比（按ASCII值大小相比较），直到出现不同的字符或遇'\0'为止。</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-type">int</span> t;<br>    t=<span class="hljs-built_in">strcmp</span>(<span class="hljs-string">&quot;CHina&quot;</span>,<span class="hljs-string">&quot;China&quot;</span>);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,t);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><p>输出：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-number">-1</span><br></code></pre></td></tr></table></figure><ul><li><code>strlen</code>函数输出字符串的实际长度</li><li><code>strlwr</code>把大写转换为小写</li><li><code>strupr</code>把小写转换为大写</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;字符串数组&quot;&gt;字符串数组&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;strcat&lt;/code&gt;的使用需要注意数组长度的设置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="计算机" scheme="https://brockshuai.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    <category term="C" scheme="https://brockshuai.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>单片机实验报告</title>
@@ -153,9 +185,9 @@ various majors and gr</summary>
     
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
-    
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
@@ -289,9 +321,9 @@ class=&quot;math inline&quot;&gt;\(f_{x}(0,0)\)&lt;/span</summary>
     
     <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
-    
     <category term="碎碎念" scheme="https://brockshuai.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
@@ -546,34 +578,6 @@ src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img</summary>
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
     
     <category term="跑步" scheme="https://brockshuai.github.io/tags/%E8%B7%91%E6%AD%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高数复习（四）</title>
-    <link href="https://brockshuai.github.io/2023/02/03/%E9%AB%98%E6%95%B04/"/>
-    <id>https://brockshuai.github.io/2023/02/03/%E9%AB%98%E6%95%B04/</id>
-    <published>2023-02-03T13:11:52.000Z</published>
-    <updated>2023-02-05T02:28:15.569Z</updated>
-    
-    <content type="html"><![CDATA[<p>判断敛散性： <span class="math display">\[\int_a^{b} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}\]</span></p><p><span class="math display">\[\int_a^{\frac{a+b}{2}} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{c\rightarrow 0^{+}} \int_{a+c}^{\frac{a b b}{2}} \frac{\mathrm{d}x}{\sqrt{\left(\frac{b-a}{2}\right)^2-\left(x-\frac{b+a}{2}\right)^2}}\]</span></p><p><span class="math display">\[\text { 令 } x-\frac{b+a}{2}=\frac{b-a}{2} \sin \theta,~于是\lim _{\varepsilon \rightarrow 0^{+}} \int_{\arcsin \frac{\sigma-(b-a) /2}{(b-a) / 2}}^0 \mathrm{~d} \theta=\lim _{\delta \rightarrow0^{+}}\left[-\arcsin \frac{\varepsilon-(b-a) / 2}{(b-a) /2}\right]=\frac{\pi}{2}\]</span></p><p>又 <span class="math display">\[\lim_{\delta\rightarrow0^+}\int_{\frac{a+b}{2}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}=\lim _{\delta \rightarrow 0^{+}}\arcsin \frac{(b-a) / 2-\delta}{(b-a) / 2}=\frac{\pi}{2},\]</span></p><p>故原积分收敛,且 <span class="math display">\[\begin{aligned}\int_a^b \frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}= &amp; \lim_{\varepsilon \rightarrow 0^{+}} \int_{a +\varepsilon}^{\frac{a+b}{2}}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}} \\&amp; +\lim _{\delta \rightarrow 0^{+}} \int_{\frac{a+b}{b}}^{b-\delta}\frac{\mathrm{d} x}{\sqrt{(a-x)(b-x)}}=\pi.\end{aligned}\]</span></p><hr /><p>广义积分判断准则： <span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}g(x)\text{d}x收敛，则\int_{a}^{+\infty}f(x)\text{d}x收敛\]</span></p><p><span class="math display">\[若0\leq f(x)\leqg(x),~当\int_{a}^{+\infty}f(x)\text{d}x发散，则\int_{a}^{+\infty}g(x)\text{d}x发散\]</span></p><hr /><p>$$</p><p>$$</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;判断敛散性： &lt;span class=&quot;math display&quot;&gt;\[
-\int_a^{b} \frac{\mathrm{d} x}{\sqrt{(x-a)(b-x)}}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
-\in</summary>
-      
-    
-    
-    
-    
-    <category term="学习" scheme="https://brockshuai.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
