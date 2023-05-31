@@ -17,19 +17,22 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="求分界点、不连续点处的函数偏导数可以使用定义： 设\(z&#x3D;f(x,y)&#x3D;\sqrt{|xy|}\)，求\(f_{x}(0,0)\)和\(f_y(0,0)\) 解： \[ \begin{aligned} &amp; f_x(0, 0)&#x3D;\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}&#x3D;0 \\ &amp; f_y(0,0)&#x3D;\lim _{y">
+    <meta name="description" content="求分界点、不连续点处的函数偏导数可以使用定义： 设$z&#x3D;f(x,y)&#x3D;\sqrt{|xy|}$，求$f_{x}(0,0)$和$f_y(0,0)$ 解：  \begin{aligned} &amp; f_x(0, 0)&#x3D;\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}&#x3D;0 \\ &amp; f_y(0,0)&#x3D;\lim _{y \rightarrow 0}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高数II（一）">
 <meta property="og:url" content="https://brockshuai.github.io/2023/03/05/%E9%AB%98%E6%95%B0II%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="求分界点、不连续点处的函数偏导数可以使用定义： 设\(z&#x3D;f(x,y)&#x3D;\sqrt{|xy|}\)，求\(f_{x}(0,0)\)和\(f_y(0,0)\) 解： \[ \begin{aligned} &amp; f_x(0, 0)&#x3D;\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}&#x3D;0 \\ &amp; f_y(0,0)&#x3D;\lim _{y">
+<meta property="og:description" content="求分界点、不连续点处的函数偏导数可以使用定义： 设$z&#x3D;f(x,y)&#x3D;\sqrt{|xy|}$，求$f_{x}(0,0)$和$f_y(0,0)$ 解：  \begin{aligned} &amp; f_x(0, 0)&#x3D;\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}&#x3D;0 \\ &amp; f_y(0,0)&#x3D;\lim _{y \rightarrow 0}">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.02.34.png">
+<meta property="og:image" content="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.56.20.png">
 <meta property="article:published_time" content="2023-03-05T07:44:18.000Z">
 <meta property="article:modified_time" content="2023-03-05T08:56:56.333Z">
 <meta property="article:author" content="神仙魚">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.02.34.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -254,7 +257,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          464 字
+          426 字
         
       </span>
     
@@ -330,34 +333,23 @@
               <div class="markdown-body">
                 
                 <p>求分界点、不连续点处的函数偏导数可以使用定义：</p>
-<p>设<span class="math inline">\(z=f(x,y)=\sqrt{|xy|}\)</span>，求<span
-class="math inline">\(f_{x}(0,0)\)</span>和<span
-class="math inline">\(f_y(0,0)\)</span></p>
-<p><strong>解：</strong> <span class="math display">\[
+<p>设$z=f(x,y)=\sqrt{|xy|}$，求$f_{x}(0,0)$和$f_y(0,0)$</p>
+<p><strong>解：</strong></p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-&amp; f_x(0, 0)=\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}=0
-\\
-&amp; f_y(0,0)=\lim _{y \rightarrow 0} \frac{\sqrt{|y \cdot 0|}-0}{y}=0
-\end{aligned}
-\]</span></p>
-<blockquote>
+& f_x(0, 0)=\lim _{x \rightarrow 0} \frac{\sqrt{|x \cdot 0|}-0}{x}=0 \\
+& f_y(0,0)=\lim _{y \rightarrow 0} \frac{\sqrt{|y \cdot 0|}-0}{y}=0
+\end{aligned}</script><blockquote>
 <p>固定一个变量，让另一个趋于所给的值。</p>
 </blockquote>
-<p><span class="math display">\[
-f(x, y)= \begin{cases}\dfrac{x y}{x^2+y^2}, &amp; x^2+y^2 \neq 0 \\ 0,
-&amp; x^2+y^2=0\end{cases}
-\]</span></p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.02.34.png" srcset="/img/loading.gif" lazyload /></p>
-<p>这一函数沿<span class="math inline">\(x\)</span>轴和<span
-class="math inline">\(y\)</span>轴上的值恒为0，可偏导，但在卦限内部出现了函数值的突变，因此不连续。</p>
-<hr />
+<script type="math/tex; mode=display">
+f(x, y)= \begin{cases}\dfrac{x y}{x^2+y^2}, & x^2+y^2 \neq 0 \\ 0, & x^2+y^2=0\end{cases}</script><p><img src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.02.34.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<p>这一函数沿$x$轴和$y$轴上的值恒为0，可偏导，但在卦限内部出现了函数值的突变，因此不连续。</p>
+<hr>
 <p>如果函数可微，则函数在该点处连续。</p>
 <p>多元函数可偏导不一定可微。</p>
-<p><img
-src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.56.20.png" srcset="/img/loading.gif" lazyload /></p>
-<p>这一函数沿<span class="math inline">\(x\)</span>轴和<span
-class="math inline">\(y\)</span>轴上的值恒为0，但在卦限上有增量。</p>
+<p><img src="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-03-05%2016.56.20.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<p>这一函数沿$x$轴和$y$轴上的值恒为0，但在卦限上有增量。</p>
 
                 
               </div>
