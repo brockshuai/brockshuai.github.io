@@ -17,12 +17,12 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="高数复习  \int F(x)\text{d}y&#x3D;F(x)\cdot y也即  \int_{0}^x F(x)\text{d}y&#x3D;xF(x)   \lim\limits_{n\rightarrow\infty}\sum\limits_{i&#x3D;1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})&#x3D;\int_{0}^{1}f(x)\text{d}x积分的上下限可以通过求和上下限以及$f$的">
+    <meta name="description" content="高数复习  \[ \int F(x)\text{d}y&#x3D;F(x)\cdot y \] 也即 \[ \int_{0}^x F(x)\text{d}y&#x3D;xF(x) \]  \[ \lim\limits_{n\rightarrow\infty}\sum\limits_{i&#x3D;1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})&#x3D;\int_{0}^{1}f(x)\text{d}x \] 积分的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高数复习（一）">
 <meta property="og:url" content="https://brockshuai.github.io/2023/01/25/%E9%AB%98%E6%95%B01/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="高数复习  \int F(x)\text{d}y&#x3D;F(x)\cdot y也即  \int_{0}^x F(x)\text{d}y&#x3D;xF(x)   \lim\limits_{n\rightarrow\infty}\sum\limits_{i&#x3D;1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})&#x3D;\int_{0}^{1}f(x)\text{d}x积分的上下限可以通过求和上下限以及$f$的">
+<meta property="og:description" content="高数复习  \[ \int F(x)\text{d}y&#x3D;F(x)\cdot y \] 也即 \[ \int_{0}^x F(x)\text{d}y&#x3D;xF(x) \]  \[ \lim\limits_{n\rightarrow\infty}\sum\limits_{i&#x3D;1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})&#x3D;\int_{0}^{1}f(x)\text{d}x \] 积分的">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-25T02:15:55.000Z">
 <meta property="article:modified_time" content="2023-01-26T01:40:33.502Z">
@@ -254,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          1.6k 字
         
       </span>
     
@@ -329,38 +329,60 @@
             
               <div class="markdown-body">
                 
-                <h2 id="高数复习"><a href="#高数复习" class="headerlink" title="高数复习"></a>高数复习</h2><ol>
-<li><script type="math/tex; mode=display">
-\int F(x)\text{d}y=F(x)\cdot y</script><p>也即</p>
-<script type="math/tex; mode=display">
-\int_{0}^x F(x)\text{d}y=xF(x)</script><hr>
-</li>
-<li><script type="math/tex; mode=display">
-\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})=\int_{0}^{1}f(x)\text{d}x</script><p>积分的上下限可以通过求和上下限以及$f$的自变量调整.</p>
-<hr>
-</li>
-<li><script type="math/tex; mode=display">
+                <h2 id="高数复习">高数复习</h2>
+<ol type="1">
+<li><p><span class="math display">\[
+\int F(x)\text{d}y=F(x)\cdot y
+\]</span></p>
+<p>也即 <span class="math display">\[
+\int_{0}^x F(x)\text{d}y=xF(x)
+\]</span></p>
+<hr /></li>
+<li><p><span class="math display">\[
+\lim\limits_{n\rightarrow\infty}\sum\limits_{i=1}^{n}\dfrac{1}{n}f(\dfrac{i}{n})=\int_{0}^{1}f(x)\text{d}x
+\]</span></p>
+<p>积分的上下限可以通过求和上下限以及<span
+class="math inline">\(f\)</span>的自变量调整.</p>
+<hr /></li>
+<li><p><span class="math display">\[
 \begin{aligned}
-&~~~~~~ \int\dfrac{1}{2+\cos\pi x}\text{d}x\\
-&=\int\dfrac{1}{2+2\cos^2\dfrac{\pi x}{2}-1}\text{d}x\\
-&=\int\dfrac{1}{1+2\cos^2\dfrac{\pi x}{2}}\text{d}x\\
-&=\dfrac{2}{\pi}\int\dfrac{1}{2+\sec^2\dfrac{\pi x}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\
-&=\dfrac{2}{\pi}\int\dfrac{1}{3+\tan^2\dfrac{\pi x}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\
-&=
+&amp;~~~~~~ \int\dfrac{1}{2+\cos\pi x}\text{d}x\\
+&amp;=\int\dfrac{1}{2+2\cos^2\dfrac{\pi x}{2}-1}\text{d}x\\
+&amp;=\int\dfrac{1}{1+2\cos^2\dfrac{\pi x}{2}}\text{d}x\\
+&amp;=\dfrac{2}{\pi}\int\dfrac{1}{2+\sec^2\dfrac{\pi
+x}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\
+&amp;=\dfrac{2}{\pi}\int\dfrac{1}{3+\tan^2\dfrac{\pi
+x}{2}}\text{d}(\tan\dfrac{\pi x}{2})\\
+&amp;=
 \dfrac{2}{\sqrt3}\cdot\arctan(\dfrac{\tan(\dfrac{\pi}{2}x)}{\sqrt3})+C
-\end{aligned}</script><hr>
-</li>
-<li><script type="math/tex; mode=display">
-I=\int \frac{\cos ^2 x-\sin x}{\cos x\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \mathrm{d} x</script><p>由于</p>
-<script type="math/tex; mode=display">
-\left(\cos x \cdot \mathrm{e}^{\sin x}\right)^{\prime}=-\sin x \cdot \mathrm{e}^{\sin x}+\cos ^2 x \cdot \mathrm{e}^{\sin x}=\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sin x}</script><p>因此</p>
-<script type="math/tex; mode=display">
-\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sin x} \mathrm{~d} x</script><p>故有</p>
-<script type="math/tex; mode=display">
+\end{aligned}
+\]</span></p>
+<hr /></li>
+<li><p><span class="math display">\[
+I=\int \frac{\cos ^2 x-\sin x}{\cos x\left(1+\cos x \cdot
+\mathrm{e}^{\sin x}\right)} \mathrm{d} x
+\]</span></p>
+<p>由于 <span class="math display">\[
+\left(\cos x \cdot \mathrm{e}^{\sin x}\right)^{\prime}=-\sin x \cdot
+\mathrm{e}^{\sin x}+\cos ^2 x \cdot \mathrm{e}^{\sin x}=\left(\cos ^2
+x-\sin x\right) \mathrm{e}^{\sin x}
+\]</span> 因此 <span class="math display">\[
+\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\left(\cos ^2
+x-\sin x\right) \mathrm{e}^{\sin x} \mathrm{~d} x
+\]</span> 故有 <span class="math display">\[
 \begin{aligned}
-I & =\int \frac{\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sin x}}{\cos x \cdot \mathrm{e}^{\sin x}\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \mathrm{d} x=\int \frac{\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)}{\cos x \cdot \mathrm{e}^{\sin x}\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \\
-& =\int\left(\frac{1}{\cos x \cdot \mathrm{e}^{\sin x}}-\frac{1}{1+\cos x \cdot \mathrm{e}^{\sin x}}\right) \mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\ln \left|\frac{\cos x \cdot \mathrm{e}^{\sin x}}{1+\cos x \cdot \mathrm{e}^{\sin x}}\right|+C
-\end{aligned}</script></li>
+I &amp; =\int \frac{\left(\cos ^2 x-\sin x\right) \mathrm{e}^{\sin
+x}}{\cos x \cdot \mathrm{e}^{\sin x}\left(1+\cos x \cdot
+\mathrm{e}^{\sin x}\right)} \mathrm{d} x=\int \frac{\mathrm{d}\left(\cos
+x \cdot \mathrm{e}^{\sin x}\right)}{\cos x \cdot \mathrm{e}^{\sin
+x}\left(1+\cos x \cdot \mathrm{e}^{\sin x}\right)} \\
+&amp; =\int\left(\frac{1}{\cos x \cdot \mathrm{e}^{\sin
+x}}-\frac{1}{1+\cos x \cdot \mathrm{e}^{\sin x}}\right)
+\mathrm{d}\left(\cos x \cdot \mathrm{e}^{\sin x}\right)=\ln
+\left|\frac{\cos x \cdot \mathrm{e}^{\sin x}}{1+\cos x \cdot
+\mathrm{e}^{\sin x}}\right|+C
+\end{aligned}
+\]</span></p></li>
 </ol>
 
                 

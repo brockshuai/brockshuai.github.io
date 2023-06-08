@@ -17,12 +17,12 @@
   <meta name="author" content="神仙魚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="二级结论 与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即$\text{tr}(A)&#x3D;\text{tr}(B)$ 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有$n$的不同的特征值，要么所有的$k$重特征值的几何重数也为$k$">
+    <meta name="description" content="二级结论  与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即\(\text{tr}(A)&#x3D;\text{tr}(B)\) 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有\(n\)的不同的特征值，要么所有的\(k\)重特征值的几何重数也为\(k\)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="相似矩阵知识点">
 <meta property="og:url" content="https://brockshuai.github.io/2023/01/08/%E7%9B%B8%E4%BC%BC%E7%9F%A9%E9%98%B5/index.html">
 <meta property="og:site_name" content="神仙魚">
-<meta property="og:description" content="二级结论 与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即$\text{tr}(A)&#x3D;\text{tr}(B)$ 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有$n$的不同的特征值，要么所有的$k$重特征值的几何重数也为$k$">
+<meta property="og:description" content="二级结论  与对角矩阵相似的只有对角矩阵 相似矩阵的迹相等，即\(\text{tr}(A)&#x3D;\text{tr}(B)\) 相似矩阵的秩相等 相似矩阵有相同的特征值 与实对称矩阵相似的矩阵必可以相似对角化 矩阵可以相似对角化只有两种情况：要么有\(n\)的不同的特征值，要么所有的\(k\)重特征值的几何重数也为\(k\)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-08T01:34:52.000Z">
 <meta property="article:modified_time" content="2023-01-10T04:03:18.246Z">
@@ -254,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.4k 字
         
       </span>
     
@@ -265,7 +265,7 @@
         
         
         
-          8 分钟
+          9 分钟
         
       </span>
     
@@ -329,30 +329,68 @@
             
               <div class="markdown-body">
                 
-                <h2 id="二级结论"><a href="#二级结论" class="headerlink" title="二级结论"></a>二级结论</h2><ol>
+                <h2 id="二级结论">二级结论</h2>
+<ol type="1">
 <li>与对角矩阵相似的只有对角矩阵</li>
-<li>相似矩阵的迹相等，即$\text{tr}(A)=\text{tr}(B)$</li>
+<li>相似矩阵的迹相等，即<span
+class="math inline">\(\text{tr}(A)=\text{tr}(B)\)</span></li>
 <li>相似矩阵的秩相等</li>
 <li>相似矩阵有相同的特征值</li>
 <li>与实对称矩阵相似的矩阵必可以相似对角化</li>
-<li>矩阵可以相似对角化只有两种情况：要么有$n$的不同的特征值，要么所有的$k$重特征值的几何重数也为$k$</li>
+<li>矩阵可以相似对角化只有两种情况：要么有<span
+class="math inline">\(n\)</span>的不同的特征值，要么所有的<span
+class="math inline">\(k\)</span>重特征值的几何重数也为<span
+class="math inline">\(k\)</span></li>
 </ol>
 <span id="more"></span>
-<h2 id="相似矩阵特征向量的关系"><a href="#相似矩阵特征向量的关系" class="headerlink" title="相似矩阵特征向量的关系"></a>相似矩阵特征向量的关系</h2><p>若$P^{-1}AP=B$，$B$有特征向量$\beta$，则有如下推论：</p>
-<p>因$P^{-1}AP=B$，$B=\lambda\beta$，则</p>
-<script type="math/tex; mode=display">
-A=PBP^{-1}</script><p>故而</p>
-<script type="math/tex; mode=display">
-AP\beta=PBP^{-1}P\beta=PBP\beta=P\lambda\beta</script><p>$\lambda$作为数可以提到前面，则</p>
-<script type="math/tex; mode=display">
-AP\beta=\lambda P\beta</script><p>由此可以得到，$A$有特征向量$P\beta$。</p>
-<h2 id="“先拆后合”求特征值"><a href="#“先拆后合”求特征值" class="headerlink" title="“先拆后合”求特征值"></a>“先拆后合”求特征值</h2><p>求矩阵$A$的特征值可以把$A$拆成一个简单矩阵$B$和若干倍的$E$的和，先求出$B$的特征值，再根据特征值的性质求出$A$的特征值。具体而言，可以进行如下操作：</p>
-<p><strong>例：求矩阵$A=\left[\begin{array}{ccccc}a &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \ 1 &amp; a &amp; 1 &amp; \cdots &amp; 1 \ 1 &amp; 1 &amp; a &amp; \cdots &amp; 1 \ \vdots &amp; \vdots &amp; \vdots &amp; &amp; \vdots \ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; a\end{array}\right]$的特征值</strong></p>
-<p>解：由题目知，</p>
-<script type="math/tex; mode=display">
-\begin{aligned} \boldsymbol{A} & =\left[\begin{array}{lllll}a-1 & & & & \\ & a-1 & & & \\ & & a-1 & & \\ & & & \ddots & \\ & & & a-1\end{array}\right]+\left[\begin{array}{ccccc}1 & 1 & 1 & \cdots & 1 \\ 1 & 1 & 1 & \cdots & 1 \\ 1 & 1 & 1 & \cdots & 1 \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & 1 & 1 & \cdots & 1\end{array}\right] \\ & =(a-1) \boldsymbol{E}+\boldsymbol{B},\end{aligned}</script><p>而矩阵$\boldsymbol{B}$的秩为$1$，有</p>
-<script type="math/tex; mode=display">
-|\lambda \boldsymbol{E}-\boldsymbol{B}|=\lambda^n-n\lambda^{n-1}</script><p>得到矩阵$\boldsymbol{B}$的特征值为$n,0,0,…,0$，因此$\boldsymbol{A}$的特征值为$n+a-1,a-1,a-1,…,a-1$。</p>
+<h2 id="相似矩阵特征向量的关系">相似矩阵特征向量的关系</h2>
+<p>若<span class="math inline">\(P^{-1}AP=B\)</span>，<span
+class="math inline">\(B\)</span>有特征向量<span
+class="math inline">\(\beta\)</span>，则有如下推论：</p>
+<p>因<span class="math inline">\(P^{-1}AP=B\)</span>，<span
+class="math inline">\(B=\lambda\beta\)</span>，则 <span
+class="math display">\[
+A=PBP^{-1}
+\]</span> 故而 <span class="math display">\[
+AP\beta=PBP^{-1}P\beta=PBP\beta=P\lambda\beta
+\]</span> <span
+class="math inline">\(\lambda\)</span>作为数可以提到前面，则 <span
+class="math display">\[
+AP\beta=\lambda P\beta
+\]</span></p>
+<p>由此可以得到，<span class="math inline">\(A\)</span>有特征向量<span
+class="math inline">\(P\beta\)</span>。</p>
+<h2 id="先拆后合求特征值">“先拆后合”求特征值</h2>
+<p>求矩阵<span class="math inline">\(A\)</span>的特征值可以把<span
+class="math inline">\(A\)</span>拆成一个简单矩阵<span
+class="math inline">\(B\)</span>和若干倍的<span
+class="math inline">\(E\)</span>的和，先求出<span
+class="math inline">\(B\)</span>的特征值，再根据特征值的性质求出<span
+class="math inline">\(A\)</span>的特征值。具体而言，可以进行如下操作：</p>
+<p><strong>例：求矩阵<span
+class="math inline">\(A=\left[\begin{array}{ccccc}a &amp; 1 &amp; 1
+&amp; \cdots &amp; 1 \\ 1 &amp; a &amp; 1 &amp; \cdots &amp; 1 \\ 1
+&amp; 1 &amp; a &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots
+&amp; &amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp;
+a\end{array}\right]\)</span>的特征值</strong></p>
+<p>解：由题目知， <span class="math display">\[
+\begin{aligned} \boldsymbol{A} &amp; =\left[\begin{array}{lllll}a-1
+&amp; &amp; &amp; &amp; \\ &amp; a-1 &amp; &amp; &amp; \\ &amp; &amp;
+a-1 &amp; &amp; \\ &amp; &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp;
+a-1\end{array}\right]+\left[\begin{array}{ccccc}1 &amp; 1 &amp; 1 &amp;
+\cdots &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 \\ 1 &amp; 1
+&amp; 1 &amp; \cdots &amp; 1 \\ \vdots &amp; \vdots &amp; \vdots &amp;
+&amp; \vdots \\ 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1\end{array}\right]
+\\ &amp; =(a-1) \boldsymbol{E}+\boldsymbol{B},\end{aligned}
+\]</span></p>
+<p>而矩阵<span class="math inline">\(\boldsymbol{B}\)</span>的秩为<span
+class="math inline">\(1\)</span>，有 <span class="math display">\[
+|\lambda \boldsymbol{E}-\boldsymbol{B}|=\lambda^n-n\lambda^{n-1}
+\]</span> 得到矩阵<span
+class="math inline">\(\boldsymbol{B}\)</span>的特征值为<span
+class="math inline">\(n,0,0,...,0\)</span>，因此<span
+class="math inline">\(\boldsymbol{A}\)</span>的特征值为<span
+class="math inline">\(n+a-1,a-1,a-1,...,a-1\)</span>。</p>
 
                 
               </div>
