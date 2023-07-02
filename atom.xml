@@ -6,7 +6,7 @@
   <link href="https://brockshuai.github.io/atom.xml" rel="self"/>
   
   <link href="https://brockshuai.github.io/"/>
-  <updated>2023-06-21T14:02:36.024Z</updated>
+  <updated>2023-07-02T16:13:02.446Z</updated>
   <id>https://brockshuai.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>数学建模</title>
+    <link href="https://brockshuai.github.io/2023/07/03/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    <id>https://brockshuai.github.io/2023/07/03/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</id>
+    <published>2023-07-02T16:07:18.000Z</published>
+    <updated>2023-07-02T16:13:02.446Z</updated>
+    
+    <content type="html"><![CDATA[<p>小学期期间的校赛从6.29持续到7.2晚上八点，刚刚终于算是结束了。小学期两周的时间，一直无所事事也让人感到无所适从，能和同学打一场数学建模的校赛也是非常不错的。</p><p>总体来说这次的校赛体验比去年五一的Mathorcup好很多。和队友原本就认识，交流上没有任何障碍，且大家都各自有各自的长处：数学思维好、语言表达能力强、代码力强，这些都是能顺利完成本次比赛的重要因素。虽然本次选题很有难度，后两问甚至用到了图像识别、多边形拟合这样的非典型数学建模算法，但最终的结果是经过层层严密推理，真实可信的，而不像上次，自己写出的论文自己都无法说服自己相信。</p><p>希望本次比赛可以出现，顺利参加九月份的国赛。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;小学期期间的校赛从6.29持续到7.2晚上八点，刚刚终于算是结束了。小学期两周的时间，一直无所事事也让人感到无所适从，能和同学打一场数学建模的校赛也是非常不错的。&lt;/p&gt;
+&lt;p&gt;总体来说这次的校赛体验比去年五一的Mathorcup好很多。和队友原本就认识，交流上没有任何障碍</summary>
+      
+    
+    
+    
+    
+    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="技术" scheme="https://brockshuai.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="数学" scheme="https://brockshuai.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高数重难点</title>
     <link href="https://brockshuai.github.io/2023/06/21/%E9%AB%98%E6%95%B0%E9%87%8D%E9%9A%BE%E7%82%B9/"/>
     <id>https://brockshuai.github.io/2023/06/21/%E9%AB%98%E6%95%B0%E9%87%8D%E9%9A%BE%E7%82%B9/</id>
     <published>2023-06-21T13:51:50.000Z</published>
-    <updated>2023-06-21T14:02:36.024Z</updated>
+    <updated>2023-06-26T15:04:29.726Z</updated>
     
     <content type="html"><![CDATA[<h1 id="重难点总结">重难点总结</h1><h2 id="傅里叶变换">傅里叶变换</h2><h3 id="pipi上的傅里叶变换"><spanclass="math inline">\([-\pi,\pi]\)</span>上的傅里叶变换</h3><p>通式： <span class="math display">\[f(x)={\frac{a_{0}}{2}}\,+\,\sum_{n=1}^{\infty}\,\left(\,a_{n}\cos\,nx\,+\,b_{n}\sin\,n x\,\right)\,\]</span> <span class="math display">\[a_{k}=\frac{1}{\pi}\int_{-\pi}^{\pi}f(\,x)\cos\,kx\mathrm{d}x\quad(\,k=0\,,1\,,2\,,\cdots\,)\;\]</span> <span class="math display">\[b_{_{k}}={\frac{1}{\pi}}\int_{-\pi}^{\pi}f(x)\sin\,k x\mathrm{d}x\ \ \(\,k\,=\,1\,,2\,,\cdots\,).\]</span> 对于奇函数，傅里叶级数称为正弦级数，即 <spanclass="math display">\[f(x)=\sum_{n=1}^{\infty}b_{x}\sin\,n x\,,\quadx\in(\,-\,\infty\,,\,+\,\infty\,)\]</span> <span class="math display">\[b_{_n}={\frac{1}{\pi}}\int_{-\pi}^{\pi}f(\,x)\sin\,nx\mathrm{d}x={\frac{2}{\pi}}\int_{0}^{\pi}\!f(\,x)\sin\,nx\mathrm{d}x\quad(\,n\,=\,1\,,2\,,\cdots)\]</span> 同理，余弦级数： <span class="math display">\[f(x)={\frac{a_{0}}{2}}\,+\,\sum_{n=1}^{\infty}a_{n}\cos\,n x\,,\quadx\,\in\,(\,-\,\infty\,\,,\,\,+\,\infty\,\,)\]</span> <span class="math display">\[a_{n}=\frac{2}{\pi}\int_{0}^{\pi}f(\,x\,)\cos\,nx\mathrm{d}x\quad(\,n\,=0\,,\,1\,,2\,,\,\cdots\,)\]</span> ### <span class="math inline">\([-l,l]\)</span>上的傅里叶变换通式： <span class="math display">\[f(x)={\frac{a_{0}}{2}}\,+\,\sum_{n=1}^{\infty}\left(a_{n}\mathrm{cos}\,{\frac{n\pix}{l}}\,+\,b_{n}\mathrm{sin}\,{\frac{n\pi x}{l}}\right)\]</span> 其中， <span class="math display">\[a_{n}\,=\,\frac{1}{l}\int_{-l}^{l}f(\,x)\cos\frac{n\pix}{l}\mathrm{d}x\;\;\;\;(\,n\,=\,0\,,1\,,2\,,\cdots)\]</span> <span class="math display">\[b_{n}=\frac{1}{l}\int_{-l}^{l}f(x)\sin\frac{n\pix}{l}\mathrm{d}x~~~(n=1,2,\cdots)\]</span> ### <span class="math inline">\([0,l]\)</span>上的傅里叶变换需要进行解析延拓，分为奇延拓和偶延拓</p><h4 id="奇延拓">奇延拓</h4><p>通式： <span class="math display">\[f(x)=\sum_{n=1}^{\infty}\,b_{n}\sin{\frac{n\pi x}{l}}\]</span></p><p>其中 <span class="math display">\[b_{n}=\frac{2}{l}\int_{0}^{l}f(x)\sin\frac{n\pix}{l}\mathrm{d}x~~~(n=1,2,\cdots)\]</span></p><p>####偶延拓</p><p><span class="math display">\[f(x)={\frac{a_{0}}{2}}\,+\,\sum_{n=1}^{\infty}\,a_{n}\cos{\frac{n\pix}{l}}\]</span> 其中 <span class="math display">\[a_{n}=\frac{2}{l}\int_{0}^{l}\!f(\,x\,)\cos\,\frac{n\pix}{l}\mathrm{d}x\quad(\,n=0\,,1\,,2\,,\cdots)\]</span> ## 线积分、面积分的计算方法</p><p>若 <span class="math display">\[x=x(\,t\,),y=y(\,t\,),z=z(\,t\,)\;\;\;\;\;\;(\alpha&lt; t&lt; \beta)\]</span> 则</p><p><span class="math display">\[\int_{(C)} f(x, y, z) \mathrm{d}s=\int_\alpha^\beta f[x(t), y(t), z(t)]\sqrt{\dot{x}^2(t)+\dot{y}^2(t)+\dot{z}^2(t)} \mathrm{d} t \]</span></p><h3 id="第一型面积分">第一型面积分</h3><p>若<span class="math inline">\(S\)</span>的方程为 <spanclass="math display">\[z=f(x,y)\]</span> 则第一型面积分的计算公式为：<span class="math display">\[\iint_{(S)} f(x, y, z) \mathrm{d}S=\iint_{(\sigma)} f[x, y, z(x, y)] \sqrt{1+z_x^2+z_y^2} \mathrm{~d} x\mathrm{d} y \]</span> ### 第二型线积分 设光滑有向曲线<spanclass="math inline">\((C)\)</span>的参数方程是 <spanclass="math display">\[\boldsymbol{r}=\boldsymbol{r}(t)=(x(t), y(t),z(t)) \quad(\alpha \leqslant t \leqslant \beta)\]</span>而又有向量值函数 <spanclass="math display">\[\boldsymbol{A}=\boldsymbol{A}(x, y, z)=(P(x, y,z), Q(x, y, z), R(x, y, z))\]</span></p><p>则 <span class="math display">\[\begin{aligned}\int_{(C)} \boldsymbol{A}(M) \cdot \mathbf{d} s &amp; =\int_{(C)}(P(x,y, z), Q(x, y, z), R(x, y, z)) \cdot(\mathrm{d} x, \mathrm{~d} y,\mathrm{~d} z) \\&amp; =\int_{(G)} P(x, y, z) \mathrm{d} x+Q(x, y, z) \mathrm{d} y+R(x,y, z) \mathrm{d} z\end{aligned}\]</span> 其中 <span class="math display">\[\begin{aligned}&amp; \int_{(C)} P(x, y, z) \mathrm{d} x=\int_\alpha^\beta P[x(t), y(t),z(t)] \dot{x}(t) \mathrm{d} t, \\&amp; \int_{(C)} Q(x, y, z) \mathrm{d} y=\int_\alpha^\beta Q[x(t), y(t),z(t)] \dot{y}(t) \mathrm{d} t, \\&amp; \int_{(C)} R(x, y, z) \mathrm{d} z=\int_\alpha^\beta R[x(t), y(t),z(t)] \dot{z}(t) \mathrm{d} t .\end{aligned}\]</span></p><h3 id="两类线积分的联系">两类线积分的联系</h3><p>如果设<span class="math inline">\(M\)</span>处的切向量为<spanclass="math inline">\((\cos \alpha,\cos \beta,\cos \gamma)\)</span>，则<span class="math display">\[\int_{(C)} P \mathrm{~d} x+Q \mathrm{~d}y+R \mathrm{~d} z=\int_{(C)}(P \cos \alpha+Q \cos \beta+R \cos \gamma)\mathrm{d} s\]</span></p><h3 id="第二型面积分">第二型面积分</h3><p>设有向曲面<span class="math inline">\((S)\)</span>为<spanclass="math inline">\(z=z(x,y)\)</span>，其在<spanclass="math inline">\(xOy\)</span>平面上的投影为<spanclass="math inline">\((\sigma_{xy})\)</span>，则 <spanclass="math display">\[\iint_{(S)} R(x, y, z) \mathrm{d} x \wedge\mathrm{d} y= \pm \iint_{\left(\sigma_{xy}\right)} R[x, y, z(x, y)]\mathrm{d} x \mathrm{d} y\]</span></p><p>对于<span class="math inline">\(x=x(y,z)\)</span>和<spanclass="math inline">\(y=y(x,z)\)</span>同理 ## 各种积分的联系及场论</p><h3 id="green公式">Green公式</h3><p>设平面有界闭区域<spanclass="math inline">\((\sigma)\)</span>由一条分段光滑的简单曲线所围成，<spanclass="math inline">\((\sigma)\)</span>的边界曲线为<spanclass="math inline">\((C)\)</span>，函数<spanclass="math inline">\(P,Q\)</span>在<spanclass="math inline">\((\sigma)\)</span>上一阶导函数连续，则 <spanclass="math display">\[\iint_{(\sigma)}\left(\frac{\partial Q}{\partialx}-\frac{\partial P}{\partial y}\right) \mathrm{d} \sigma=\oint_{(+C)}P(x, y) \mathrm{d} x+Q(x, y) \mathrm{d} y\]</span> ### Gauss公式空间有界闭区域<span class="math inline">\((V)\)</span>的边界为<spanclass="math inline">\((S)\)</span>，则 <span class="math display">\[\iiint_V\left(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partialy}+\frac{\partial R}{\partial z}\right) \mathrm{d} V=\iint_{(S)} P\mathrm{~d} y \wedge \mathrm{d} z+Q \mathrm{~d} z \wedge \mathrm{d} x+R\mathrm{~d} x \wedge \mathrm{d} y\]</span> ### Stokes公式 <span class="math display">\[\oint_{(S)}P\mathrm{d}x+Q\mathrm{d}y+R\mathrm{d}z=\iint_{(S)}\!\left({\frac{\partialR}{\partial y}}-{\frac{\partial Q}{\partialz}}\!\right)\operatorname{d}\!y\wedge \text{d}z+\left({\frac{\partialP}{\partial z}}-{\frac{\partial R}{\partialx}}\!\right)\operatorname{d}\!z\wedge \text{d}x+\left({\frac{\partialQ}{\partial x}}-{\frac{\partial P}{\partialy}}\right)\operatorname{d}\!x\wedge \text{d}y\]</span> ### 场论部分 记<span class="math display">\[\nabla=(\frac{\partial}{\partial x},\frac{\partial}{\partialy},\frac{\partial}{\partial z}) \]</span> 那么，</p><h4 id="梯度">梯度</h4><p>设二元函数<span class="math inline">\(f(x,y)\)</span>在<spanclass="math inline">\((x_0,y_0)\)</span>处可微，则<spanclass="math inline">\(f\)</span>在该点处的梯度一定存在，并且梯度为：<spanclass="math display">\[\nabla f(x_0,y_0)=(\dfrac{\partial f}{\partial x},\dfrac{\partialf}{\partial y})  \]</span> 而对于散度， ####散度（同时也是一个通量密度） 散度的计算公式： <spanclass="math display">\[\text{div}~\mathbf{A}=\nabla \cdot\mathbf{A}=\dfrac{\partial P}{\partial x}+\dfrac{\partial Q}{\partialy}+\dfrac{\partial R}{\partial z} \]</span> 接下来，</p><h4id="旋度是矢量本身不是环量密度">旋度（是矢量，本身不是环量密度）</h4><p><span class="math display">\[ \mathbf{rot~A}=\nabla \times \mathbf{A}\]</span></p><p>有了这三个量，可以引出对各种场的讨论：</p><h4 id="各种场之间的关系">各种场之间的关系</h4><h5 id="无旋场">无旋场</h5><ul><li>无旋场——环量处处为<span class="math inline">\(0\)</span></li><li>如果一个场为无旋场，那么它为有势场，也就存在势函数；它同时也是保守场</li><li>对无旋场，<spanclass="math inline">\(P\text{d}x+Q\text{d}y+R\text{d}z\)</span>是某一函数的全微分</li><li>该场中线积分与路径无关 ##### 无源场</li><li>沿任意一不自交闭曲面的通量为<spanclass="math inline">\(0\)</span></li><li>处处散度为<span class="math inline">\(0\)</span> ##### 调和场</li><li>既无源又无旋的场称为调和场 ## 级数 常用级数公式： <spanclass="math display">\[e^{x}=\sum_{n=0}^{\infty}\frac{1}{n!}x^{n}\,\left(-\infty&lt;x&lt;+\infty\right)\]</span><span class="math display">\[\sin x = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}x^{2n+1}  (-\infty \lt x \lt+\infty)\]</span></li></ul><h2 id="一些其他的理解">一些其他的理解</h2><p>有时候第一型面积分的计算不一定选择<spanclass="math inline">\(x,y\)</span>为参，例如选择<spanclass="math inline">\(\varphi,\theta\)</span>，为参数，并把曲面上的坐标表示成 <spanclass="math display">\[r=(x(\varphi, \theta),y(\varphi,\theta),z(\varphi, \theta))\]</span></p><p>其中 <span class="math display">\[x=R\sin\varphi\cos\theta\]</span><span class="math display">\[y=R\sin\varphi\sin\theta\]</span> <span class="math display">\[z=R\cos\varphi\]</span> <spanclass="math display">\[此时，面积分为\]</span><em>{()}f[x(, ),y(, ),z(, )]||r</em>{}r_{}|| $$此时的变换为球坐标变换，计算可以得到</p><p><span class="math display">\[||r_{\theta}\times r_{\varphi}||=R^2\sin \varphi\]</span></p><p>在计算级数和函数的时候注意观察已经得到的级数形式是否符合某个已知的简单函数的展开式，若有，则直接把变量代入已知函数即可。</p>]]></content>
     
@@ -547,33 +574,6 @@ class=&quot;math inline&quot;&gt;\(f_{x}(0,0)\)&lt;/span</summary>
     <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
     <category term="运动" scheme="https://brockshuai.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有趣的照片</title>
-    <link href="https://brockshuai.github.io/2023/02/09/%E6%9C%89%E8%B6%A3%E7%9A%84%E7%85%A7%E7%89%87/"/>
-    <id>https://brockshuai.github.io/2023/02/09/%E6%9C%89%E8%B6%A3%E7%9A%84%E7%85%A7%E7%89%87/</id>
-    <published>2023-02-09T15:43:44.000Z</published>
-    <updated>2023-02-09T15:50:36.679Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="有趣的照片">有趣的照片</h2><p>趁着备份硬盘上的摄影原图，翻了翻以前拍的东西，发现了不少之前没有仔细审视过的的有趣照片。</p><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/JPEG%E5%9B%BE%E5%83%8F-E89ADE6FC702-1.jpeg" /></p><hr /><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2023-02-09%2023.48.23.png" /></p><p>学博军微妙的表情</p><hr /><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/000042.JPG" /></p><p>大差市的花店</p><hr /><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/000060.JPG" /></p><p>午夜的梧桐西道，灯光尤其清冷</p><hr /><p><imgsrc="https://picbed123.oss-cn-beijing.aliyuncs.com/img/IMG_6358.JPG" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;有趣的照片&quot;&gt;有趣的照片&lt;/h2&gt;
-&lt;p&gt;趁着备份硬盘上的摄影原图，翻了翻以前拍的东西，发现了不少之前没有仔细审视过的的有趣照片。&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://picbed123.oss-cn-beijing.aliyuncs.com/img</summary>
-      
-    
-    
-    
-    
-    <category term="生活" scheme="https://brockshuai.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="摄影" scheme="https://brockshuai.github.io/tags/%E6%91%84%E5%BD%B1/"/>
     
   </entry>
   
